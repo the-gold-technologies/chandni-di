@@ -6,10 +6,10 @@ import { Users, GraduationCap, Heart, School } from "lucide-react";
 
 export default function AccomplishedResultsSection() {
   return (
-    <section className="relative overflow-hidden bg-[#FAF7F2] py-8 sm:py-12 border-y border-[#ECE5DC]">
+    <section className="relative overflow-hidden border-y border-[#ECE5DC] bg-[#FAF7F2] py-8 sm:py-12">
       {/* Top Center Geometric Chevron Accent (Matching Color Theme) */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-44 h-4 overflow-hidden flex items-center justify-center">
-        <svg viewBox="0 0 160 16" fill="none" className="w-40 h-4">
+      <div className="absolute left-1/2 top-0 flex h-4 w-44 -translate-x-1/2 items-center justify-center overflow-hidden">
+        <svg viewBox="0 0 160 16" fill="none" className="h-4 w-40">
           <path
             d="M0 0L10 10L20 0L30 10L40 0L50 10L60 0L70 10L80 0L90 10L100 0L110 10L120 0L130 10L140 0L150 10L160 0"
             stroke="#D96B27"
@@ -24,7 +24,7 @@ export default function AccomplishedResultsSection() {
       </div>
 
       {/* Playful Top-Right Cloud Doodles */}
-      <div className="absolute top-8 right-8 sm:right-14 pointer-events-none opacity-70">
+      <div className="pointer-events-none absolute right-8 top-8 opacity-70 sm:right-14">
         <svg
           width="130"
           height="65"
@@ -42,37 +42,37 @@ export default function AccomplishedResultsSection() {
         </svg>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-12 lg:gap-14">
           {/* Left Column: Heading, Subtitle, Founder Quote Card, and Child Doodle */}
-          <div className="lg:col-span-5 flex flex-col justify-between space-y-6">
+          <div className="flex flex-col justify-between space-y-6 lg:col-span-5">
             <div className="space-y-3.5">
               {/* Eyebrow from Document Section 1.3 */}
               <div className="inline-flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-[#D96B27]" />
-                <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-[#D96B27]">
+                <span className="h-2 w-2 rounded-full bg-[#D96B27]" />
+                <span className="text-xs font-extrabold uppercase tracking-widest text-[#D96B27] sm:text-sm">
                   1.3 IMPACT STATISTICS
                 </span>
               </div>
 
               {/* Main Headline verbatim from Google Doc */}
-              <h2 className="text-3xl sm:text-4xl lg:text-[38px] font-black text-[#1C1814] font-serif tracking-tight leading-[1.15]">
+              <h2 className="font-serif text-3xl font-black leading-[1.15] tracking-tight text-[#1C1814] sm:text-4xl lg:text-[38px]">
                 Together, We Are <br />
                 <span className="text-[#D96B27]">Creating Pathways</span> <br />
                 to Opportunity
               </h2>
 
               {/* Exact Copy verbatim from Google Doc */}
-              <p className="text-base sm:text-lg text-[#5C534A] leading-relaxed font-normal pt-1 max-w-md">
+              <p className="max-w-md pt-1 text-base font-normal leading-relaxed text-[#5C534A] sm:text-lg">
                 Every number represents a child, a family, and a journey that
                 continues beyond the classroom.
               </p>
             </div>
 
             {/* Testimonial Badge Card (Dark badge with decorative edges) */}
-            <div className="relative bg-[#1A1613] text-white rounded-2xl p-4 sm:p-4.5 overflow-hidden shadow-xl border border-[#2E2822] max-w-md">
+            <div className="sm:p-4.5 relative max-w-md overflow-hidden rounded-2xl border border-[#2E2822] bg-[#1A1613] p-4 text-white shadow-xl">
               {/* Decorative Corner Chevron Borders */}
-              <div className="absolute bottom-0 right-0 w-14 h-7 pointer-events-none opacity-85">
+              <div className="pointer-events-none absolute bottom-0 right-0 h-7 w-14 opacity-85">
                 <svg viewBox="0 0 64 32" fill="none">
                   <path
                     d="M64 32L48 16L32 32"
@@ -91,15 +91,15 @@ export default function AccomplishedResultsSection() {
                   />
                 </svg>
               </div>
-              <div className="absolute top-0 left-0 w-11 h-5.5 pointer-events-none opacity-85">
+              <div className="h-5.5 pointer-events-none absolute left-0 top-0 w-11 opacity-85">
                 <svg viewBox="0 0 48 24" fill="none">
                   <path d="M0 0L16 16L32 0" stroke="#E65100" strokeWidth="4" />
                   <path d="M16 0L32 16L48 0" stroke="#2E7D32" strokeWidth="4" />
                 </svg>
               </div>
 
-              <div className="flex items-center gap-3.5 relative z-10">
-                <div className="relative w-12 h-12 rounded-full overflow-hidden shrink-0 border-2 border-[#D96B27]/70 shadow">
+              <div className="relative z-10 flex items-center gap-3.5">
+                <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full border-2 border-[#D96B27]/70 shadow">
                   <Image
                     src="/images/founder.jpg"
                     alt="Chandni Di"
@@ -108,7 +108,7 @@ export default function AccomplishedResultsSection() {
                   />
                 </div>
                 <div className="space-y-0.5">
-                  <p className="text-xs sm:text-sm font-medium text-neutral-100 italic leading-snug">
+                  <p className="text-xs font-medium italic leading-snug text-neutral-100 sm:text-sm">
                     “No child deserves to have their future limited by the
                     circumstances of their birth.”
                   </p>
@@ -124,7 +124,7 @@ export default function AccomplishedResultsSection() {
             </div>
 
             {/* Hand-Drawn Doodle Illustration of Two Children Holding Hands */}
-            <div className="pt-1 pl-1">
+            <div className="pl-1 pt-1">
               <svg
                 width="160"
                 height="140"
@@ -134,7 +134,7 @@ export default function AccomplishedResultsSection() {
                 strokeWidth="2.4"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="transform -rotate-1"
+                className="-rotate-1 transform"
               >
                 {/* Child 1 (Left - Taller with collar) */}
                 <circle cx="55" cy="40" r="22" />
@@ -167,82 +167,82 @@ export default function AccomplishedResultsSection() {
 
           {/* Right Column: 2x2 Grid of 4 Clean White Rounded Cards */}
           <div className="lg:col-span-7">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
               {/* Card 1: 500 Children who have become part of mainstream society */}
-              <div className="bg-white rounded-2xl p-6 sm:p-6.5 shadow-[0_8px_24px_rgba(0,0,0,0.03)] border border-[#ECE5DC] hover:shadow-[0_14px_32px_rgba(0,0,0,0.06)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+              <div className="sm:p-6.5 group flex flex-col justify-between rounded-2xl border border-[#ECE5DC] bg-white p-6 shadow-[0_8px_24px_rgba(0,0,0,0.03)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_14px_32px_rgba(0,0,0,0.06)]">
                 <div className="space-y-3.5">
-                  <div className="w-12 h-12 rounded-full bg-[#E5ECE4] flex items-center justify-center text-[#2E7D32] group-hover:scale-105 transition-transform">
-                    <School className="w-6 h-6" />
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#E5ECE4] text-[#2E7D32] transition-transform group-hover:scale-105">
+                    <School className="h-6 w-6" />
                   </div>
                   <div className="space-y-1">
-                    <div className="text-3xl font-black text-[#2E7D32] font-serif">
+                    <div className="font-serif text-3xl font-black text-[#2E7D32]">
                       500
                     </div>
-                    <h3 className="text-base font-bold text-[#1F1914] leading-snug">
+                    <h3 className="text-base font-bold leading-snug text-[#1F1914]">
                       Mainstreamed Into Society
                     </h3>
                   </div>
-                  <p className="text-xs sm:text-sm text-[#6B6258] leading-relaxed">
+                  <p className="text-xs leading-relaxed text-[#6B6258] sm:text-sm">
                     Children who have become part of mainstream society.
                   </p>
                 </div>
               </div>
 
               {/* Card 2: 370 Students currently studying in school and college */}
-              <div className="bg-white rounded-2xl p-6 sm:p-6.5 shadow-[0_8px_24px_rgba(0,0,0,0.03)] border border-[#ECE5DC] hover:shadow-[0_14px_32px_rgba(0,0,0,0.06)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+              <div className="sm:p-6.5 group flex flex-col justify-between rounded-2xl border border-[#ECE5DC] bg-white p-6 shadow-[0_8px_24px_rgba(0,0,0,0.03)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_14px_32px_rgba(0,0,0,0.06)]">
                 <div className="space-y-3.5">
-                  <div className="w-12 h-12 rounded-full bg-[#FCECE3] flex items-center justify-center text-[#D96B27] group-hover:scale-105 transition-transform">
-                    <GraduationCap className="w-6 h-6" />
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#FCECE3] text-[#D96B27] transition-transform group-hover:scale-105">
+                    <GraduationCap className="h-6 w-6" />
                   </div>
                   <div className="space-y-1">
-                    <div className="text-3xl font-black text-[#D96B27] font-serif">
+                    <div className="font-serif text-3xl font-black text-[#D96B27]">
                       370
                     </div>
-                    <h3 className="text-base font-bold text-[#1F1914] leading-snug">
+                    <h3 className="text-base font-bold leading-snug text-[#1F1914]">
                       In School and College
                     </h3>
                   </div>
-                  <p className="text-xs sm:text-sm text-[#6B6258] leading-relaxed">
+                  <p className="text-xs leading-relaxed text-[#6B6258] sm:text-sm">
                     Students currently studying in school and college.
                   </p>
                 </div>
               </div>
 
               {/* Card 3: 136 Children's education completely adopted */}
-              <div className="bg-white rounded-2xl p-6 sm:p-6.5 shadow-[0_8px_24px_rgba(0,0,0,0.03)] border border-[#ECE5DC] hover:shadow-[0_14px_32px_rgba(0,0,0,0.06)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+              <div className="sm:p-6.5 group flex flex-col justify-between rounded-2xl border border-[#ECE5DC] bg-white p-6 shadow-[0_8px_24px_rgba(0,0,0,0.03)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_14px_32px_rgba(0,0,0,0.06)]">
                 <div className="space-y-3.5">
-                  <div className="w-12 h-12 rounded-full bg-[#EAF2ED] flex items-center justify-center text-[#1E7E5A] group-hover:scale-105 transition-transform">
-                    <Heart className="w-6 h-6" />
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#EAF2ED] text-[#1E7E5A] transition-transform group-hover:scale-105">
+                    <Heart className="h-6 w-6" />
                   </div>
                   <div className="space-y-1">
-                    <div className="text-3xl font-black text-[#1E7E5A] font-serif">
+                    <div className="font-serif text-3xl font-black text-[#1E7E5A]">
                       136
                     </div>
-                    <h3 className="text-base font-bold text-[#1F1914] leading-snug">
+                    <h3 className="text-base font-bold leading-snug text-[#1F1914]">
                       Completely Adopted
                     </h3>
                   </div>
-                  <p className="text-xs sm:text-sm text-[#6B6258] leading-relaxed">
+                  <p className="text-xs leading-relaxed text-[#6B6258] sm:text-sm">
                     Children&apos;s education completely adopted.
                   </p>
                 </div>
               </div>
 
               {/* Card 4: 10 Centres across Delhi-NCR */}
-              <div className="bg-white rounded-2xl p-6 sm:p-6.5 shadow-[0_8px_24px_rgba(0,0,0,0.03)] border border-[#ECE5DC] hover:shadow-[0_14px_32px_rgba(0,0,0,0.06)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+              <div className="sm:p-6.5 group flex flex-col justify-between rounded-2xl border border-[#ECE5DC] bg-white p-6 shadow-[0_8px_24px_rgba(0,0,0,0.03)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_14px_32px_rgba(0,0,0,0.06)]">
                 <div className="space-y-3.5">
-                  <div className="w-12 h-12 rounded-full bg-[#F9F3DF] flex items-center justify-center text-[#9C7513] group-hover:scale-105 transition-transform">
-                    <Users className="w-6 h-6" />
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#F9F3DF] text-[#9C7513] transition-transform group-hover:scale-105">
+                    <Users className="h-6 w-6" />
                   </div>
                   <div className="space-y-1">
-                    <div className="text-3xl font-black text-[#9C7513] font-serif">
+                    <div className="font-serif text-3xl font-black text-[#9C7513]">
                       10 Centres
                     </div>
-                    <h3 className="text-base font-bold text-[#1F1914] leading-snug">
+                    <h3 className="text-base font-bold leading-snug text-[#1F1914]">
                       Community Centres
                     </h3>
                   </div>
-                  <p className="text-xs sm:text-sm text-[#6B6258] leading-relaxed">
+                  <p className="text-xs leading-relaxed text-[#6B6258] sm:text-sm">
                     Centres across Delhi-NCR connecting children to mainstream
                     society.
                   </p>

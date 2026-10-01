@@ -7,17 +7,17 @@ import { ArrowUpRight, Award, Heart } from "lucide-react";
 
 export default function FounderSection() {
   return (
-    <section className="py-6 sm:py-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+    <section className="relative mx-auto max-w-7xl overflow-hidden px-4 py-6 sm:px-6 sm:py-10 lg:px-8">
+      <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16">
         {/* Left Column: Image with Pastel Organic Layered Circles & Floating Pill Card */}
-        <div className="lg:col-span-5 relative flex justify-center lg:justify-start">
+        <div className="relative flex justify-center lg:col-span-5 lg:justify-start">
           {/* Overlapping Pastel / Earth-Tone Decorative Organic Circles Behind Image */}
-          <div className="absolute -top-6 -left-6 sm:-top-8 sm:-left-8 w-32 h-32 sm:w-36 sm:h-36 rounded-full bg-[#F5DFD5]/80 pointer-events-none -z-10" />
-          <div className="absolute top-20 -left-10 w-24 h-24 rounded-full bg-[#E2EBE8]/90 pointer-events-none -z-10" />
-          <div className="absolute -bottom-8 -left-6 w-36 h-36 rounded-full bg-[#EFE8DF]/80 pointer-events-none -z-10" />
+          <div className="pointer-events-none absolute -left-6 -top-6 -z-10 h-32 w-32 rounded-full bg-[#F5DFD5]/80 sm:-left-8 sm:-top-8 sm:h-36 sm:w-36" />
+          <div className="pointer-events-none absolute -left-10 top-20 -z-10 h-24 w-24 rounded-full bg-[#E2EBE8]/90" />
+          <div className="pointer-events-none absolute -bottom-8 -left-6 -z-10 h-36 w-36 rounded-full bg-[#EFE8DF]/80" />
 
           {/* Main Portrait Card with Smooth Big Rounded Corners */}
-          <div className="relative aspect-[4/5] sm:aspect-[4/4] lg:aspect-[4/5] w-full max-w-md rounded-[2.2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.09)] border border-neutral-200/60 bg-neutral-100">
+          <div className="relative aspect-[4/5] w-full max-w-md overflow-hidden rounded-[2.2rem] border border-neutral-200/60 bg-neutral-100 shadow-[0_20px_50px_rgba(0,0,0,0.09)] sm:aspect-[4/4] lg:aspect-[4/5]">
             <Image
               src="/images/founder.jpg"
               alt="Founder Chandni Di mentoring young students"
@@ -27,46 +27,46 @@ export default function FounderSection() {
             />
 
             {/* Subtle Gradient at Bottom for Depth */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent pointer-events-none" />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
 
             {/* Floating Pill Card (Bottom Right - Matching Reference Image Exactly) */}
             <Link
               href="/about#founder"
-              className="absolute bottom-5 right-5 sm:bottom-6 sm:right-6 bg-white/95 backdrop-blur-md rounded-2xl p-3 px-4 shadow-xl border border-white/90 flex items-center gap-3.5 z-20 group hover:shadow-2xl transition-all transform hover:-translate-y-0.5"
+              className="group absolute bottom-5 right-5 z-20 flex transform items-center gap-3.5 rounded-2xl border border-white/90 bg-white/95 p-3 px-4 shadow-xl backdrop-blur-md transition-all hover:-translate-y-0.5 hover:shadow-2xl sm:bottom-6 sm:right-6"
             >
               <div className="text-left">
-                <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#D96B27] block leading-tight">
+                <span className="block text-[10px] font-extrabold uppercase leading-tight tracking-widest text-[#D96B27]">
                   FOUNDER
                 </span>
-                <span className="text-sm font-bold text-neutral-900 block leading-tight pt-0.5">
+                <span className="block pt-0.5 text-sm font-bold leading-tight text-neutral-900">
                   Chandni Di
                 </span>
               </div>
-              <div className="w-8 h-8 rounded-full bg-[#D96B27] text-white flex items-center justify-center shrink-0 group-hover:bg-[#C45E28] transition-colors shadow-sm">
-                <ArrowUpRight className="w-4 h-4" />
+              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#D96B27] text-white shadow-sm transition-colors group-hover:bg-[#C45E28]">
+                <ArrowUpRight className="h-4 w-4" />
               </div>
             </Link>
           </div>
         </div>
 
         {/* Right Column: Editorial Typography, Brush Underline, and Exact Doc Content */}
-        <div className="lg:col-span-7 space-y-6">
+        <div className="space-y-6 lg:col-span-7">
           <div className="space-y-3">
             {/* Eyebrow */}
             <div>
-              <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-[#D96B27]">
+              <span className="text-xs font-extrabold uppercase tracking-widest text-[#D96B27] sm:text-sm">
                 MEET THE FOUNDER
               </span>
             </div>
 
             {/* Main Headline with Brush Underline Accent (Matching Reference) */}
-            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-neutral-900 font-serif tracking-tight leading-[1.18]">
+            <h2 className="font-serif text-3xl font-bold leading-[1.18] tracking-tight text-neutral-900 sm:text-4xl lg:text-[42px]">
               One Life Experience. <br />A Commitment to{" "}
-              <span className="relative inline-block italic font-serif text-[#D96B27]">
+              <span className="relative inline-block font-serif italic text-[#D96B27]">
                 Thousands of Children.
                 {/* Hand-Drawn Underline Stroke Curve */}
                 <svg
-                  className="absolute -bottom-2 left-0 w-full h-3 text-[#D96B27]"
+                  className="absolute -bottom-2 left-0 h-3 w-full text-[#D96B27]"
                   viewBox="0 0 200 12"
                   fill="none"
                 >
@@ -82,12 +82,12 @@ export default function FounderSection() {
           </div>
 
           {/* Lead Highlight Line */}
-          <h3 className="text-lg sm:text-xl font-bold text-neutral-800 pt-1 leading-snug">
+          <h3 className="pt-1 text-lg font-bold leading-snug text-neutral-800 sm:text-xl">
             Chandni Di&apos;s work is rooted in lived experience.
           </h3>
 
           {/* Verbatim Paragraphs from Google Doc Section 1.5 */}
-          <div className="space-y-4 text-sm sm:text-base text-neutral-600 leading-relaxed">
+          <div className="space-y-4 text-sm leading-relaxed text-neutral-600 sm:text-base">
             <p>
               Having grown up in a slum herself, she understands the barriers
               that children from underserved communities can face. Her journey
@@ -103,9 +103,9 @@ export default function FounderSection() {
           </div>
 
           {/* Presidential Honours Note */}
-          <div className="p-4 bg-[#FAF7F2] rounded-2xl border border-[#ECE5DC] flex items-center gap-3 text-xs sm:text-sm text-neutral-700">
-            <div className="w-8 h-8 rounded-full bg-[#FCECE3] text-[#D96B27] flex items-center justify-center shrink-0">
-              <Award className="w-4 h-4" />
+          <div className="flex items-center gap-3 rounded-2xl border border-[#ECE5DC] bg-[#FAF7F2] p-4 text-xs text-neutral-700 sm:text-sm">
+            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#FCECE3] text-[#D96B27]">
+              <Award className="h-4 w-4" />
             </div>
             <div>
               <span className="font-bold text-neutral-900">
@@ -119,18 +119,18 @@ export default function FounderSection() {
           </div>
 
           {/* Handwritten Style Sign-off (Matching Reference) */}
-          <div className="pt-2 space-y-1">
+          <div className="space-y-1 pt-2">
             <p className="text-sm font-semibold text-[#D96B27]">
               We invite you to walk with us on this journey.
             </p>
             <div className="flex items-center gap-2 text-base sm:text-lg">
-              <span className="font-serif italic font-bold text-neutral-900">
+              <span className="font-serif font-bold italic text-neutral-900">
                 Chandni Di
               </span>
               <span className="text-neutral-400">—</span>
-              <span className="font-serif italic text-[#D96B27] flex items-center gap-1.5">
+              <span className="flex items-center gap-1.5 font-serif italic text-[#D96B27]">
                 Founder, Chandni Di
-                <Heart className="w-3.5 h-3.5 fill-[#D96B27] text-[#D96B27] inline" />
+                <Heart className="inline h-3.5 w-3.5 fill-[#D96B27] text-[#D96B27]" />
               </span>
             </div>
           </div>
@@ -139,10 +139,10 @@ export default function FounderSection() {
           <div className="pt-2">
             <Link
               href="/about#founder"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#1C1814] hover:bg-black text-white font-bold text-xs uppercase tracking-wider transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+              className="inline-flex transform items-center gap-2 rounded-full bg-[#1C1814] px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-black hover:shadow-lg"
             >
               <span>Meet Chandni Di</span>
-              <ArrowUpRight className="w-4 h-4" />
+              <ArrowUpRight className="h-4 w-4" />
             </Link>
           </div>
         </div>

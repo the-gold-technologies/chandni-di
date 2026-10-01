@@ -5,24 +5,24 @@ import Link from "next/link";
 
 export default function HowCouldYouHelpSection() {
   return (
-    <section className="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
       {/* Centered Heading Matching Google Doc Section 1.6 */}
-      <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-18 space-y-3">
+      <div className="sm:mb-18 mx-auto mb-14 max-w-3xl space-y-3 text-center">
         <div className="inline-flex items-center gap-2">
-          <span className="w-2 h-2 rounded-full bg-[#00897B]" />
-          <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-[#00897B]">
+          <span className="h-2 w-2 rounded-full bg-[#00897B]" />
+          <span className="text-xs font-extrabold uppercase tracking-widest text-[#00897B] sm:text-sm">
             1.6 GET INVOLVED
           </span>
         </div>
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 font-serif tracking-tight">
+        <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl lg:text-5xl">
           You Can Be Part of a Child&apos;s Journey
         </h2>
-        <div className="space-y-2 pt-1 max-w-2xl mx-auto text-neutral-600 text-sm sm:text-base leading-relaxed">
+        <div className="mx-auto max-w-2xl space-y-2 pt-1 text-sm leading-relaxed text-neutral-600 sm:text-base">
           <p>
             Change can begin with a contribution, a few hours of your time, a
             partnership, or the decision to support a child&apos;s education.
           </p>
-          <p className="text-xs sm:text-sm text-neutral-500">
+          <p className="text-xs text-neutral-500 sm:text-sm">
             Whether you are an individual, organisation, volunteer, or CSR
             partner, there are meaningful ways to contribute.
           </p>
@@ -30,12 +30,12 @@ export default function HowCouldYouHelpSection() {
       </div>
 
       {/* 3-Column Clean Minimalist Layout Matching 3 CTA Buttons from Doc */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14 max-w-5xl mx-auto text-left">
+      <div className="mx-auto grid max-w-5xl grid-cols-1 gap-10 text-left md:grid-cols-3 lg:gap-14">
         {/* Column 1: Volunteer */}
-        <div className="space-y-4 flex flex-col justify-between">
+        <div className="flex flex-col justify-between space-y-4">
           <div className="space-y-4">
             {/* Illustrated Icon (Stick figure holding heart matching reference) */}
-            <div className="w-14 h-14 flex items-center justify-start">
+            <div className="flex h-14 w-14 items-center justify-start">
               <svg width="44" height="44" viewBox="0 0 48 48" fill="none">
                 {/* Head */}
                 <circle
@@ -76,11 +76,11 @@ export default function HowCouldYouHelpSection() {
               </svg>
             </div>
 
-            <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 font-serif">
+            <h3 className="font-serif text-xl font-bold text-neutral-900 sm:text-2xl">
               Volunteer
             </h3>
 
-            <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+            <p className="text-xs leading-relaxed text-neutral-600 sm:text-sm">
               Contribute a few hours of your time. Mentor a child, provide
               academic tutoring, or conduct creative workshops for children.
             </p>
@@ -89,7 +89,7 @@ export default function HowCouldYouHelpSection() {
           <div className="pt-2">
             <Link
               href="/get-involved#volunteer"
-              className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-[#00897B] hover:text-[#00695C] transition-colors group"
+              className="group inline-flex items-center text-xs font-bold uppercase tracking-wider text-[#00897B] transition-colors hover:text-[#00695C]"
             >
               <span>+ VOLUNTEER</span>
             </Link>
@@ -97,10 +97,10 @@ export default function HowCouldYouHelpSection() {
         </div>
 
         {/* Column 2: Partner With Us */}
-        <div className="space-y-4 flex flex-col justify-between">
+        <div className="flex flex-col justify-between space-y-4">
           <div className="space-y-4">
             {/* Illustrated Icon (Hands holding coin matching reference) */}
-            <div className="w-14 h-14 flex items-center justify-start">
+            <div className="flex h-14 w-14 items-center justify-start">
               <svg width="44" height="44" viewBox="0 0 48 48" fill="none">
                 {/* Coin */}
                 <circle
@@ -152,11 +152,11 @@ export default function HowCouldYouHelpSection() {
               </svg>
             </div>
 
-            <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 font-serif">
+            <h3 className="font-serif text-xl font-bold text-neutral-900 sm:text-2xl">
               Partner With Us
             </h3>
 
-            <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+            <p className="text-xs leading-relaxed text-neutral-600 sm:text-sm">
               Whether you are an organization or CSR partner, collaborate to
               establish learning centres and connect youth to career
               opportunities.
@@ -166,7 +166,7 @@ export default function HowCouldYouHelpSection() {
           <div className="pt-2">
             <Link
               href="/contact"
-              className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-[#00897B] hover:text-[#00695C] transition-colors group"
+              className="group inline-flex items-center text-xs font-bold uppercase tracking-wider text-[#00897B] transition-colors hover:text-[#00695C]"
             >
               <span>+ PARTNER WITH US</span>
             </Link>
@@ -174,10 +174,10 @@ export default function HowCouldYouHelpSection() {
         </div>
 
         {/* Column 3: Donate */}
-        <div className="space-y-4 flex flex-col justify-between">
+        <div className="flex flex-col justify-between space-y-4">
           <div className="space-y-4">
             {/* Illustrated Icon (Donation box with card & heart matching reference) */}
-            <div className="w-14 h-14 flex items-center justify-start">
+            <div className="flex h-14 w-14 items-center justify-start">
               <svg width="44" height="44" viewBox="0 0 48 48" fill="none">
                 {/* Card slipping into box */}
                 <rect
@@ -214,11 +214,11 @@ export default function HowCouldYouHelpSection() {
               </svg>
             </div>
 
-            <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 font-serif">
+            <h3 className="font-serif text-xl font-bold text-neutral-900 sm:text-2xl">
               Donate
             </h3>
 
-            <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+            <p className="text-xs leading-relaxed text-neutral-600 sm:text-sm">
               Support a child&apos;s education, tuition fees, uniforms, and
               learning materials with eligible 80G tax deductions.
             </p>
@@ -227,7 +227,7 @@ export default function HowCouldYouHelpSection() {
           <div className="pt-2">
             <Link
               href="/get-involved#donate"
-              className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-[#00897B] hover:text-[#00695C] transition-colors group"
+              className="group inline-flex items-center text-xs font-bold uppercase tracking-wider text-[#00897B] transition-colors hover:text-[#00695C]"
             >
               <span>+ DONATE</span>
             </Link>

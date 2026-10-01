@@ -7,10 +7,10 @@ import { ArrowRight, Send, Heart } from "lucide-react";
 
 export default function CtaBannerSection() {
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8">
-      <div className="relative bg-[#F8F5EE] rounded-[2.5rem] p-6 sm:p-10 lg:p-12 border border-[#EDE8DE] overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.03)]">
+    <section className="mx-auto max-w-7xl px-4 py-4 sm:px-6 sm:py-8 lg:px-8">
+      <div className="relative overflow-hidden rounded-[2.5rem] border border-[#EDE8DE] bg-[#F8F5EE] p-6 shadow-[0_10px_40px_rgba(0,0,0,0.03)] sm:p-10 lg:p-12">
         {/* Decorative Muted Sage Foliage / Leaf in Bottom-Left Corner */}
-        <div className="absolute -bottom-8 -left-6 pointer-events-none opacity-60">
+        <div className="pointer-events-none absolute -bottom-8 -left-6 opacity-60">
           <svg
             width="160"
             height="160"
@@ -36,55 +36,55 @@ export default function CtaBannerSection() {
           </svg>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center relative z-10">
+        <div className="relative z-10 grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-14">
           {/* Left Column: Eyebrow, Headline, Paragraphs, Action Buttons */}
-          <div className="lg:col-span-6 space-y-6">
+          <div className="space-y-6 lg:col-span-6">
             <div className="space-y-3.5">
-              <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-[#D96B27]">
+              <span className="text-xs font-extrabold uppercase tracking-widest text-[#D96B27] sm:text-sm">
                 1.6 GET INVOLVED
               </span>
 
-              <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-bold font-serif text-[#1C1814] tracking-tight leading-[1.16]">
+              <h2 className="font-serif text-3xl font-bold leading-[1.16] tracking-tight text-[#1C1814] sm:text-4xl lg:text-[44px]">
                 You Can Be Part of <br />a Child&apos;s Journey.
               </h2>
             </div>
 
-            <div className="space-y-3 text-sm sm:text-base text-[#5C534A] leading-relaxed max-w-lg">
+            <div className="max-w-lg space-y-3 text-sm leading-relaxed text-[#5C534A] sm:text-base">
               <p>
                 Change can begin with a contribution, a few hours of your time,
                 a partnership, or the decision to support a child&apos;s
                 education.
               </p>
-              <p className="text-xs sm:text-sm text-[#7D7368]">
+              <p className="text-xs text-[#7D7368] sm:text-sm">
                 Whether you are an individual, organisation, volunteer, or CSR
                 partner, there are meaningful ways to contribute.
               </p>
             </div>
 
             {/* Action Buttons (Matching Reference Design: Dark Pill + White Pill) */}
-            <div className="pt-2 flex flex-wrap items-center gap-4">
+            <div className="flex flex-wrap items-center gap-4 pt-2">
               {/* Primary Button (Dark Pill with Arrow) */}
               <Link
                 href="/get-involved#donate"
-                className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-[#1F3D36] hover:bg-[#162D28] text-white font-bold text-sm tracking-wide transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                className="inline-flex transform items-center gap-2.5 rounded-full bg-[#1F3D36] px-7 py-3.5 text-sm font-bold tracking-wide text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-[#162D28] hover:shadow-lg"
               >
                 <span>Donate Now</span>
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="h-4 w-4" />
               </Link>
 
               {/* Secondary Button (White Pill with Terracotta Icon) */}
               <Link
                 href="/get-involved#volunteer"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white hover:bg-neutral-50 text-neutral-900 border border-neutral-200/90 font-bold text-sm tracking-wide shadow-sm transition-all transform hover:-translate-y-0.5"
+                className="inline-flex transform items-center gap-2 rounded-full border border-neutral-200/90 bg-white px-6 py-3.5 text-sm font-bold tracking-wide text-neutral-900 shadow-sm transition-all hover:-translate-y-0.5 hover:bg-neutral-50"
               >
-                <Send className="w-4 h-4 text-[#D96B27]" />
+                <Send className="h-4 w-4 text-[#D96B27]" />
                 <span>Volunteer With Us</span>
               </Link>
 
               {/* Partner Link */}
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-neutral-700 hover:text-[#D96B27] underline decoration-neutral-300 underline-offset-4 transition-colors px-2 py-1"
+                className="inline-flex items-center gap-1.5 px-2 py-1 text-xs font-bold text-neutral-700 underline decoration-neutral-300 underline-offset-4 transition-colors hover:text-[#D96B27] sm:text-sm"
               >
                 <span>Partner With Us →</span>
               </Link>
@@ -92,10 +92,10 @@ export default function CtaBannerSection() {
           </div>
 
           {/* Right Column: Visual Arch Shape + Sunburst Rays + Floating Polaroid Card */}
-          <div className="lg:col-span-6 relative flex justify-center lg:justify-end">
+          <div className="relative flex justify-center lg:col-span-6 lg:justify-end">
             <div className="relative w-full max-w-md lg:max-w-lg">
               {/* Sunburst Doodle Rays on Top-Left of Arch */}
-              <div className="absolute -top-4 -left-4 sm:-top-6 sm:-left-6 pointer-events-none z-10">
+              <div className="pointer-events-none absolute -left-4 -top-4 z-10 sm:-left-6 sm:-top-6">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
                   <path
                     d="M10 24H2M14 14L8 8M24 10V2M34 14L40 8"
@@ -107,32 +107,32 @@ export default function CtaBannerSection() {
               </div>
 
               {/* Large Arch / Oval Masked Photo */}
-              <div className="relative aspect-[16/11] sm:aspect-[16/10] w-full rounded-[4rem_4rem_2.5rem_2.5rem] overflow-hidden shadow-2xl border-4 border-white/80 bg-neutral-200">
+              <div className="relative aspect-[16/11] w-full overflow-hidden rounded-[4rem_4rem_2.5rem_2.5rem] border-4 border-white/80 bg-neutral-200 shadow-2xl sm:aspect-[16/10]">
                 <Image
                   src="/images/hero_hug.jpg"
                   alt="Chandni Di embracing smiling student"
                   fill
                   className="object-cover object-center"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent pointer-events-none" />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
               </div>
 
               {/* Floating Tilted Polaroid Card (Bottom Right - Matching Reference Image) */}
-              <div className="absolute -bottom-4 right-2 sm:bottom-2 sm:right-4 bg-white rounded-2xl p-4 sm:p-5 shadow-2xl border border-neutral-100 rotate-6 transform transition-transform hover:rotate-2 z-20">
-                <div className="text-center font-serif italic space-y-0.5 text-neutral-800 text-xs sm:text-sm font-semibold select-none">
+              <div className="absolute -bottom-4 right-2 z-20 rotate-6 transform rounded-2xl border border-neutral-100 bg-white p-4 shadow-2xl transition-transform hover:rotate-2 sm:bottom-2 sm:right-4 sm:p-5">
+                <div className="select-none space-y-0.5 text-center font-serif text-xs font-semibold italic text-neutral-800 sm:text-sm">
                   <div>Every</div>
                   <div>Child</div>
                   <div>Deserves</div>
                   <div>A Future</div>
-                  <div className="pt-1 flex justify-center">
-                    <Heart className="w-3.5 h-3.5 text-[#D96B27] fill-[#D96B27]" />
+                  <div className="flex justify-center pt-1">
+                    <Heart className="h-3.5 w-3.5 fill-[#D96B27] text-[#D96B27]" />
                   </div>
                 </div>
               </div>
 
               {/* Subtle Bottom-Right Subtitle (TRAVEL · PEOPLE · PURPOSE style) */}
               <div className="pt-5 text-right">
-                <span className="text-[10px] sm:text-xs font-bold tracking-[0.25em] uppercase text-neutral-400">
+                <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-neutral-400 sm:text-xs">
                   EDUCATION · DIGNITY · FUTURE
                 </span>
               </div>
