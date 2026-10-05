@@ -54,22 +54,25 @@ export default function ProgrammesCardsGrid() {
   return (
     <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       {/* Section Header */}
-      <div className="mx-auto max-w-3xl text-center space-y-2 mb-12 sm:mb-14">
+      <div className="mx-auto mb-12 max-w-3xl space-y-2 text-center sm:mb-14">
         <span className="text-xs font-bold uppercase tracking-[0.25em] text-brand-700">
           Our Educational Lifecycle
         </span>
         <h2 className="font-serif text-3xl font-extrabold tracking-tight text-neutral-900 sm:text-4xl lg:text-[42px]">
           Three Focused Programmes.
           <br />
-          <span className="font-serif italic text-brand-700">One Unbroken Journey.</span>
+          <span className="font-serif italic text-brand-700">
+            One Unbroken Journey.
+          </span>
         </h2>
-        <p className="text-sm text-neutral-600 sm:text-base max-w-xl mx-auto pt-1">
-          Select a programme to explore its full curriculum, operational framework, and student stories.
+        <p className="mx-auto max-w-xl pt-1 text-sm text-neutral-600 sm:text-base">
+          Select a programme to explore its full curriculum, operational
+          framework, and student stories.
         </p>
       </div>
 
       {/* 3-Card Grid matching user reference */}
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 pt-4">
+      <div className="grid grid-cols-1 gap-8 pt-4 md:grid-cols-2 lg:grid-cols-3">
         {programmes.map((prog) => {
           const Icon = prog.icon;
           return (
@@ -95,28 +98,28 @@ export default function ProgrammesCardsGrid() {
                     <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
 
                     {/* Bottom Centered Age/Stage Pill */}
-                    <div className="absolute bottom-3 left-1/2 -translate-x-1/2 rounded-full bg-black/50 px-3.5 py-1 text-[11px] font-semibold text-white backdrop-blur-md border border-white/20 whitespace-nowrap">
+                    <div className="absolute bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full border border-white/20 bg-black/50 px-3.5 py-1 text-[11px] font-semibold text-white backdrop-blur-md">
                       {prog.stage} • {prog.ageGroup}
                     </div>
                   </div>
                 </div>
 
                 {/* Centered Content */}
-                <div className="flex flex-1 flex-col items-center justify-between text-center pt-5 sm:pt-6 space-y-5">
+                <div className="flex flex-1 flex-col items-center justify-between space-y-5 pt-5 text-center sm:pt-6">
                   <div className="space-y-2">
-                    <h3 className="font-serif text-2xl font-bold tracking-tight text-neutral-900 group-hover:text-brand-700 transition-colors">
+                    <h3 className="font-serif text-2xl font-bold tracking-tight text-neutral-900 transition-colors group-hover:text-brand-700">
                       {prog.title}
                     </h3>
-                    <p className="text-sm leading-relaxed text-neutral-600 max-w-xs mx-auto">
+                    <p className="mx-auto max-w-xs text-sm leading-relaxed text-neutral-600">
                       {prog.description}
                     </p>
                   </div>
 
                   {/* Brand Red Button & Sponsor Link */}
-                  <div className="w-full pt-1 space-y-2">
+                  <div className="w-full space-y-2 pt-1">
                     <Link
                       href={prog.href}
-                      className="group/btn inline-flex items-center justify-center gap-2 rounded-full bg-brand-700 px-6 py-2.5 text-xs sm:text-sm font-semibold text-white shadow-md transition-all duration-200 hover:scale-[1.02] hover:bg-brand-800 hover:shadow-lg w-full"
+                      className="group/btn inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-700 px-6 py-2.5 text-xs font-semibold text-white shadow-md transition-all duration-200 hover:scale-[1.02] hover:bg-brand-800 hover:shadow-lg sm:text-sm"
                     >
                       <span>Explore Programme</span>
                       <ArrowRight className="h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
@@ -125,7 +128,7 @@ export default function ProgrammesCardsGrid() {
                     <div>
                       <Link
                         href="/get-involved#donate"
-                        className="inline-flex items-center gap-1 text-[11px] font-semibold text-neutral-500 hover:text-brand-700 transition-colors"
+                        className="inline-flex items-center gap-1 text-[11px] font-semibold text-neutral-500 transition-colors hover:text-brand-700"
                       >
                         <Heart className="h-3 w-3 text-brand-700" />
                         <span>Sponsor this programme (80G Tax Benefit)</span>

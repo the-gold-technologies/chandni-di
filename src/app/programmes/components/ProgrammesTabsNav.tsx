@@ -28,9 +28,24 @@ export default function ProgrammesTabsNav() {
   }, []);
 
   const tabs = [
-    { id: "bridge", step: "01", label: "Bridge Programme", shortLabel: "Bridge" },
-    { id: "after-school", step: "02", label: "After-School Programme", shortLabel: "After-School" },
-    { id: "college-to-career", step: "03", label: "College to Career", shortLabel: "College to Career" },
+    {
+      id: "bridge",
+      step: "01",
+      label: "Bridge Programme",
+      shortLabel: "Bridge",
+    },
+    {
+      id: "after-school",
+      step: "02",
+      label: "After-School Programme",
+      shortLabel: "After-School",
+    },
+    {
+      id: "college-to-career",
+      step: "03",
+      label: "College to Career",
+      shortLabel: "College to Career",
+    },
   ];
 
   return (

@@ -64,9 +64,7 @@ export default function ProgrammeFrameworkSection({
                 {/* Vertical Connector Pin & Dot */}
                 <div className="flex flex-col items-center">
                   <div
-                    className={`h-4 w-0.5 ${
-                      card.pinColor || "bg-brand-600"
-                    }`}
+                    className={`h-4 w-0.5 ${card.pinColor || "bg-brand-600"}`}
                   />
                   <div
                     className={`h-2 w-2 rounded-full ${
@@ -86,12 +84,12 @@ export default function ProgrammeFrameworkSection({
             return (
               <div
                 key={card.num}
-                className={`group relative flex flex-col justify-between overflow-visible rounded-[30px] border p-4 sm:p-5 pb-7 sm:pb-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl ${
+                className={`group relative flex flex-col justify-between overflow-visible rounded-[30px] border p-4 pb-7 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-5 sm:pb-8 ${
                   card.cardBg || "bg-[#FAF6ED]"
                 } ${card.borderColor || "border-[#EFE5D3]"}`}
               >
                 {/* Small Floating Circular Icon Badge Overlapping Left Edge */}
-                <div className="absolute -left-3 top-[32%] z-20 hidden sm:flex h-8 w-8 items-center justify-center rounded-full border border-neutral-200/90 bg-white shadow-md transition-transform duration-300 group-hover:scale-110">
+                <div className="absolute -left-3 top-[32%] z-20 hidden h-8 w-8 items-center justify-center rounded-full border border-neutral-200/90 bg-white shadow-md transition-transform duration-300 group-hover:scale-110 sm:flex">
                   <Icon className="h-4 w-4 text-neutral-700" />
                 </div>
 
@@ -108,27 +106,27 @@ export default function ProgrammeFrameworkSection({
                     <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
                     {/* Mobile-only Step Pill */}
-                    <div className="absolute left-3 top-3 lg:hidden rounded-full bg-white/95 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-neutral-800 shadow-xs border border-white/60">
+                    <div className="shadow-xs absolute left-3 top-3 rounded-full border border-white/60 bg-white/95 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-neutral-800 lg:hidden">
                       Step {card.num}
                     </div>
                   </div>
 
                   {/* Text Details */}
                   <div className="space-y-2">
-                    <span className="inline-block rounded-md bg-white/80 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-neutral-700 border border-black/5 shadow-2xs">
+                    <span className="shadow-2xs inline-block rounded-md border border-black/5 bg-white/80 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-neutral-700">
                       {card.badge}
                     </span>
-                    <h3 className="font-serif text-xl font-bold leading-snug text-neutral-900 group-hover:text-brand-800 transition-colors">
+                    <h3 className="font-serif text-xl font-bold leading-snug text-neutral-900 transition-colors group-hover:text-brand-800">
                       {card.title}
                     </h3>
-                    <p className="text-xs sm:text-sm leading-relaxed text-neutral-600">
+                    <p className="text-xs leading-relaxed text-neutral-600 sm:text-sm">
                       {card.description}
                     </p>
                   </div>
                 </div>
 
                 {/* Key Deliverables / Action Items Sub-Pills */}
-                <div className="mt-5 border-t border-black/5 pt-3.5 space-y-1.5">
+                <div className="mt-5 space-y-1.5 border-t border-black/5 pt-3.5">
                   <span className="block text-[10px] font-bold uppercase tracking-wider text-neutral-500">
                     Key Highlights:
                   </span>
@@ -136,7 +134,7 @@ export default function ProgrammeFrameworkSection({
                     {card.actionItems.map((item, idx) => (
                       <span
                         key={idx}
-                        className="rounded-full bg-white/90 px-2.5 py-0.5 text-[10px] font-medium text-neutral-700 border border-black/5 shadow-2xs"
+                        className="shadow-2xs rounded-full border border-black/5 bg-white/90 px-2.5 py-0.5 text-[10px] font-medium text-neutral-700"
                       >
                         ✓ {item}
                       </span>

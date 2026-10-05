@@ -17,7 +17,7 @@ export default function ProgrammesPage() {
       <ProgrammesHeroSection />
 
       {/* 2. PROGRAMMES 3-CARD SHOWCASE GRID */}
-      <div className="bg-white pt-16 sm:pt-24 pb-8 sm:pb-12">
+      <div className="bg-white pb-8 pt-16 sm:pb-12 sm:pt-24">
         <ProgrammesCardsGrid />
       </div>
 

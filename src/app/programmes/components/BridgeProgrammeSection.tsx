@@ -20,7 +20,7 @@ export default function BridgeProgrammeSection() {
   return (
     <div
       id="bridge"
-      className="scroll-mt-28 relative overflow-hidden rounded-3xl border border-neutral-200/90 bg-white p-6 shadow-xl sm:p-10 lg:p-12"
+      className="relative scroll-mt-28 overflow-hidden rounded-3xl border border-neutral-200/90 bg-white p-6 shadow-xl sm:p-10 lg:p-12"
     >
       {/* Subtle Warm Gradient Accent */}
       <div className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-brand-100/30 blur-3xl" />
@@ -33,11 +33,11 @@ export default function BridgeProgrammeSection() {
           <div className="space-y-6 lg:col-span-7">
             {/* Stage & Target Badges */}
             <div className="flex flex-wrap items-center gap-2.5">
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-50 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-brand-800 border border-brand-200/80 shadow-2xs">
-                <span className="h-1.5 w-1.5 rounded-full bg-brand-600 animate-pulse" />
+              <span className="shadow-2xs inline-flex items-center gap-1.5 rounded-full border border-brand-200/80 bg-brand-50 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-brand-800">
+                <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-brand-600" />
                 Stage 01 • Foundational
               </span>
-              <span className="rounded-full bg-neutral-100 px-3.5 py-1 text-xs font-semibold text-neutral-700 border border-neutral-200/80">
+              <span className="rounded-full border border-neutral-200/80 bg-neutral-100 px-3.5 py-1 text-xs font-semibold text-neutral-700">
                 Age Group: 5–12 Years
               </span>
             </div>
@@ -53,14 +53,15 @@ export default function BridgeProgrammeSection() {
             </div>
 
             {/* Primary Objective Banner */}
-            <div className="flex items-start gap-3 rounded-2xl border border-amber-200/80 bg-amber-50/70 p-4 text-xs sm:text-sm text-neutral-800">
-              <Target className="h-5 w-5 text-amber-700 shrink-0 mt-0.5" />
+            <div className="flex items-start gap-3 rounded-2xl border border-amber-200/80 bg-amber-50/70 p-4 text-xs text-neutral-800 sm:text-sm">
+              <Target className="mt-0.5 h-5 w-5 shrink-0 text-amber-700" />
               <div>
-                <span className="font-bold text-neutral-900 uppercase tracking-wide text-[11px] block text-amber-900">
+                <span className="block text-[11px] font-bold uppercase tracking-wide text-amber-900 text-neutral-900">
                   Primary Objective
                 </span>
-                <span className="font-medium text-neutral-800 leading-snug">
-                  School readiness and mainstream school admission into government Hindi-medium and private English-medium schools.
+                <span className="font-medium leading-snug text-neutral-800">
+                  School readiness and mainstream school admission into
+                  government Hindi-medium and private English-medium schools.
                 </span>
               </div>
             </div>
@@ -80,7 +81,7 @@ export default function BridgeProgrammeSection() {
             </div>
 
             {/* CTA Button Row */}
-            <div className="pt-2 flex flex-wrap items-center gap-4">
+            <div className="flex flex-wrap items-center gap-4 pt-2">
               <Link
                 href="/get-involved#donate"
                 className="inline-flex items-center justify-center gap-2.5 rounded-full bg-brand-700 px-7 py-3.5 text-sm font-semibold text-white shadow-md transition-all duration-200 hover:scale-[1.02] hover:bg-brand-800 hover:shadow-lg"
@@ -90,7 +91,7 @@ export default function BridgeProgrammeSection() {
               </Link>
               <a
                 href="#bridge-steps"
-                className="inline-flex items-center gap-1.5 text-sm font-semibold text-neutral-700 hover:text-brand-700 transition-colors"
+                className="inline-flex items-center gap-1.5 text-sm font-semibold text-neutral-700 transition-colors hover:text-brand-700"
               >
                 <span>View How It Works</span>
                 <ArrowRight className="h-4 w-4" />
@@ -114,17 +115,18 @@ export default function BridgeProgrammeSection() {
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/10" />
 
               {/* Floating Top Badge */}
-              <div className="absolute left-4 top-4 rounded-full bg-white/95 px-3.5 py-1.5 text-xs font-bold text-brand-800 shadow-md backdrop-blur-md border border-white/50">
+              <div className="absolute left-4 top-4 rounded-full border border-white/50 bg-white/95 px-3.5 py-1.5 text-xs font-bold text-brand-800 shadow-md backdrop-blur-md">
                 100% Free Foundation
               </div>
 
               {/* Bottom Caption Pill */}
-              <div className="absolute bottom-4 left-4 right-4 rounded-2xl bg-black/40 p-3.5 backdrop-blur-md border border-white/20 text-white">
-                <div className="text-xs font-bold tracking-wide uppercase text-amber-300">
+              <div className="absolute bottom-4 left-4 right-4 rounded-2xl border border-white/20 bg-black/40 p-3.5 text-white backdrop-blur-md">
+                <div className="text-xs font-bold uppercase tracking-wide text-amber-300">
                   Community Classrooms
                 </div>
-                <div className="text-xs text-white/90 mt-0.5">
-                  Building literacy, numeracy &amp; daily study habits for first-generation learners.
+                <div className="mt-0.5 text-xs text-white/90">
+                  Building literacy, numeracy &amp; daily study habits for
+                  first-generation learners.
                 </div>
               </div>
             </div>
@@ -132,7 +134,10 @@ export default function BridgeProgrammeSection() {
         </div>
 
         {/* 4-Step Process Grid: "How the Programme Works" */}
-        <div id="bridge-steps" className="scroll-mt-28 space-y-6 pt-4 border-t border-neutral-100">
+        <div
+          id="bridge-steps"
+          className="scroll-mt-28 space-y-6 border-t border-neutral-100 pt-4"
+        >
           <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-end">
             <div>
               <div className="text-xs font-bold uppercase tracking-wider text-brand-700">
@@ -143,7 +148,8 @@ export default function BridgeProgrammeSection() {
               </h3>
             </div>
             <p className="max-w-md text-xs text-neutral-500 sm:text-sm">
-              A structured 4-step pathway transitioning children from community outreach into formal schools.
+              A structured 4-step pathway transitioning children from community
+              outreach into formal schools.
             </p>
           </div>
 
@@ -155,16 +161,17 @@ export default function BridgeProgrammeSection() {
                   <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-100 text-sm font-extrabold text-brand-700">
                     01
                   </span>
-                  <Users className="h-5 w-5 text-neutral-400 group-hover:text-brand-600 transition-colors" />
+                  <Users className="h-5 w-5 text-neutral-400 transition-colors group-hover:text-brand-600" />
                 </div>
                 <h4 className="font-serif text-base font-bold text-neutral-900">
                   Community Identification
                 </h4>
                 <p className="text-xs leading-relaxed text-neutral-600 sm:text-sm">
-                  We identify children and families who wish to pursue education through door-to-door community engagement.
+                  We identify children and families who wish to pursue education
+                  through door-to-door community engagement.
                 </p>
               </div>
-              <div className="mt-4 pt-3 border-t border-neutral-200/60 text-[11px] font-semibold text-brand-700">
+              <div className="mt-4 border-t border-neutral-200/60 pt-3 text-[11px] font-semibold text-brand-700">
                 Step 1 • Identification
               </div>
             </div>
@@ -176,16 +183,17 @@ export default function BridgeProgrammeSection() {
                   <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-amber-100 text-sm font-extrabold text-amber-800">
                     02
                   </span>
-                  <BookOpen className="h-5 w-5 text-neutral-400 group-hover:text-amber-600 transition-colors" />
+                  <BookOpen className="h-5 w-5 text-neutral-400 transition-colors group-hover:text-amber-600" />
                 </div>
                 <h4 className="font-serif text-base font-bold text-neutral-900">
                   Academic Preparation
                 </h4>
                 <p className="text-xs leading-relaxed text-neutral-600 sm:text-sm">
-                  Children receive structured learning support through our programme, helping them build essential foundational skills.
+                  Children receive structured learning support through our
+                  programme, helping them build essential foundational skills.
                 </p>
               </div>
-              <div className="mt-4 pt-3 border-t border-neutral-200/60 text-[11px] font-semibold text-amber-800">
+              <div className="mt-4 border-t border-neutral-200/60 pt-3 text-[11px] font-semibold text-amber-800">
                 Step 2 • Foundation
               </div>
             </div>
@@ -197,16 +205,17 @@ export default function BridgeProgrammeSection() {
                   <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-100 text-sm font-extrabold text-[#1B3828]">
                     03
                   </span>
-                  <School className="h-5 w-5 text-neutral-400 group-hover:text-[#1B3828] transition-colors" />
+                  <School className="h-5 w-5 text-neutral-400 transition-colors group-hover:text-[#1B3828]" />
                 </div>
                 <h4 className="font-serif text-base font-bold text-neutral-900">
                   School Readiness
                 </h4>
                 <p className="text-xs leading-relaxed text-neutral-600 sm:text-sm">
-                  The programme prepares children for admission into mainstream schools (Govt Hindi-medium &amp; Pvt English-medium).
+                  The programme prepares children for admission into mainstream
+                  schools (Govt Hindi-medium &amp; Pvt English-medium).
                 </p>
               </div>
-              <div className="mt-4 pt-3 border-t border-neutral-200/60 text-[11px] font-semibold text-[#1B3828]">
+              <div className="mt-4 border-t border-neutral-200/60 pt-3 text-[11px] font-semibold text-[#1B3828]">
                 Step 3 • Admission
               </div>
             </div>
@@ -218,16 +227,17 @@ export default function BridgeProgrammeSection() {
                   <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-100 text-sm font-extrabold text-brand-800">
                     04
                   </span>
-                  <CheckCircle2 className="h-5 w-5 text-neutral-400 group-hover:text-brand-700 transition-colors" />
+                  <CheckCircle2 className="h-5 w-5 text-neutral-400 transition-colors group-hover:text-brand-700" />
                 </div>
                 <h4 className="font-serif text-base font-bold text-neutral-900">
                   Continued Support
                 </h4>
                 <p className="text-xs leading-relaxed text-neutral-600 sm:text-sm">
-                  After school admission, children receive further assistance through our After-School Programme to ensure ongoing success.
+                  After school admission, children receive further assistance
+                  through our After-School Programme to ensure ongoing success.
                 </p>
               </div>
-              <div className="mt-4 pt-3 border-t border-neutral-200/60 text-[11px] font-semibold text-brand-800">
+              <div className="mt-4 border-t border-neutral-200/60 pt-3 text-[11px] font-semibold text-brand-800">
                 Step 4 • Retention
               </div>
             </div>
@@ -235,15 +245,17 @@ export default function BridgeProgrammeSection() {
         </div>
 
         {/* Programme Goal Banner Card */}
-        <div className="relative overflow-hidden rounded-2xl border border-brand-200/90 bg-gradient-to-r from-brand-50/90 via-[#FFF8F3] to-amber-50/70 p-6 sm:p-8 shadow-sm">
+        <div className="relative overflow-hidden rounded-2xl border border-brand-200/90 bg-gradient-to-r from-brand-50/90 via-[#FFF8F3] to-amber-50/70 p-6 shadow-sm sm:p-8">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <div className="space-y-1.5 max-w-2xl">
+            <div className="max-w-2xl space-y-1.5">
               <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-800">
                 <Sparkles className="h-4 w-4 text-brand-600" />
                 <span>Programme Goal</span>
               </div>
               <p className="font-serif text-base italic leading-relaxed text-neutral-900 sm:text-lg">
-                &ldquo;To help children transition into formal education and begin their academic journey with greater confidence and preparation.&rdquo;
+                &ldquo;To help children transition into formal education and
+                begin their academic journey with greater confidence and
+                preparation.&rdquo;
               </p>
             </div>
             <Link

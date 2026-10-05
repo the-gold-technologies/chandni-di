@@ -114,7 +114,8 @@ export interface ProgrammeDetail {
 export const programmesDetailData: Record<string, ProgrammeDetail> = {
   "bridge-programme": {
     id: "bridge-programme",
-    metaTitle: "Bridge Programme | Foundational Learning & School Admission | Chandni Di NGO",
+    metaTitle:
+      "Bridge Programme | Foundational Learning & School Admission | Chandni Di NGO",
     metaDescription:
       "Helping children from underserved communities take their first step towards formal education. Age group 5–12 years, foundational literacy, and mainstream school admission.",
     hero: {
@@ -139,7 +140,8 @@ export const programmesDetailData: Record<string, ProgrammeDetail> = {
       imageAlt: "Teacher helping young children learn in a community classroom",
       floatingBadge: "100% Free Programme",
       captionTitle: "Community Learning Centers",
-      captionText: "Building foundational confidence, letters, numbers, and basic classroom habits.",
+      captionText:
+        "Building foundational confidence, letters, numbers, and basic classroom habits.",
     },
     overview: {
       eyebrow: "The Ground Reality",
@@ -263,13 +265,15 @@ export const programmesDetailData: Record<string, ProgrammeDetail> = {
       ctaText: "Sponsor a Child's Education",
       ctaHref: "/get-involved#donate",
       image: "/images/cta_learning_children.jpg",
-      imageAlt: "Two happy Indian school children sitting at a study desk drawing with pencils",
+      imageAlt:
+        "Two happy Indian school children sitting at a study desk drawing with pencils",
     },
   },
 
   "after-school": {
     id: "after-school",
-    metaTitle: "After-School Programme (Classes 1–12) | Tuition & Fee Grants | Chandni Di NGO",
+    metaTitle:
+      "After-School Programme (Classes 1–12) | Tuition & Fee Grants | Chandni Di NGO",
     metaDescription:
       "Daily tuition, mental health counselling, and 50–100% school fee sponsorships to keep underprivileged children in school and thriving.",
     hero: {
@@ -291,10 +295,12 @@ export const programmesDetailData: Record<string, ProgrammeDetail> = {
       secondaryCtaText: "Explore What We Provide",
       secondaryCtaHref: "#what-we-provide",
       image: "/images/after_school_programme.jpg",
-      imageAlt: "Indian school students gathered around a study desk with their mentor in an after-school coaching library",
+      imageAlt:
+        "Indian school students gathered around a study desk with their mentor in an after-school coaching library",
       floatingBadge: "50%–100% Fee Grant",
       captionTitle: "After-School Centers",
-      captionText: "Daily subject coaching, emotional counselling & holistic personality growth.",
+      captionText:
+        "Daily subject coaching, emotional counselling & holistic personality growth.",
     },
     overview: {
       eyebrow: "The Journey Beyond Enrollment",
@@ -418,13 +424,15 @@ export const programmesDetailData: Record<string, ProgrammeDetail> = {
       ctaText: "Sponsor a Child's School Fees",
       ctaHref: "/get-involved#donate",
       image: "/images/cta_learning_children.jpg",
-      imageAlt: "Two happy Indian school children sitting at a study desk drawing with pencils",
+      imageAlt:
+        "Two happy Indian school children sitting at a study desk drawing with pencils",
     },
   },
 
   "college-to-career": {
     id: "college-to-career",
-    metaTitle: "College to Career Programme | 100% Scholarships & Internships | Chandni Di NGO",
+    metaTitle:
+      "College to Career Programme | 100% Scholarships & Internships | Chandni Di NGO",
     metaDescription:
       "Empowering youth through college guidance, 100% higher education scholarships, skill development, and corporate internship linkages.",
     hero: {
@@ -446,10 +454,12 @@ export const programmesDetailData: Record<string, ProgrammeDetail> = {
       secondaryCtaText: "Explore What We Do",
       secondaryCtaHref: "#what-we-do",
       image: "/images/college_to_career.jpg",
-      imageAlt: "Confident Indian college students and fresh graduates on university campus with laptops and books",
+      imageAlt:
+        "Confident Indian college students and fresh graduates on university campus with laptops and books",
       floatingBadge: "100% Scholarships",
       captionTitle: "University & Professional Life",
-      captionText: "Degree guidance, digital skill training & corporate internship linkages.",
+      captionText:
+        "Degree guidance, digital skill training & corporate internship linkages.",
     },
     overview: {
       eyebrow: "Bridging The Higher Education Gap",
@@ -583,11 +593,14 @@ export const programmesDetailData: Record<string, ProgrammeDetail> = {
       ctaText: "Support College Scholarships",
       ctaHref: "/get-involved#donate",
       image: "/images/cta_learning_children.jpg",
-      imageAlt: "Two happy Indian school children sitting at a study desk drawing with pencils",
+      imageAlt:
+        "Two happy Indian school children sitting at a study desk drawing with pencils",
     },
   },
 };
 
-export function getProgrammeData(id: "bridge-programme" | "after-school" | "college-to-career"): ProgrammeDetail {
+export function getProgrammeData(
+  id: "bridge-programme" | "after-school" | "college-to-career"
+): ProgrammeDetail {
   return programmesDetailData[id];
 }
