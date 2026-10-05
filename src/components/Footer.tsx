@@ -38,7 +38,7 @@ function SpotifyIcon(props: React.SVGProps<SVGSVGElement>) {
 
 export default function Footer() {
   return (
-    <footer className="relative mt-12 w-full overflow-hidden bg-[#F2F4F3] text-neutral-800">
+    <footer className="relative w-full overflow-hidden bg-[#F2F4F3] text-neutral-800">
       {/* Decorative Botanical Flowers Illustration firmly anchored at Bottom-Left Corner */}
       <div className="pointer-events-none absolute bottom-0 left-0 z-0 select-none">
         <Image

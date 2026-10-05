@@ -1,45 +1,37 @@
 import React from "react";
-import Link from "next/link";
-import { ChevronRight, Home } from "lucide-react";
-import BridgeProgrammeSection from "../components/BridgeProgrammeSection";
+import { getProgrammeData } from "../data/programmesDetailData";
+import ProgrammeDetailHero from "../components/ProgrammeDetailHero";
+import ProgrammeOverviewSection from "../components/ProgrammeOverviewSection";
+import ProgrammeFrameworkSection from "../components/ProgrammeFrameworkSection";
 import OtherProgrammesNav from "../components/OtherProgrammesNav";
-import ProgrammesCtaSection from "../components/ProgrammesCtaSection";
+import ProgrammeGoalBanner from "../components/ProgrammeGoalBanner";
 
 export const metadata = {
-  title: "Bridge Programme (Ages 5–12) | Foundational Education | Chandni Di NGO",
+  title:
+    "Bridge Programme | Foundational Learning & School Admission | Chandni Di NGO",
   description:
-    "Helping children take their first step towards formal education. Community identification, foundational literacy, and mainstream school admission support.",
+    "Helping children from underserved communities take their first step towards formal education. Age group 5–12 years, foundational literacy, and mainstream school admission.",
 };
 
-export default function BridgeProgrammeDetailPage() {
+export default function BridgeProgrammePage() {
+  const data = getProgrammeData("bridge-programme");
+
   return (
-    <div className="space-y-12 pb-20 pt-28 sm:space-y-16 sm:pt-32">
-      {/* Breadcrumbs */}
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-neutral-500 sm:text-sm">
-          <Link href="/" className="inline-flex items-center gap-1 hover:text-brand-700 transition-colors">
-            <Home className="h-3.5 w-3.5" />
-            <span>Home</span>
-          </Link>
-          <ChevronRight className="h-3.5 w-3.5 text-neutral-400" />
-          <Link href="/programmes" className="hover:text-brand-700 transition-colors">
-            Programmes
-          </Link>
-          <ChevronRight className="h-3.5 w-3.5 text-neutral-400" />
-          <span className="font-semibold text-neutral-900">Bridge Programme</span>
-        </nav>
-      </div>
+    <div className="space-y-0">
+      {/* 1. Dedicated Full Hero Section */}
+      <ProgrammeDetailHero data={data.hero} />
 
-      {/* Main Programme In-Depth Section */}
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <BridgeProgrammeSection />
-      </section>
+      {/* 2. Context Story & Dual Admission Highlights */}
+      <ProgrammeOverviewSection data={data.overview} />
 
-      {/* Cross-Navigation to Other Programmes */}
+      {/* 3. 4-Stage Operational Pathway Cards (Matching Reference Timeline Style) */}
+      <ProgrammeFrameworkSection data={data.framework} />
+
+      {/* 4. Cross-Navigation to Other Programmes */}
       <OtherProgrammesNav currentId="bridge-programme" />
 
-      {/* CTA Section */}
-      <ProgrammesCtaSection />
+      {/* 5. Concluding Take the Next Step CTA Banner (Just before the footer) */}
+      <ProgrammeGoalBanner data={data.goal} />
     </div>
   );
 }

@@ -12,14 +12,16 @@ export const metadata = {
 
 export default function ProgrammesPage() {
   return (
-    <div className="space-y-16 pb-20 sm:space-y-24">
+    <div className="space-y-0">
       {/* 1. HERO SECTION */}
       <ProgrammesHeroSection />
 
       {/* 2. PROGRAMMES 3-CARD SHOWCASE GRID */}
-      <ProgrammesCardsGrid />
+      <div className="bg-white pt-16 sm:pt-24 pb-8 sm:pb-12">
+        <ProgrammesCardsGrid />
+      </div>
 
-      {/* 3. CTA BANNER */}
+      {/* 3. CTA BANNER (Seamlessly blending with upper bg-white) */}
       <ProgrammesCtaSection />
     </div>
   );
