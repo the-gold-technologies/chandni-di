@@ -12,12 +12,12 @@ export default function AccomplishedResultsSection() {
         <svg viewBox="0 0 160 16" fill="none" className="h-4 w-40">
           <path
             d="M0 0L10 10L20 0L30 10L40 0L50 10L60 0L70 10L80 0L90 10L100 0L110 10L120 0L130 10L140 0L150 10L160 0"
-            stroke="#D96B27"
+            stroke="#C62828"
             strokeWidth="3"
           />
           <path
             d="M10 0L20 10L30 0L40 10L50 0L60 10L70 0L80 10L90 0L100 10L110 0L120 10L130 0L140 10L150 0"
-            stroke="#2E7D32"
+            stroke="#E57373"
             strokeWidth="2"
           />
         </svg>
@@ -49,16 +49,16 @@ export default function AccomplishedResultsSection() {
             <div className="space-y-3.5">
               {/* Eyebrow from Document Section 1.3 */}
               <div className="inline-flex items-center gap-2">
-                <span className="h-2 w-2 rounded-full bg-[#D96B27]" />
-                <span className="text-xs font-extrabold uppercase tracking-widest text-[#D96B27] sm:text-sm">
+                <span className="h-2 w-2 rounded-full bg-brand-700" />
+                <span className="text-xs font-extrabold uppercase tracking-widest text-brand-700 sm:text-sm">
                   1.3 IMPACT STATISTICS
                 </span>
               </div>
 
-              {/* Main Headline verbatim from Google Doc */}
+              {/* Main Headline */}
               <h2 className="font-serif text-3xl font-black leading-[1.15] tracking-tight text-[#1C1814] sm:text-4xl lg:text-[38px]">
                 Together, We Are <br />
-                <span className="text-[#D96B27]">Creating Pathways</span> <br />
+                <span className="text-brand-700">Creating Pathways</span> <br />
                 to Opportunity
               </h2>
 
@@ -81,25 +81,25 @@ export default function AccomplishedResultsSection() {
                   />
                   <path
                     d="M48 32L32 16L16 32"
-                    stroke="#E65100"
+                    stroke="#E53935"
                     strokeWidth="4"
                   />
                   <path
                     d="M32 32L16 16L0 32"
-                    stroke="#F57F17"
+                    stroke="#EF5350"
                     strokeWidth="4"
                   />
                 </svg>
               </div>
               <div className="h-5.5 pointer-events-none absolute left-0 top-0 w-11 opacity-85">
                 <svg viewBox="0 0 48 24" fill="none">
-                  <path d="M0 0L16 16L32 0" stroke="#E65100" strokeWidth="4" />
-                  <path d="M16 0L32 16L48 0" stroke="#2E7D32" strokeWidth="4" />
+                  <path d="M0 0L16 16L32 0" stroke="#C62828" strokeWidth="4" />
+                  <path d="M16 0L32 16L48 0" stroke="#E53935" strokeWidth="4" />
                 </svg>
               </div>
 
               <div className="relative z-10 flex items-center gap-3.5">
-                <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full border-2 border-[#D96B27]/70 shadow">
+                <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full border-2 border-brand-700/70 shadow">
                   <Image
                     src="/images/founder.jpg"
                     alt="Chandni Di"
@@ -113,7 +113,7 @@ export default function AccomplishedResultsSection() {
                     circumstances of their birth.”
                   </p>
                   <div className="flex items-center gap-1.5 text-[11px] sm:text-xs">
-                    <span className="font-bold text-[#E67E22]">Chandni Di</span>
+                    <span className="font-bold text-brand-400">Chandni Di</span>
                     <span className="text-neutral-400">·</span>
                     <span className="text-neutral-300">
                       Founder & Grassroots Worker
@@ -142,7 +142,7 @@ export default function AccomplishedResultsSection() {
                 <circle cx="62" cy="36" r="2" fill="#54493F" />
                 <path d="M47 45c3 4 13 4 16 0" />
                 <path d="M55 18c-2-5 3-7 1-11" />
-                <path d="M48 62l7 6 7-6" stroke="#D96B27" strokeWidth="2.6" />
+                <path d="M48 62l7 6 7-6" stroke="#C62828" strokeWidth="2.6" />
                 <path d="M42 63l-10 18 6 3 6-12v35h22v-35l6 12 6-3-10-18z" />
                 <path d="M38 72l-14 10" />
                 <circle cx="21" cy="84" r="3" />
@@ -171,11 +171,11 @@ export default function AccomplishedResultsSection() {
               {/* Card 1: 500 Children who have become part of mainstream society */}
               <div className="sm:p-6.5 group flex flex-col justify-between rounded-2xl border border-[#ECE5DC] bg-white p-6 shadow-[0_8px_24px_rgba(0,0,0,0.03)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_14px_32px_rgba(0,0,0,0.06)]">
                 <div className="space-y-3.5">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#E5ECE4] text-[#2E7D32] transition-transform group-hover:scale-105">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-50 text-brand-700 transition-transform group-hover:scale-105">
                     <School className="h-6 w-6" />
                   </div>
                   <div className="space-y-1">
-                    <div className="font-serif text-3xl font-black text-[#2E7D32]">
+                    <div className="font-serif text-3xl font-black text-brand-700">
                       500
                     </div>
                     <h3 className="text-base font-bold leading-snug text-[#1F1914]">
@@ -191,11 +191,11 @@ export default function AccomplishedResultsSection() {
               {/* Card 2: 370 Students currently studying in school and college */}
               <div className="sm:p-6.5 group flex flex-col justify-between rounded-2xl border border-[#ECE5DC] bg-white p-6 shadow-[0_8px_24px_rgba(0,0,0,0.03)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_14px_32px_rgba(0,0,0,0.06)]">
                 <div className="space-y-3.5">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#FCECE3] text-[#D96B27] transition-transform group-hover:scale-105">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-50 text-brand-700 transition-transform group-hover:scale-105">
                     <GraduationCap className="h-6 w-6" />
                   </div>
                   <div className="space-y-1">
-                    <div className="font-serif text-3xl font-black text-[#D96B27]">
+                    <div className="font-serif text-3xl font-black text-brand-700">
                       370
                     </div>
                     <h3 className="text-base font-bold leading-snug text-[#1F1914]">
@@ -211,11 +211,11 @@ export default function AccomplishedResultsSection() {
               {/* Card 3: 136 Children's education completely adopted */}
               <div className="sm:p-6.5 group flex flex-col justify-between rounded-2xl border border-[#ECE5DC] bg-white p-6 shadow-[0_8px_24px_rgba(0,0,0,0.03)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_14px_32px_rgba(0,0,0,0.06)]">
                 <div className="space-y-3.5">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#EAF2ED] text-[#1E7E5A] transition-transform group-hover:scale-105">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-50 text-brand-700 transition-transform group-hover:scale-105">
                     <Heart className="h-6 w-6" />
                   </div>
                   <div className="space-y-1">
-                    <div className="font-serif text-3xl font-black text-[#1E7E5A]">
+                    <div className="font-serif text-3xl font-black text-brand-700">
                       136
                     </div>
                     <h3 className="text-base font-bold leading-snug text-[#1F1914]">
@@ -231,11 +231,11 @@ export default function AccomplishedResultsSection() {
               {/* Card 4: 10 Centres across Delhi-NCR */}
               <div className="sm:p-6.5 group flex flex-col justify-between rounded-2xl border border-[#ECE5DC] bg-white p-6 shadow-[0_8px_24px_rgba(0,0,0,0.03)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_14px_32px_rgba(0,0,0,0.06)]">
                 <div className="space-y-3.5">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#F9F3DF] text-[#9C7513] transition-transform group-hover:scale-105">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-50 text-brand-700 transition-transform group-hover:scale-105">
                     <Users className="h-6 w-6" />
                   </div>
                   <div className="space-y-1">
-                    <div className="font-serif text-3xl font-black text-[#9C7513]">
+                    <div className="font-serif text-3xl font-black text-brand-700">
                       10 Centres
                     </div>
                     <h3 className="text-base font-bold leading-snug text-[#1F1914]">

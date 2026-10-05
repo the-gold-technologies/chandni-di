@@ -7,13 +7,12 @@ import { ArrowRight, Award } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="relative flex min-h-[580px] items-center overflow-hidden border-b border-brand-100/80 bg-gradient-to-br from-[#FFF5F5] via-[#FFF8F8] to-[#FFF1F1] lg:min-h-[640px] xl:min-h-[700px]">
-      {/* Ambient Reddish Glow (Matching the Red & Black Brand Logo Palette) */}
-      <div className="pointer-events-none absolute -left-20 -top-24 -z-10 h-[550px] w-[550px] rounded-full bg-brand-700/[0.07] blur-3xl" />
-      <div className="pointer-events-none absolute left-1/4 top-1/2 -z-10 h-[450px] w-[450px] rounded-full bg-brand-700/[0.04] blur-3xl" />
-      <div className="pointer-events-none absolute -bottom-20 right-1/4 -z-10 h-[400px] w-[400px] rounded-full bg-brand-700/[0.05] blur-3xl" />
+    <section className="relative flex min-h-[580px] items-center overflow-hidden border-b border-neutral-200/60 bg-[#FAF7F2] lg:min-h-[640px] xl:min-h-[700px]">
+      {/* Ambient Warm Glow (matching About page tone) */}
+      <div className="pointer-events-none absolute -left-20 -top-24 -z-10 h-[500px] w-[500px] rounded-full bg-brand-100/30 blur-3xl" />
+      <div className="pointer-events-none absolute right-1/4 top-1/2 -z-10 h-[450px] w-[450px] rounded-full bg-amber-100/35 blur-3xl" />
 
-      {/* Right Side Realistic Photographic Scene with Soft Reddish Ambient Blend */}
+      {/* Right Side Realistic Photographic Scene with Soft Ambient Blend */}
       <div className="pointer-events-none absolute bottom-0 right-0 top-0 z-0 h-full w-full lg:w-[62%] xl:w-[60%]">
         <Image
           src="/images/hero_classroom_banner.jpg"
@@ -22,10 +21,10 @@ export default function HeroSection() {
           priority
           className="object-cover object-right"
         />
-        {/* Soft horizontal gradient overlay in dim reddish tone to blend seamlessly into the left */}
-        <div className="lg:via-42% absolute inset-0 bg-gradient-to-r from-[#FFF8F8] via-[#FFF8F8]/95 via-35% to-transparent lg:via-[#FFF8F8]/85" />
+        {/* Soft horizontal gradient overlay in matching #FAF7F2 tone to blend seamlessly into the left */}
+        <div className="lg:via-42% absolute inset-0 bg-gradient-to-r from-[#FAF7F2] via-[#FAF7F2]/95 via-35% to-transparent lg:via-[#FAF7F2]/85" />
         {/* Subtle top and bottom blend */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#FFF5F5]/30 via-transparent to-[#FFF5F5]/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#FAF7F2]/30 via-transparent to-[#FAF7F2]/40" />
       </div>
 
       {/* Main Container */}
@@ -87,7 +86,7 @@ export default function HeroSection() {
           </div>
 
           {/* Presidential Honours Callout */}
-          <div className="flex items-center gap-3 border-t border-brand-200/50 pt-6 text-xs text-neutral-600 sm:text-sm">
+          <div className="flex items-center gap-3 border-t border-neutral-200/70 pt-6 text-xs text-neutral-600 sm:text-sm">
             <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gold-100 text-gold-700">
               <Award className="h-4 w-4" />
             </div>

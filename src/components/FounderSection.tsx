@@ -35,14 +35,14 @@ export default function FounderSection() {
               className="group absolute bottom-5 right-5 z-20 flex transform items-center gap-3.5 rounded-2xl border border-white/90 bg-white/95 p-3 px-4 shadow-xl backdrop-blur-md transition-all hover:-translate-y-0.5 hover:shadow-2xl sm:bottom-6 sm:right-6"
             >
               <div className="text-left">
-                <span className="block text-[10px] font-extrabold uppercase leading-tight tracking-widest text-[#D96B27]">
+                <span className="block text-[10px] font-extrabold uppercase leading-tight tracking-widest text-brand-700">
                   FOUNDER
                 </span>
                 <span className="block pt-0.5 text-sm font-bold leading-tight text-neutral-900">
                   Chandni Di
                 </span>
               </div>
-              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#D96B27] text-white shadow-sm transition-colors group-hover:bg-[#C45E28]">
+              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-700 text-white shadow-sm transition-colors group-hover:bg-brand-800">
                 <ArrowUpRight className="h-4 w-4" />
               </div>
             </Link>
@@ -54,7 +54,7 @@ export default function FounderSection() {
           <div className="space-y-3">
             {/* Eyebrow */}
             <div>
-              <span className="text-xs font-extrabold uppercase tracking-widest text-[#D96B27] sm:text-sm">
+              <span className="text-xs font-extrabold uppercase tracking-widest text-brand-700 sm:text-sm">
                 MEET THE FOUNDER
               </span>
             </div>
@@ -62,11 +62,11 @@ export default function FounderSection() {
             {/* Main Headline with Brush Underline Accent (Matching Reference) */}
             <h2 className="font-serif text-3xl font-bold leading-[1.18] tracking-tight text-neutral-900 sm:text-4xl lg:text-[42px]">
               One Life Experience. <br />A Commitment to{" "}
-              <span className="relative inline-block font-serif italic text-[#D96B27]">
+              <span className="relative inline-block font-serif italic text-brand-700">
                 Thousands of Children.
                 {/* Hand-Drawn Underline Stroke Curve */}
                 <svg
-                  className="absolute -bottom-2 left-0 h-3 w-full text-[#D96B27]"
+                  className="absolute -bottom-2 left-0 h-3 w-full text-brand-700"
                   viewBox="0 0 200 12"
                   fill="none"
                 >
@@ -104,7 +104,7 @@ export default function FounderSection() {
 
           {/* Presidential Honours Note */}
           <div className="flex items-center gap-3 rounded-2xl border border-[#ECE5DC] bg-[#FAF7F2] p-4 text-xs text-neutral-700 sm:text-sm">
-            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#FCECE3] text-[#D96B27]">
+            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-50 text-brand-700">
               <Award className="h-4 w-4" />
             </div>
             <div>
@@ -120,7 +120,7 @@ export default function FounderSection() {
 
           {/* Handwritten Style Sign-off (Matching Reference) */}
           <div className="space-y-1 pt-2">
-            <p className="text-sm font-semibold text-[#D96B27]">
+            <p className="text-sm font-semibold text-brand-700">
               We invite you to walk with us on this journey.
             </p>
             <div className="flex items-center gap-2 text-base sm:text-lg">
@@ -128,9 +128,9 @@ export default function FounderSection() {
                 Chandni Di
               </span>
               <span className="text-neutral-400">—</span>
-              <span className="flex items-center gap-1.5 font-serif italic text-[#D96B27]">
+              <span className="flex items-center gap-1.5 font-serif italic text-brand-700">
                 Founder, Chandni Di
-                <Heart className="inline h-3.5 w-3.5 fill-[#D96B27] text-[#D96B27]" />
+                <Heart className="inline h-3.5 w-3.5 fill-brand-700 text-brand-700" />
               </span>
             </div>
           </div>

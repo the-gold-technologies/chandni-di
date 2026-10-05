@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Send, Heart } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Send, Heart } from "lucide-react";
 
 export default function CtaBannerSection() {
   return (
@@ -40,7 +40,7 @@ export default function CtaBannerSection() {
           {/* Left Column: Eyebrow, Headline, Paragraphs, Action Buttons */}
           <div className="space-y-6 lg:col-span-6">
             <div className="space-y-3.5">
-              <span className="text-xs font-extrabold uppercase tracking-widest text-[#D96B27] sm:text-sm">
+              <span className="text-xs font-extrabold uppercase tracking-widest text-brand-700 sm:text-sm">
                 1.6 GET INVOLVED
               </span>
 
@@ -61,32 +61,33 @@ export default function CtaBannerSection() {
               </p>
             </div>
 
-            {/* Action Buttons (Matching Reference Design: Dark Pill + White Pill) */}
+            {/* Action Buttons (Following exact dark pill button pattern) */}
             <div className="flex flex-wrap items-center gap-4 pt-2">
-              {/* Primary Button (Dark Pill with Arrow) */}
+              {/* Primary Dark Pill Button */}
               <Link
                 href="/get-involved#donate"
-                className="inline-flex transform items-center gap-2.5 rounded-full bg-[#1F3D36] px-7 py-3.5 text-sm font-bold tracking-wide text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-[#162D28] hover:shadow-lg"
+                className="inline-flex transform items-center gap-2 rounded-full bg-[#1C1814] px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-black hover:shadow-lg"
               >
                 <span>Donate Now</span>
-                <ArrowRight className="h-4 w-4" />
+                <ArrowUpRight className="h-4 w-4" />
               </Link>
 
-              {/* Secondary Button (White Pill with Terracotta Icon) */}
+              {/* Secondary White Pill Button */}
               <Link
                 href="/get-involved#volunteer"
-                className="inline-flex transform items-center gap-2 rounded-full border border-neutral-200/90 bg-white px-6 py-3.5 text-sm font-bold tracking-wide text-neutral-900 shadow-sm transition-all hover:-translate-y-0.5 hover:bg-neutral-50"
+                className="inline-flex transform items-center gap-2 rounded-full border border-neutral-300 bg-white px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-neutral-900 shadow-sm transition-all hover:-translate-y-0.5 hover:bg-neutral-50 hover:shadow-md"
               >
-                <Send className="h-4 w-4 text-[#D96B27]" />
                 <span>Volunteer With Us</span>
+                <ArrowUpRight className="h-4 w-4 text-neutral-500" />
               </Link>
 
               {/* Partner Link */}
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-1.5 px-2 py-1 text-xs font-bold text-neutral-700 underline decoration-neutral-300 underline-offset-4 transition-colors hover:text-[#D96B27] sm:text-sm"
+                className="inline-flex items-center gap-1.5 px-2 py-1 text-xs font-bold uppercase tracking-wider text-neutral-700 underline decoration-neutral-300 underline-offset-4 transition-colors hover:text-brand-700"
               >
-                <span>Partner With Us →</span>
+                <span>Partner With Us</span>
+                <ArrowUpRight className="h-3.5 w-3.5" />
               </Link>
             </div>
           </div>
@@ -99,7 +100,7 @@ export default function CtaBannerSection() {
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
                   <path
                     d="M10 24H2M14 14L8 8M24 10V2M34 14L40 8"
-                    stroke="#D96B27"
+                    stroke="#C62828"
                     strokeWidth="2.5"
                     strokeLinecap="round"
                   />
@@ -125,7 +126,7 @@ export default function CtaBannerSection() {
                   <div>Deserves</div>
                   <div>A Future</div>
                   <div className="flex justify-center pt-1">
-                    <Heart className="h-3.5 w-3.5 fill-[#D96B27] text-[#D96B27]" />
+                    <Heart className="h-3.5 w-3.5 fill-brand-700 text-brand-700" />
                   </div>
                 </div>
               </div>
