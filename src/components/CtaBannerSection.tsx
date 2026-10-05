@@ -63,10 +63,10 @@ export default function CtaBannerSection() {
 
             {/* Action Buttons (Following exact dark pill button pattern) */}
             <div className="flex flex-wrap items-center gap-4 pt-2">
-              {/* Primary Dark Pill Button */}
+              {/* Primary Red Pill Button */}
               <Link
                 href="/get-involved#donate"
-                className="inline-flex transform items-center gap-2 rounded-full bg-[#1C1814] px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-black hover:shadow-lg"
+                className="inline-flex transform items-center gap-2 rounded-full bg-brand-700 px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-brand-800 hover:shadow-lg"
               >
                 <span>Donate Now</span>
                 <ArrowUpRight className="h-4 w-4" />

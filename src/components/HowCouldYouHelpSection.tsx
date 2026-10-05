@@ -89,7 +89,7 @@ export default function HowCouldYouHelpSection() {
           <div className="pt-2">
             <Link
               href="/get-involved#volunteer"
-              className="group inline-flex items-center text-xs font-bold uppercase tracking-wider text-[#00897B] transition-colors hover:text-[#00695C]"
+              className="group inline-flex items-center text-xs font-bold uppercase tracking-wider text-brand-700 transition-colors hover:text-brand-800"
             >
               <span>+ VOLUNTEER</span>
             </Link>
@@ -166,7 +166,7 @@ export default function HowCouldYouHelpSection() {
           <div className="pt-2">
             <Link
               href="/contact"
-              className="group inline-flex items-center text-xs font-bold uppercase tracking-wider text-[#00897B] transition-colors hover:text-[#00695C]"
+              className="group inline-flex items-center text-xs font-bold uppercase tracking-wider text-brand-700 transition-colors hover:text-brand-800"
             >
               <span>+ PARTNER WITH US</span>
             </Link>
@@ -227,7 +227,7 @@ export default function HowCouldYouHelpSection() {
           <div className="pt-2">
             <Link
               href="/get-involved#donate"
-              className="group inline-flex items-center text-xs font-bold uppercase tracking-wider text-[#00897B] transition-colors hover:text-[#00695C]"
+              className="group inline-flex items-center text-xs font-bold uppercase tracking-wider text-brand-700 transition-colors hover:text-brand-800"
             >
               <span>+ DONATE</span>
             </Link>

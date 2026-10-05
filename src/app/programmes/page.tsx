@@ -22,7 +22,7 @@ export default function ProgrammesPage() {
   return (
     <div className="space-y-20 pb-20 sm:space-y-28">
       {/* 1. HERO SECTION */}
-      <section className="hero-radial-bg border-b border-neutral-200/60 pb-16 pt-12 sm:py-20">
+      <section className="hero-radial-bg border-b border-neutral-200/60 pb-16 pt-32 sm:pb-20 sm:pt-36 lg:pt-40">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl space-y-4">
             <span className="rounded-full bg-brand-50 px-3 py-1 text-xs font-bold uppercase tracking-widest text-brand-700">
@@ -222,7 +222,7 @@ export default function ProgrammesPage() {
             </div>
             <Link
               href="/get-involved#donate"
-              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-gold-600 px-6 py-3.5 text-xs font-semibold uppercase tracking-wider text-white shadow-md transition-all hover:bg-gold-700"
+              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-brand-700 px-6 py-3.5 text-xs font-semibold uppercase tracking-wider text-white shadow-md transition-all hover:bg-brand-800"
             >
               <Heart className="h-4 w-4 fill-white" /> Sponsor School Tuition
             </Link>
@@ -328,7 +328,7 @@ export default function ProgrammesPage() {
             </div>
             <Link
               href="/get-involved#donate"
-              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-emerald-600 px-6 py-3.5 text-xs font-semibold uppercase tracking-wider text-white shadow-md transition-all hover:bg-emerald-700"
+              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-brand-700 px-6 py-3.5 text-xs font-semibold uppercase tracking-wider text-white shadow-md transition-all hover:bg-brand-800"
             >
               <Heart className="h-4 w-4 fill-white" /> Sponsor College Scholar
             </Link>

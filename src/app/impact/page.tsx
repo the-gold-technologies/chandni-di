@@ -26,7 +26,7 @@ export default function ImpactPage() {
   return (
     <div className="space-y-20 pb-20 sm:space-y-28">
       {/* 1. HERO SECTION */}
-      <section className="hero-radial-bg border-b border-neutral-200/60 pb-16 pt-12 sm:py-20">
+      <section className="hero-radial-bg border-b border-neutral-200/60 pb-16 pt-32 sm:pb-20 sm:pt-36 lg:pt-40">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl space-y-4">
             <span className="rounded-full bg-brand-50 px-3 py-1 text-xs font-bold uppercase tracking-widest text-brand-700">

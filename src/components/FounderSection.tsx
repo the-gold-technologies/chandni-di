@@ -139,7 +139,7 @@ export default function FounderSection() {
           <div className="pt-2">
             <Link
               href="/about#founder"
-              className="inline-flex transform items-center gap-2 rounded-full bg-[#1C1814] px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-black hover:shadow-lg"
+              className="inline-flex transform items-center gap-2 rounded-full bg-brand-700 px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-brand-800 hover:shadow-lg"
             >
               <span>Meet Chandni Di</span>
               <ArrowUpRight className="h-4 w-4" />

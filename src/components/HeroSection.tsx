@@ -28,7 +28,7 @@ export default function HeroSection() {
       </div>
 
       {/* Main Container */}
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-16 pt-32 sm:px-6 sm:pb-20 sm:pt-36 lg:px-8 lg:pb-24 lg:pt-40">
         <div className="max-w-xl space-y-6 sm:space-y-7 lg:max-w-3xl">
           {/* Eyebrow Tag: Exactly "YOUR FUTURE. OUR PRIORITY." (Redundant text removed) */}
           <div className="inline-flex items-center">

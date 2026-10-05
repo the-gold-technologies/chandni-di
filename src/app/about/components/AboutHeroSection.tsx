@@ -35,7 +35,7 @@ export default function AboutHeroSection() {
         <circle cx="960" cy="400" r="2" fill="#D96B27" opacity="0.12" />
       </svg>
 
-      <div className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-14">
+      <div className="relative mx-auto max-w-7xl px-4 pb-12 pt-32 sm:px-6 sm:pb-16 sm:pt-36 lg:px-8 lg:pb-20 lg:pt-40">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
           {/* ── LEFT: Text ─────────────────────────────── */}
           <div className="space-y-6 sm:space-y-7">
