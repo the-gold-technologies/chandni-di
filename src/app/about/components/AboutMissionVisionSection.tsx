@@ -26,9 +26,11 @@ export default function AboutMissionVisionSection() {
           <p className="relative max-w-xl text-base font-normal leading-relaxed text-emerald-50/90 sm:text-[17px]">
             We envision a society where children from slum and street
             communities have access to education, opportunities, and the support
-            they need to build independent, fulfilling, and dignified futures.
+            they need to build independent and fulfilling futures.
+          </p>
+          <p className="relative mt-4 max-w-xl text-base font-normal leading-relaxed text-emerald-50/90 sm:text-[17px]">
             Our long-term goal is to help children move beyond survival towards
-            learning, growth, professional opportunities, and active
+            learning, growth, professional opportunities, and greater
             participation in mainstream society.
           </p>
         </div>
@@ -51,11 +53,13 @@ export default function AboutMissionVisionSection() {
           {/* Copy (Clear, inspiring, verbatim & accessible) */}
           <p className="relative max-w-xl text-base font-normal leading-relaxed text-rose-50/90 sm:text-[17px]">
             Our mission is to support children from underserved communities
-            through accessible foundational education, continuous academic
-            tutoring, emotional counselling, practical skill development, and
-            pathways to higher education and employment. We work to help
-            children develop the capabilities and confidence needed to thrive in
-            society.
+            through accessible education, continuous academic assistance,
+            counselling, skill development, and pathways to higher education and
+            employment.
+          </p>
+          <p className="relative mt-4 max-w-xl text-base font-normal leading-relaxed text-rose-50/90 sm:text-[17px]">
+            We work to help children develop the capabilities and confidence
+            needed to participate meaningfully in society.
           </p>
         </div>
       </div>

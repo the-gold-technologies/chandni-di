@@ -13,9 +13,9 @@ export default function ProgrammesSection() {
       title: "Bridge Programme",
       category: "Foundational",
       tag: "Ages 5–12 Years",
-      eyebrow: "Preparing Children for Formal Education",
+      eyebrow: "Preparing children for formal education",
       quote:
-        "We help children between the ages of 5 and 12 build foundational academic skills, literacy, and emotional confidence to prepare for admission into mainstream schools.",
+        "We help children between the ages of 5 and 12 build foundational academic skills and prepare for admission into mainstream schools.",
       link: "/programmes#bridge",
       // Background Image & Shaded Brand Red Overlay
       image: "/images/hero_hug.jpg",
@@ -40,9 +40,9 @@ export default function ProgrammesSection() {
       title: "After-School Programme",
       category: "Tutoring",
       tag: "School Students",
-      eyebrow: "Strengthening Learning, Confidence & Character",
+      eyebrow: "Strengthening learning, confidence, and character",
       quote:
-        "We support children already enrolled in school through daily tuition, academic assistance, holistic counselling, and life skill development so they never drop out.",
+        "We support children already enrolled in school through tuition, academic assistance, counselling, and skill development.",
       link: "/programmes#after-school",
       // Background Image & Deep Forest Green Overlay
       image: "/images/hero_classroom_banner.jpg",
@@ -67,9 +67,9 @@ export default function ProgrammesSection() {
       title: "College to Career",
       category: "Higher Ed",
       tag: "Higher Education & Jobs",
-      eyebrow: "Connecting Education with Opportunity",
+      eyebrow: "Connecting education with opportunity",
       quote:
-        "We help students pursue higher education, develop relevant skills, secure 100% scholarship funding, and prepare for future career opportunities and independence.",
+        "We help students pursue higher education, develop relevant skills, and prepare for future career opportunities.",
       link: "/programmes#college-to-career",
       // Background Image & Deep Eucalyptus Slate Green Overlay
       image: "/images/palak.jpg",

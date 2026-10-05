@@ -74,10 +74,15 @@ export default function AboutStorySection() {
             </p>
           </div>
 
-          <blockquote className="rounded-r-2xl border-l-4 border-brand-700 bg-brand-50 p-4 font-serif text-base italic text-neutral-800 sm:text-lg">
-            &quot;No child deserves to have their future limited by the
-            circumstances of their birth.&quot;
-          </blockquote>
+          <div className="space-y-2 pt-2">
+            <span className="text-xs font-bold uppercase tracking-wider text-neutral-500">
+              The Belief That Guides Us
+            </span>
+            <blockquote className="rounded-r-2xl border-l-4 border-brand-700 bg-brand-50 p-4 font-serif text-base italic text-neutral-800 sm:text-lg">
+              &quot;No child deserves to have their future limited by the
+              circumstances of their birth.&quot;
+            </blockquote>
+          </div>
         </div>
       </div>
     </section>
