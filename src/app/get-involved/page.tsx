@@ -6,13 +6,14 @@ import {
   SponsorChildSection,
   WaysToContributeSection,
   PartnerSection,
+  TransparencySection,
   GetInvolvedCtaBanner,
 } from "./components";
 
 export const metadata: Metadata = {
-  title: "Get Involved | Voice of Slum",
+  title: "Get Involved | Chandni Di — Empowering Children Through Education",
   description:
-    "Join Voice of Slum in empowering children through education, healthcare, and livelihood support. Donate, sponsor a child, volunteer, fundraise, or partner with us today.",
+    "Join Chandni Di in empowering children through education, healthcare, and livelihood support. Donate, sponsor a child, volunteer, fundraise, or partner with us today.",
 };
 
 export default function GetInvolvedPage() {
@@ -37,7 +38,10 @@ export default function GetInvolvedPage() {
         {/* 6. PARTNERSHIPS (7.3 Institutional + 7.4 Corporate CSR) */}
         <PartnerSection />
 
-        {/* 7. TAKE THE NEXT STEP CTA BANNER (Navigates to Contact) */}
+        {/* 7. BUILDING TRUST THROUGH ACCOUNTABILITY (Google Doc Transparency Section) */}
+        <TransparencySection />
+
+        {/* 8. TAKE THE NEXT STEP CTA BANNER (Navigates to Contact) */}
         <GetInvolvedCtaBanner />
       </div>
     </main>

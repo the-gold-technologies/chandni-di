@@ -24,13 +24,13 @@ export default function TransparencyPage() {
             </span>
             <h1 className="font-serif text-4xl font-extrabold leading-tight text-neutral-900 sm:text-5xl lg:text-6xl">
               Building Trust Through{" "}
-              <span className="text-brand-700">Accountability.</span>
+              <span className="text-brand-700">Accountability</span>
             </h1>
             <p className="text-lg leading-relaxed text-neutral-600 sm:text-xl">
-              We believe transparency and ethical governance are fundamental to
-              meaningful social change. Every rupee invested in Chandni Di is
-              documented, audited, and channeled directly toward a child’s
-              education.
+              We believe transparency and accountability are essential to
+              responsible social impact. We aim to share relevant organisational
+              information and documentation so supporters can better understand
+              our work and governance.
             </p>
           </div>
         </div>
@@ -40,14 +40,14 @@ export default function TransparencyPage() {
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-12 max-w-3xl space-y-3 text-center">
           <span className="rounded-full bg-brand-50 px-3 py-1 text-xs font-bold uppercase tracking-widest text-brand-700">
-            Government Compliance
+            Documents &amp; Registrations
           </span>
           <h2 className="font-serif text-3xl font-extrabold text-neutral-900 sm:text-4xl">
-            Official Registrations & Certifications
+            Documents &amp; Registrations
           </h2>
           <p className="text-sm text-neutral-600 sm:text-base">
-            Verified statutory compliance ensuring your donations are legally
-            protected and 50% tax exempt.
+            The following can be included, subject to verification and
+            availability:
           </p>
         </div>
 
@@ -264,7 +264,34 @@ export default function TransparencyPage() {
         </div>
       </section>
 
-      {/* 5. CTA */}
+      {/* 5. OUR COMMITMENT (Google Doc Requirement) */}
+      <section className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div className="relative overflow-hidden rounded-3xl border border-[#EDE5DA] bg-[#FAF7F2] p-8 text-center shadow-soft sm:p-12">
+          <div className="mx-auto max-w-2xl space-y-4">
+            <span className="rounded-full bg-brand-50 px-3 py-1 text-xs font-bold uppercase tracking-widest text-brand-700">
+              Responsible Governance
+            </span>
+            <h3 className="font-serif text-2xl font-bold text-neutral-900 sm:text-3xl">
+              Our Commitment
+            </h3>
+            <p className="text-base leading-relaxed text-neutral-700 sm:text-lg">
+              We strive to maintain responsible processes and provide
+              appropriate information about our programmes, operations, and
+              impact.
+            </p>
+            <div className="pt-2">
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 rounded-full bg-brand-700 px-7 py-3 text-sm font-bold text-white shadow-md transition-all hover:bg-brand-800"
+              >
+                <span>Contact Us for More Information</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 6. CTA */}
       <section className="mx-auto max-w-4xl space-y-6 px-4 text-center sm:px-6 lg:px-8">
         <h2 className="font-serif text-3xl font-bold text-neutral-900">
           Ready to Make a Direct Impact?

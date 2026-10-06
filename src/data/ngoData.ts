@@ -306,6 +306,34 @@ export const TRANSPARENCY_DOCS = [
     badge: "CSR Ready",
     desc: "Authorized to partner with corporations for Section 135 Schedule VII CSR initiatives.",
   },
+  {
+    title: "Trust Registration Certificate",
+    issuer: "Sub-Registrar, Govt. of NCT of Delhi",
+    status: "Registered Public Trust",
+    badge: "Legal Trust",
+    desc: "Registered trust deed validating legal constitution, objectives, and public charitable governance.",
+  },
+  {
+    title: "Annual Activity Reports",
+    issuer: "Chandni Di Foundation",
+    status: "Published Annually",
+    badge: "Impact Reporting",
+    desc: "Detailed summaries of learning centres, student enrollments, mainstreamed outcomes, and community reach.",
+  },
+  {
+    title: "Financial Audit Reports",
+    issuer: "Independent Chartered Accountants",
+    status: "Audited Annually",
+    badge: "CA Audited",
+    desc: "Fully audited balance sheets, income & expenditure statements, and statutory tax filings.",
+  },
+  {
+    title: "Relevant Organisational Documents",
+    issuer: "Tax & Regulatory Bodies",
+    status: "Compliant & Active",
+    badge: "Statutory Filings",
+    desc: "Official PAN card, Form 10BD annual donor returns, child safety guidelines, and operational bylaws.",
+  },
 ];
 
 export const SPONSORSHIP_TIERS = [

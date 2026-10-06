@@ -136,29 +136,8 @@ export default function ProgrammesSection() {
 
         <h2 className="font-serif text-3xl font-bold tracking-tight text-[#1C1814] sm:text-4xl lg:text-[44px] lg:leading-tight">
           Supporting a Child at Every Stage of Their{" "}
-          <span className="relative inline-block font-handwriting text-4xl font-semibold text-brand-700 sm:text-5xl lg:text-[54px]">
+          <span className="font-handwriting text-4xl font-semibold text-brand-700 sm:text-5xl lg:text-[54px]">
             Journey
-            {/* Hand-drawn forest green underline curve */}
-            <svg
-              className="absolute -bottom-2 left-0 h-3 w-full text-brand-700"
-              viewBox="0 0 130 14"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M2 10C32 3 85 2 128 8"
-                stroke="currentColor"
-                strokeWidth="3.5"
-                strokeLinecap="round"
-              />
-              <path
-                d="M15 12C45 6 92 6 120 10"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                opacity="0.6"
-              />
-            </svg>
           </span>
         </h2>
 

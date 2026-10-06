@@ -62,27 +62,10 @@ export default function ImpactGlanceSection() {
                 </span>
               </div>
 
-              {/* Main Headline with Hand-Drawn Brush Curve Underline */}
+              {/* Main Headline */}
               <h2 className="font-serif text-3xl font-extrabold leading-[1.15] tracking-tight text-neutral-900 sm:text-4xl lg:text-[44px] xl:text-[48px]">
                 Together, We{" "}
-                <span className="relative inline-block font-serif text-brand-700">
-                  Create Impact
-                  {/* Hand-Drawn Warm Yellow Underline Stroke Curve */}
-                  <svg
-                    className="pointer-events-none absolute -bottom-2 left-0 h-3.5 w-full text-[#E5A84B] sm:-bottom-2.5"
-                    viewBox="0 0 180 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M3 10C50 3 130 3 177 10"
-                      stroke="currentColor"
-                      strokeWidth="3.4"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </span>
+                <span className="font-serif text-brand-700">Create Impact</span>
               </h2>
 
               {/* Exact Google Doc Subtitle */}

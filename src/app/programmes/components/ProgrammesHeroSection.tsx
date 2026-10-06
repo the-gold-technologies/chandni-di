@@ -21,25 +21,11 @@ export default function ProgrammesHeroSection() {
               OUR PROGRAMMES
             </span>
 
-            {/* Headline with "Future Careers." in Italic Brand Red with Hand-Drawn Curve */}
+            {/* Headline with "Future Careers." in Italic Brand Red */}
             <h1 className="font-serif text-4xl font-extrabold leading-[1.14] tracking-tight text-neutral-900 sm:text-5xl lg:text-[54px] xl:text-[60px]">
               From First Lessons to{" "}
-              <span className="relative inline-block font-serif italic text-brand-700">
+              <span className="font-serif italic text-brand-700">
                 Future Careers.
-                {/* Hand-drawn warm ochre underline curve */}
-                <svg
-                  className="pointer-events-none absolute -bottom-2 left-0 h-3.5 w-full text-[#E5A84B] sm:-bottom-3"
-                  viewBox="0 0 140 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M3 10C40 3 100 3 137 10"
-                    stroke="currentColor"
-                    strokeWidth="3.2"
-                    strokeLinecap="round"
-                  />
-                </svg>
               </span>
             </h1>
 

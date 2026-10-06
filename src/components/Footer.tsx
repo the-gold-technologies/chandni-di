@@ -146,10 +146,10 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/impact#stories"
+                    href="/stories-of-change"
                     className="transition-colors hover:text-brand-700"
                   >
-                    Student Stories
+                    Stories of Change
                   </Link>
                 </li>
               </ul>

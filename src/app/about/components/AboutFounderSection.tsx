@@ -45,26 +45,10 @@ export default function AboutFounderSection() {
               </span>
             </div>
 
-            {/* Pull Quote / Headline with Hand-Drawn Brush Underline */}
+            {/* Pull Quote / Headline */}
             <h2 className="relative font-serif text-2xl font-bold leading-[1.28] text-neutral-900 sm:text-3xl lg:text-[34px]">
               “Turning lived experience into a lifelong commitment to{" "}
-              <span className="relative inline-block text-neutral-900">
-                children&apos;s futures.
-                {/* Hand-Drawn Underline Stroke Curve */}
-                <svg
-                  className="absolute -bottom-2 left-0 h-3 w-full text-brand-700/80"
-                  viewBox="0 0 200 12"
-                  fill="none"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M3 9C55 3 150 3 197 8"
-                    stroke="currentColor"
-                    strokeWidth="3.2"
-                    strokeLinecap="round"
-                  />
-                </svg>
-              </span>
+              <span className="text-neutral-900">children&apos;s futures.</span>
               ”
             </h2>
 

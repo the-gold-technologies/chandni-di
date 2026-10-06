@@ -59,24 +59,11 @@ export default function FounderSection() {
               </span>
             </div>
 
-            {/* Main Headline with Brush Underline Accent (Matching Reference) */}
+            {/* Main Headline */}
             <h2 className="font-serif text-3xl font-bold leading-[1.18] tracking-tight text-neutral-900 sm:text-4xl lg:text-[42px]">
               One Life Experience. <br />A Commitment to{" "}
-              <span className="relative inline-block font-serif italic text-brand-700">
+              <span className="font-serif italic text-brand-700">
                 Thousands of Children.
-                {/* Hand-Drawn Underline Stroke Curve */}
-                <svg
-                  className="absolute -bottom-2 left-0 h-3 w-full text-brand-700"
-                  viewBox="0 0 200 12"
-                  fill="none"
-                >
-                  <path
-                    d="M3 9C50 3 150 3 197 8"
-                    stroke="currentColor"
-                    strokeWidth="3.2"
-                    strokeLinecap="round"
-                  />
-                </svg>
               </span>
             </h2>
           </div>
