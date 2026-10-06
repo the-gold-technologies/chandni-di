@@ -38,7 +38,7 @@ function SpotifyIcon(props: React.SVGProps<SVGSVGElement>) {
 
 export default function Footer() {
   return (
-    <footer className="relative w-full overflow-hidden bg-[#F2F4F3] text-neutral-800">
+    <footer className="relative w-full overflow-hidden rounded-t-[2.5rem] border-x border-t border-[#EDE5DA] bg-[#FAF7F2] text-neutral-800 shadow-[0_-6px_30px_rgba(0,0,0,0.02)] sm:rounded-t-[3rem] lg:rounded-t-[3.5rem]">
       {/* Decorative Botanical Flowers Illustration firmly anchored at Bottom-Left Corner */}
       <div className="pointer-events-none absolute bottom-0 left-0 z-0 select-none">
         <Image
@@ -71,18 +71,18 @@ export default function Footer() {
             </Link>
           </div>
 
-          {/* Right Navigation Columns: 3 Columns precisely matching reference style */}
+          {/* Right Navigation Columns: 3 Columns matching original reference layout */}
           <div className="grid grid-cols-3 gap-6 md:col-span-7 lg:col-span-7 lg:gap-10">
             {/* Column 1: Our Organisation */}
             <div>
-              <h3 className="mb-3.5 text-[15px] font-bold tracking-tight text-neutral-900 sm:text-base">
+              <h3 className="mb-3.5 text-[15px] font-bold tracking-tight text-brand-700 sm:text-base">
                 Our Organisation
               </h3>
-              <ul className="space-y-2 text-[13px] text-neutral-600 sm:text-[14px]">
+              <ul className="space-y-2 text-[13px] font-medium text-neutral-800 sm:text-[14px]">
                 <li>
                   <Link
                     href="/about"
-                    className="transition-colors hover:text-neutral-950"
+                    className="transition-colors hover:text-brand-700"
                   >
                     About Us
                   </Link>
@@ -90,7 +90,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/about#founder"
-                    className="transition-colors hover:text-neutral-950"
+                    className="transition-colors hover:text-brand-700"
                   >
                     Founder&apos;s Story
                   </Link>
@@ -98,7 +98,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/about#mission"
-                    className="transition-colors hover:text-neutral-950"
+                    className="transition-colors hover:text-brand-700"
                   >
                     Our Mission
                   </Link>
@@ -106,7 +106,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/transparency"
-                    className="transition-colors hover:text-neutral-950"
+                    className="transition-colors hover:text-brand-700"
                   >
                     Transparency &amp; 80G
                   </Link>
@@ -116,14 +116,14 @@ export default function Footer() {
 
             {/* Column 2: Programmes */}
             <div>
-              <h3 className="mb-3.5 text-[15px] font-bold tracking-tight text-neutral-900 sm:text-base">
+              <h3 className="mb-3.5 text-[15px] font-bold tracking-tight text-brand-700 sm:text-base">
                 Programmes
               </h3>
-              <ul className="space-y-2 text-[13px] text-neutral-600 sm:text-[14px]">
+              <ul className="space-y-2 text-[13px] font-medium text-neutral-800 sm:text-[14px]">
                 <li>
                   <Link
                     href="/programmes#bridge"
-                    className="transition-colors hover:text-neutral-950"
+                    className="transition-colors hover:text-brand-700"
                   >
                     Bridge Schooling
                   </Link>
@@ -131,7 +131,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/programmes#after-school"
-                    className="transition-colors hover:text-neutral-950"
+                    className="transition-colors hover:text-brand-700"
                   >
                     After-School Support
                   </Link>
@@ -139,7 +139,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/programmes#college-to-career"
-                    className="transition-colors hover:text-neutral-950"
+                    className="transition-colors hover:text-brand-700"
                   >
                     College to Career
                   </Link>
@@ -147,7 +147,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/impact#stories"
-                    className="transition-colors hover:text-neutral-950"
+                    className="transition-colors hover:text-brand-700"
                   >
                     Student Stories
                   </Link>
@@ -157,14 +157,14 @@ export default function Footer() {
 
             {/* Column 3: Contact */}
             <div>
-              <h3 className="mb-3.5 text-[15px] font-bold tracking-tight text-neutral-900 sm:text-base">
+              <h3 className="mb-3.5 text-[15px] font-bold tracking-tight text-brand-700 sm:text-base">
                 Contact
               </h3>
-              <ul className="space-y-2 text-[13px] text-neutral-600 sm:text-[14px]">
+              <ul className="space-y-2 text-[13px] font-medium text-neutral-800 sm:text-[14px]">
                 <li>
                   <Link
                     href="/contact#faqs"
-                    className="transition-colors hover:text-neutral-950"
+                    className="transition-colors hover:text-brand-700"
                   >
                     FAQs
                   </Link>
@@ -172,7 +172,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/contact"
-                    className="transition-colors hover:text-neutral-950"
+                    className="transition-colors hover:text-brand-700"
                   >
                     Contact Us
                   </Link>
@@ -180,7 +180,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/get-involved#donate"
-                    className="transition-colors hover:text-neutral-950"
+                    className="transition-colors hover:text-brand-700"
                   >
                     Support a Child
                   </Link>
@@ -188,7 +188,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/get-involved#volunteer"
-                    className="transition-colors hover:text-neutral-950"
+                    className="transition-colors hover:text-brand-700"
                   >
                     Volunteer
                   </Link>
@@ -198,17 +198,16 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Row: Centered Copyright and Right Social Icons (Matching reference layout) */}
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 sm:mt-14 sm:flex-row">
-          {/* Centered/offset copyright line, clear of the flowers */}
-          <div className="text-center sm:pl-36 md:pl-48 lg:pl-56">
-            <p className="text-xs text-neutral-500 sm:text-[13px]">
+        {/* Bottom Row: Left Copyright (aligned with logo) and Right Social Icons */}
+        <div className="mt-12 flex flex-col items-start justify-between gap-4 sm:mt-14 sm:flex-row sm:items-center">
+          <div>
+            <p className="text-xs font-semibold text-neutral-800 sm:text-[13px]">
               © {new Date().getFullYear()} Chandni Di Foundation. All rights
               reserved
             </p>
           </div>
 
-          {/* 4 Social Media Icons exactly as in reference */}
+          {/* 4 Social Media Icons matching original styling */}
           <div className="flex items-center gap-2.5">
             {/* Facebook */}
             <a

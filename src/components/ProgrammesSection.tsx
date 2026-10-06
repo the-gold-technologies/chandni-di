@@ -17,21 +17,19 @@ export default function ProgrammesSection() {
       quote:
         "We help children between the ages of 5 and 12 build foundational academic skills and prepare for admission into mainstream schools.",
       link: "/programmes#bridge",
-      // Background Image & Shaded Brand Red Overlay
+      // Background Image & Soft Blurry Reduced Black Overlay
       image: "/images/hero_hug.jpg",
-      bgClass: "bg-[#540B10]",
-      gradientClass:
-        "bg-gradient-to-b from-[#8C1B23]/92 via-[#5E0C12]/95 to-[#2E0407]/98",
-      ambientClass:
-        "bg-[radial-gradient(circle_at_25%_20%,rgba(239,68,68,0.22),transparent_70%)]",
+      bgClass: "bg-[#18181b]",
+      gradientClass: "bg-gradient-to-t from-black/85 via-black/50 to-black/30",
+      ambientClass: "bg-black/20 backdrop-blur-[2px]",
       textClass: "text-white",
-      subtextClass: "text-rose-100/90",
-      quoteIconClass: "text-white/25",
+      subtextClass: "text-white/90 drop-shadow-sm",
+      quoteIconClass: "text-white/40 drop-shadow-sm",
       badgeClass:
-        "bg-white/20 text-white backdrop-blur-md border border-white/15",
-      avatarClass: "bg-white/20 text-white border border-white/15",
+        "bg-black/40 text-white backdrop-blur-md border border-white/20 shadow-sm",
+      avatarClass: "bg-black/40 text-white border border-white/20 shadow-sm",
       buttonClass:
-        "bg-white/20 hover:bg-white text-white hover:text-brand-700 shadow-sm",
+        "bg-black/40 hover:bg-white text-white hover:text-black shadow-md border border-white/20",
       role: "Ages 5–12 • School Readiness",
     },
     {
@@ -44,21 +42,19 @@ export default function ProgrammesSection() {
       quote:
         "We support children already enrolled in school through tuition, academic assistance, counselling, and skill development.",
       link: "/programmes#after-school",
-      // Background Image & Deep Forest Green Overlay
+      // Background Image & Soft Blurry Reduced Black Overlay
       image: "/images/hero_classroom_banner.jpg",
-      bgClass: "bg-[#11241A]",
-      gradientClass:
-        "bg-gradient-to-b from-[#1C3B2B]/92 via-[#11241A]/95 to-[#08130D]/98",
-      ambientClass:
-        "bg-[radial-gradient(circle_at_25%_20%,rgba(52,211,153,0.18),transparent_70%)]",
+      bgClass: "bg-[#18181b]",
+      gradientClass: "bg-gradient-to-t from-black/85 via-black/50 to-black/30",
+      ambientClass: "bg-black/20 backdrop-blur-[2px]",
       textClass: "text-white",
-      subtextClass: "text-emerald-100/90",
-      quoteIconClass: "text-white/25",
+      subtextClass: "text-white/90 drop-shadow-sm",
+      quoteIconClass: "text-white/40 drop-shadow-sm",
       badgeClass:
-        "bg-white/20 text-emerald-100 backdrop-blur-md border border-white/15",
-      avatarClass: "bg-white/20 text-white border border-white/15",
+        "bg-black/40 text-white backdrop-blur-md border border-white/20 shadow-sm",
+      avatarClass: "bg-black/40 text-white border border-white/20 shadow-sm",
       buttonClass:
-        "bg-white/20 hover:bg-white text-white hover:text-[#173425] shadow-sm",
+        "bg-black/40 hover:bg-white text-white hover:text-black shadow-md border border-white/20",
       role: "Enrolled Students • Daily Guidance",
     },
     {
@@ -71,21 +67,19 @@ export default function ProgrammesSection() {
       quote:
         "We help students pursue higher education, develop relevant skills, and prepare for future career opportunities.",
       link: "/programmes#college-to-career",
-      // Background Image & Deep Eucalyptus Slate Green Overlay
+      // Background Image & Soft Blurry Reduced Black Overlay
       image: "/images/palak.jpg",
-      bgClass: "bg-[#162D24]",
-      gradientClass:
-        "bg-gradient-to-b from-[#254637]/92 via-[#162D24]/95 to-[#0B1712]/98",
-      ambientClass:
-        "bg-[radial-gradient(circle_at_25%_20%,rgba(74,222,128,0.18),transparent_70%)]",
+      bgClass: "bg-[#18181b]",
+      gradientClass: "bg-gradient-to-t from-black/85 via-black/50 to-black/30",
+      ambientClass: "bg-black/20 backdrop-blur-[2px]",
       textClass: "text-white",
-      subtextClass: "text-emerald-100/90",
-      quoteIconClass: "text-white/25",
+      subtextClass: "text-white/90 drop-shadow-sm",
+      quoteIconClass: "text-white/40 drop-shadow-sm",
       badgeClass:
-        "bg-white/20 text-emerald-100 backdrop-blur-md border border-white/15",
-      avatarClass: "bg-white/20 text-white border border-white/15",
+        "bg-black/40 text-white backdrop-blur-md border border-white/20 shadow-sm",
+      avatarClass: "bg-black/40 text-white border border-white/20 shadow-sm",
       buttonClass:
-        "bg-white/20 hover:bg-white text-white hover:text-[#254637] shadow-sm",
+        "bg-black/40 hover:bg-white text-white hover:text-black shadow-md border border-white/20",
       role: "Higher Education • 100% Sponsored",
     },
   ];
@@ -188,7 +182,7 @@ export default function ProgrammesSection() {
                 src={prog.image}
                 alt={prog.title}
                 fill
-                className="object-cover object-center opacity-25 mix-blend-luminosity saturate-50 transition-transform duration-700 ease-out group-hover:scale-105"
+                className="object-cover object-center opacity-85 transition-transform duration-700 ease-out group-hover:scale-105"
               />
               {/* Shaded Color Gradient Overlay guaranteeing text contrast */}
               <div className={`absolute inset-0 ${prog.gradientClass}`} />
