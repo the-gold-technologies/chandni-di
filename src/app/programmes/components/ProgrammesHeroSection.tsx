@@ -53,13 +53,24 @@ export default function ProgrammesHeroSection() {
 
             {/* Button: Pill-shaped Burgundy/Brand Red with Chevron */}
             <div className="pt-2">
-              <Link
-                href="#bridge"
-                className="inline-flex items-center gap-2 rounded-full bg-brand-700 px-7 py-3.5 text-sm font-semibold text-white shadow-md transition-all duration-200 hover:scale-[1.02] hover:bg-brand-800 hover:shadow-lg sm:text-base"
+              <a
+                href="#explore-programmes"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const target =
+                    document.getElementById("explore-programmes") ||
+                    document.getElementById("programmes");
+                  if (target) {
+                    target.scrollIntoView({ behavior: "smooth" });
+                  } else {
+                    window.location.hash = "explore-programmes";
+                  }
+                }}
+                className="inline-flex cursor-pointer items-center gap-2 rounded-full bg-brand-700 px-7 py-3.5 text-sm font-semibold text-white shadow-md transition-all duration-200 hover:scale-[1.02] hover:bg-brand-800 hover:shadow-lg sm:text-base"
               >
                 <span>Explore Our Programmes</span>
                 <ChevronRight className="h-4 w-4 stroke-[2.5]" />
-              </Link>
+              </a>
             </div>
           </div>
 

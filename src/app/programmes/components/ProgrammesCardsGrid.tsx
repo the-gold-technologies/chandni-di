@@ -52,7 +52,10 @@ export default function ProgrammesCardsGrid() {
   ];
 
   return (
-    <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section
+      id="explore-programmes"
+      className="mx-auto max-w-7xl scroll-mt-24 px-4 sm:px-6 lg:px-8"
+    >
       {/* Section Header */}
       <div className="mx-auto mb-12 max-w-3xl space-y-2 text-center sm:mb-14">
         <span className="text-xs font-bold uppercase tracking-[0.25em] text-brand-700">
