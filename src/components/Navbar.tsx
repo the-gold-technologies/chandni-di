@@ -194,7 +194,7 @@ export default function Navbar() {
               {/* Dropdown Menu Flyout */}
               {impactDropdownOpen && (
                 <div
-                  className="animate-in fade-in slide-in-from-top-2 absolute left-1/2 top-full z-50 mt-2 w-80 -translate-x-1/2 rounded-2xl border border-neutral-200/90 bg-white p-2.5 shadow-2xl backdrop-blur-md transition-all duration-200"
+                  className="animate-in fade-in slide-in-from-top-2 absolute left-1/2 top-full z-50 mt-5 w-80 -translate-x-1/2 rounded-2xl border border-neutral-200/90 bg-white p-2.5 shadow-2xl backdrop-blur-md transition-all duration-200 before:absolute before:inset-x-0 before:-top-5 before:h-5"
                   role="menu"
                 >
                   <div className="space-y-1">

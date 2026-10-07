@@ -30,37 +30,37 @@ export default function HeroSection() {
       {/* Main Container */}
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-16 pt-32 sm:px-6 sm:pb-20 sm:pt-36 lg:px-8 lg:pb-24 lg:pt-40">
         <div className="max-w-xl space-y-6 sm:space-y-7 lg:max-w-3xl">
-          {/* Eyebrow Tag: Exactly "YOUR FUTURE. OUR PRIORITY." (Redundant text removed) */}
-          <div className="inline-flex items-center">
-            <span className="text-xs font-extrabold uppercase tracking-widest text-brand-700 sm:text-sm">
-              YOUR FUTURE. OUR PRIORITY.
+          {/* Eyebrow Tag */}
+          <div className="inline-flex items-center gap-2">
+            <span className="inline-flex items-center gap-2 rounded-full bg-brand-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-brand-700 ring-1 ring-brand-200">
+              Your Future. Our Priority.
             </span>
           </div>
 
-          {/* Main Headline: Exactly 3 Lines */}
-          <h1 className="text-3xl font-extrabold leading-[1.14] tracking-tight text-neutral-900 sm:text-4xl md:text-5xl lg:text-[44px] xl:text-[50px]">
+          {/* Main Headline: Exactly 3 Lines with font-serif matching other pages */}
+          <h1 className="font-serif text-3xl font-extrabold leading-[1.18] tracking-tight text-neutral-900 sm:text-4xl md:text-5xl lg:text-[46px] xl:text-[52px]">
             <span className="block whitespace-normal sm:inline sm:whitespace-nowrap">
               A Child&apos;s Circumstances
             </span>{" "}
             <br />
-            <span className="whitespace-nowrap text-brand-700">
+            <span className="whitespace-nowrap font-serif text-brand-700">
               Should Never
             </span>{" "}
             <br />
-            <span className="whitespace-nowrap text-brand-700">
+            <span className="whitespace-nowrap font-serif italic text-brand-700">
               Define Their Future.
             </span>
           </h1>
 
-          {/* Supporting Copy */}
+          {/* Supporting Copy matching other page hero p tags */}
           <div className="max-w-xl space-y-3">
-            <p className="text-base font-normal leading-relaxed text-neutral-700 sm:text-lg lg:text-xl">
+            <p className="text-base leading-relaxed text-neutral-600 sm:text-lg">
               We work with children from slum and street communities, providing
               education, academic support, counselling, skill development, and
               career guidance—from their first steps into learning to their
               journey towards independence.
             </p>
-            <p className="text-sm leading-relaxed text-neutral-600 sm:text-base">
+            <p className="text-base leading-relaxed text-neutral-600 sm:text-lg">
               Through sustained support, we help children access opportunities,
               build confidence, and become part of mainstream society.
             </p>
