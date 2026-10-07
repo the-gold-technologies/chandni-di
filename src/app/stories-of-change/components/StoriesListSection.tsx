@@ -112,7 +112,7 @@ export default function StoriesListSection() {
                   {/* Bottom Row: Smaller Rounded Button + Repositioned Sponsored Tag */}
                   <div className="mt-5 flex items-center justify-between gap-3 border-t border-neutral-100 pt-4">
                     {/* Smaller Rounded Pill Button */}
-                    <span className="inline-flex shrink-0 items-center gap-2 rounded-full bg-brand-700 px-5 py-2 text-xs font-bold text-white shadow-xs transition-all duration-300 group-hover:bg-brand-800 group-hover:shadow-md whitespace-nowrap">
+                    <span className="shadow-xs inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-full bg-brand-700 px-5 py-2 text-xs font-bold text-white transition-all duration-300 group-hover:bg-brand-800 group-hover:shadow-md">
                       <span>Read Full Story</span>
                       <ArrowRight className="h-3.5 w-3.5 shrink-0 transition-transform duration-300 group-hover:translate-x-1" />
                     </span>
@@ -151,7 +151,7 @@ export default function StoriesListSection() {
 
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {/* 1. Bridge to Formal Schools */}
-            <div className="rounded-2xl border border-neutral-200/90 bg-[#FAF7F2]/60 p-6 shadow-xs transition-all hover:border-brand-200 hover:bg-white hover:shadow-md">
+            <div className="shadow-xs rounded-2xl border border-neutral-200/90 bg-[#FAF7F2]/60 p-6 transition-all hover:border-brand-200 hover:bg-white hover:shadow-md">
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-brand-700 ring-1 ring-brand-100">
                 <TrendingUp className="h-6 w-6" />
               </div>
@@ -166,7 +166,7 @@ export default function StoriesListSection() {
             </div>
 
             {/* 2. First-Generation Scholars */}
-            <div className="rounded-2xl border border-neutral-200/90 bg-[#FAF7F2]/60 p-6 shadow-xs transition-all hover:border-brand-200 hover:bg-white hover:shadow-md">
+            <div className="shadow-xs rounded-2xl border border-neutral-200/90 bg-[#FAF7F2]/60 p-6 transition-all hover:border-brand-200 hover:bg-white hover:shadow-md">
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-50 text-amber-700 ring-1 ring-amber-200">
                 <Award className="h-6 w-6" />
               </div>
@@ -181,7 +181,7 @@ export default function StoriesListSection() {
             </div>
 
             {/* 3. Girl Child Protection */}
-            <div className="rounded-2xl border border-neutral-200/90 bg-[#FAF7F2]/60 p-6 shadow-xs transition-all hover:border-brand-200 hover:bg-white hover:shadow-md">
+            <div className="shadow-xs rounded-2xl border border-neutral-200/90 bg-[#FAF7F2]/60 p-6 transition-all hover:border-brand-200 hover:bg-white hover:shadow-md">
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200">
                 <ShieldCheck className="h-6 w-6" />
               </div>

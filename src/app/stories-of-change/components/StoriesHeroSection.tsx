@@ -44,24 +44,23 @@ export default function StoriesHeroSection() {
               Stories of Change
             </span>
 
-            {/* Main Headline: Exactly 3 Lines matching About page structure */}
+            {/* Main Headline: Exactly matching Google Doc */}
             <h1 className="space-y-2 font-serif text-3xl font-extrabold leading-[1.26] tracking-tight text-neutral-900 sm:space-y-2.5 sm:text-4xl md:text-[2.6rem] lg:text-[2.75rem] xl:text-[3.1rem]">
               <span className="block whitespace-normal sm:whitespace-nowrap">
                 Every Child Has a Story.
               </span>
               <span className="block whitespace-normal text-brand-700 sm:whitespace-nowrap">
-                Every Opportunity
+                Every Opportunity Can
               </span>
               <span className="block whitespace-normal sm:whitespace-nowrap">
-                Changes Its Direction.
+                Change Its Direction.
               </span>
             </h1>
 
             {/* Supporting paragraph verbatim from Google Doc */}
             <p className="max-w-xl text-base leading-relaxed text-neutral-600 sm:text-lg">
-              The children we work with come from difficult circumstances, but
-              their aspirations remind us of the power of sustained support,
-              daily mentorship, and believing in their potential.
+              The children we work with come from different circumstances, but
+              their aspirations remind us of the importance of sustained support.
             </p>
 
             {/* Quick stats row */}
