@@ -44,7 +44,7 @@ function InstagramIcon({ className }: { className?: string }) {
   );
 }
 
-// ── Contact Form Component (Exact Layout from Reference Image) ──
+// ── Contact Form Component ──
 function ContactFormComponent() {
   const searchParams = useSearchParams();
   const [submitted, setSubmitted] = useState(false);
@@ -76,20 +76,21 @@ function ContactFormComponent() {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full rounded-3xl border border-neutral-200/90 bg-white p-7 shadow-[0_12px_40px_-10px_rgba(0,0,0,0.06)] sm:p-9 lg:p-10">
       {submitted ? (
-        <div className="shadow-xs rounded-2xl border border-neutral-200 bg-white p-8 text-center sm:p-12">
-          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
-            <CheckCircle2 className="h-8 w-8" />
+        <div className="py-8 text-center sm:py-12">
+          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-600 ring-1 ring-emerald-200/60">
+            <CheckCircle2 className="h-9 w-9" />
           </div>
-          <h3 className="mt-4 font-sans text-2xl font-bold text-neutral-900">
+          <h3 className="mt-5 font-serif text-2xl font-bold text-neutral-900 sm:text-3xl">
             Thank You, {name}!
           </h3>
-          <p className="mx-auto mt-2 max-w-md text-sm text-neutral-600">
-            Your enquiry regarding <strong>{enquiryType}</strong> has been
-            received. We will get back to you within 24 hours.
+          <p className="mx-auto mt-2.5 max-w-md text-sm leading-relaxed text-neutral-600 sm:text-base">
+            Your enquiry regarding{" "}
+            <strong className="text-neutral-900">{enquiryType}</strong> has been
+            received. Our community team will get back to you within 24 hours.
           </p>
-          <div className="pt-6">
+          <div className="pt-8">
             <button
               onClick={() => {
                 setSubmitted(false);
@@ -99,110 +100,137 @@ function ContactFormComponent() {
                 setPhone("");
                 setOrg("");
               }}
-              className="rounded-full bg-brand-700 px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-white hover:bg-brand-800"
+              className="inline-flex items-center gap-2 rounded-full bg-brand-700 px-7 py-3 text-xs font-bold uppercase tracking-wider text-white shadow-md transition-all hover:bg-brand-800 hover:shadow-lg"
             >
-              Send Another Message
+              <span>Send Another Message</span>
             </button>
           </div>
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
-          {/* Header matching Reference Image: "Send Message" */}
-          <div className="space-y-1.5 pb-1">
-            <h3 className="font-sans text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl">
+        <form onSubmit={handleSubmit} className="space-y-5">
+          {/* Form Header */}
+          <div className="space-y-1.5 border-b border-neutral-100 pb-5">
+            <h3 className="font-serif text-2xl font-extrabold tracking-tight text-neutral-900 sm:text-3xl">
               Send Message
             </h3>
             <p className="text-xs leading-relaxed text-neutral-500 sm:text-sm">
               Please fill out the form below with your details and message to
-              contact with us
+              get in touch with us.
             </p>
           </div>
 
           {/* Row 1: Name & Email */}
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <div>
+            <div className="space-y-1.5">
+              <label className="text-xs font-semibold uppercase tracking-wider text-neutral-600">
+                Full Name <span className="text-brand-700">*</span>
+              </label>
               <input
                 type="text"
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                placeholder="Full Name *"
-                className="w-full rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm text-neutral-900 placeholder-neutral-400 transition-colors focus:border-neutral-900 focus:outline-none focus:ring-0"
+                placeholder="e.g. Rahul Sharma"
+                className="w-full rounded-xl border border-neutral-200 bg-neutral-50/60 px-4 py-3 text-sm text-neutral-900 placeholder-neutral-400 transition-all hover:border-neutral-300 hover:bg-white focus:border-brand-700 focus:bg-white focus:outline-none focus:ring-4 focus:ring-brand-700/10"
               />
             </div>
-            <div>
+            <div className="space-y-1.5">
+              <label className="text-xs font-semibold uppercase tracking-wider text-neutral-600">
+                Email Address <span className="text-brand-700">*</span>
+              </label>
               <input
                 type="email"
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Email Address *"
-                className="w-full rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm text-neutral-900 placeholder-neutral-400 transition-colors focus:border-neutral-900 focus:outline-none focus:ring-0"
+                placeholder="e.g. rahul@example.com"
+                className="w-full rounded-xl border border-neutral-200 bg-neutral-50/60 px-4 py-3 text-sm text-neutral-900 placeholder-neutral-400 transition-all hover:border-neutral-300 hover:bg-white focus:border-brand-700 focus:bg-white focus:outline-none focus:ring-4 focus:ring-brand-700/10"
               />
             </div>
           </div>
 
           {/* Row 2: Phone & Organisation */}
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <div>
+            <div className="space-y-1.5">
+              <label className="text-xs font-semibold uppercase tracking-wider text-neutral-600">
+                Phone Number <span className="text-brand-700">*</span>
+              </label>
               <input
                 type="tel"
                 required
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                placeholder="Phone Number *"
-                className="w-full rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm text-neutral-900 placeholder-neutral-400 transition-colors focus:border-neutral-900 focus:outline-none focus:ring-0"
+                placeholder="e.g. +91 98765 43210"
+                className="w-full rounded-xl border border-neutral-200 bg-neutral-50/60 px-4 py-3 text-sm text-neutral-900 placeholder-neutral-400 transition-all hover:border-neutral-300 hover:bg-white focus:border-brand-700 focus:bg-white focus:outline-none focus:ring-4 focus:ring-brand-700/10"
               />
             </div>
-            <div>
+            <div className="space-y-1.5">
+              <label className="text-xs font-semibold uppercase tracking-wider text-neutral-600">
+                Organisation{" "}
+                <span className="text-xs font-normal normal-case text-neutral-400">
+                  (optional)
+                </span>
+              </label>
               <input
                 type="text"
                 value={org}
                 onChange={(e) => setOrg(e.target.value)}
-                placeholder="Organisation (optional)"
-                className="w-full rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm text-neutral-900 placeholder-neutral-400 transition-colors focus:border-neutral-900 focus:outline-none focus:ring-0"
+                placeholder="e.g. Company or Foundation"
+                className="w-full rounded-xl border border-neutral-200 bg-neutral-50/60 px-4 py-3 text-sm text-neutral-900 placeholder-neutral-400 transition-all hover:border-neutral-300 hover:bg-white focus:border-brand-700 focus:bg-white focus:outline-none focus:ring-4 focus:ring-brand-700/10"
               />
             </div>
           </div>
 
-          {/* Row 3: Enquiry Type (Dropdown) */}
-          <div className="relative">
-            <select
-              value={enquiryType}
-              onChange={(e) => setEnquiryType(e.target.value)}
-              className="w-full appearance-none rounded-xl border border-neutral-200 bg-white px-4 py-3 pr-10 text-sm text-neutral-800 transition-colors focus:border-neutral-900 focus:outline-none focus:ring-0"
-            >
-              <option value="Donate">Donate</option>
-              <option value="Volunteer">Volunteer</option>
-              <option value="CSR Partnership">CSR Partnership</option>
-              <option value="Sponsor a Child">Sponsor a Child</option>
-              <option value="Fundraise">Fundraise</option>
-              <option value="General Enquiry">General Enquiry</option>
-            </select>
-            <ChevronDown className="pointer-events-none absolute right-3.5 top-3.5 h-4 w-4 text-neutral-400" />
+          {/* Row 3: Enquiry Type */}
+          <div className="space-y-1.5">
+            <label className="text-xs font-semibold uppercase tracking-wider text-neutral-600">
+              Enquiry Type <span className="text-brand-700">*</span>
+            </label>
+            <div className="relative">
+              <select
+                value={enquiryType}
+                onChange={(e) => setEnquiryType(e.target.value)}
+                className="w-full appearance-none rounded-xl border border-neutral-200 bg-neutral-50/60 px-4 py-3 pr-10 text-sm font-medium text-neutral-800 transition-all hover:border-neutral-300 hover:bg-white focus:border-brand-700 focus:bg-white focus:outline-none focus:ring-4 focus:ring-brand-700/10"
+              >
+                <option value="Donate">Donate</option>
+                <option value="Volunteer">Volunteer</option>
+                <option value="CSR Partnership">CSR Partnership</option>
+                <option value="Sponsor a Child">Sponsor a Child</option>
+                <option value="Fundraise">Fundraise</option>
+                <option value="General Enquiry">General Enquiry</option>
+              </select>
+              <ChevronDown className="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 text-neutral-400" />
+            </div>
           </div>
 
           {/* Row 4: Message */}
-          <div>
+          <div className="space-y-1.5">
+            <label className="text-xs font-semibold uppercase tracking-wider text-neutral-600">
+              Your Message <span className="text-brand-700">*</span>
+            </label>
             <textarea
               required
               rows={4}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              placeholder="Write Message Here..."
-              className="w-full rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm text-neutral-900 placeholder-neutral-400 transition-colors focus:border-neutral-900 focus:outline-none focus:ring-0"
+              placeholder="Tell us about your requirement or how you'd like to collaborate..."
+              className="w-full resize-none rounded-xl border border-neutral-200 bg-neutral-50/60 px-4 py-3 text-sm text-neutral-900 placeholder-neutral-400 transition-all hover:border-neutral-300 hover:bg-white focus:border-brand-700 focus:bg-white focus:outline-none focus:ring-4 focus:ring-brand-700/10"
             />
           </div>
 
-          {/* Submit Button */}
-          <div className="pt-2">
+          {/* Submit Button & Assurance */}
+          <div className="pt-2 sm:flex sm:items-center sm:justify-between sm:gap-4">
             <button
               type="submit"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-700 px-8 py-3.5 text-sm font-bold text-white shadow-sm transition-all hover:bg-brand-800 hover:shadow"
+              className="group inline-flex w-full items-center justify-center gap-2.5 rounded-full bg-brand-700 px-8 py-3.5 text-sm font-bold uppercase tracking-wider text-white shadow-md shadow-brand-700/20 transition-all hover:-translate-y-0.5 hover:bg-brand-800 hover:shadow-xl hover:shadow-brand-700/30 active:translate-y-0 sm:w-auto"
             >
               <span>Submit Enquiry</span>
-              <Send className="h-4 w-4" />
+              <Send className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </button>
+
+            <p className="mt-3 text-center text-xs text-neutral-400 sm:mt-0 sm:text-right">
+              🔒 Information is secure &amp; confidential
+            </p>
           </div>
         </form>
       )}
@@ -210,7 +238,7 @@ function ContactFormComponent() {
   );
 }
 
-// ── Contact Section Component (Matching Reference Image) ──
+// ── Contact Section Component ──
 export default function ContactSection() {
   return (
     <section
@@ -218,93 +246,105 @@ export default function ContactSection() {
       className="scroll-mt-24 bg-white py-16 sm:py-20 lg:py-24"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-12 lg:gap-16">
-          {/* ── LEFT COLUMN: Circular Icon Rows & Information (Matching Reference) ── */}
+        <div className="grid grid-cols-1 items-start gap-14 lg:grid-cols-12 lg:gap-20 xl:gap-24">
+          {/* ── LEFT COLUMN: Contact Details & Social Links ── */}
           <div className="space-y-8 lg:col-span-5">
-            {/* Header */}
-            <div className="space-y-3">
-              <h2 className="font-sans text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
-                Need more information?
-                <br />
-                <span className="text-neutral-900">Get in touch with us</span>
+            {/* Header with Editorial Typography */}
+            <div className="space-y-3.5">
+              <span className="inline-flex items-center gap-2 rounded-full bg-brand-50 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-brand-700 ring-1 ring-brand-200/80">
+                Get In Touch
+              </span>
+
+              <h2 className="font-serif text-3xl font-extrabold leading-[1.2] tracking-tight text-neutral-900 sm:text-4xl lg:text-[40px]">
+                Need more information?{" "}
+                <span className="block font-serif italic text-brand-700">
+                  Get in touch with us
+                </span>
               </h2>
 
-              <p className="text-sm leading-relaxed text-neutral-500 sm:text-base">
+              <p className="text-sm font-normal leading-relaxed text-neutral-600 sm:text-base">
                 Whether you want to support a child&apos;s education, volunteer,
                 explore a partnership, or learn more about our work, we would
                 love to hear from you.
               </p>
             </div>
 
-            {/* 3 Circular Icon Rows (As in Reference Image) */}
-            <div className="space-y-6 pt-2">
+            {/* Response Time Badge */}
+            <div className="inline-flex items-center gap-2.5 rounded-2xl border border-emerald-200/70 bg-emerald-50/90 px-4 py-2.5 text-xs font-medium text-emerald-800">
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+              </span>
+              <span>Typically responds within 24 business hours</span>
+            </div>
+
+            {/* 3 Interactive Contact Cards */}
+            <div className="space-y-4 pt-1">
               {/* Phone Number */}
-              <div className="flex items-center gap-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-neutral-100 text-neutral-700 transition-colors hover:bg-brand-50 hover:text-brand-700">
+              <a
+                href="tel:+919876543210"
+                className="hover:shadow-xs group flex items-center gap-4 rounded-2xl border border-transparent p-3 transition-all hover:border-neutral-200/80 hover:bg-white"
+              >
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand-50 text-brand-700 ring-1 ring-brand-100 transition-all group-hover:scale-105 group-hover:bg-brand-700 group-hover:text-white group-hover:shadow-md group-hover:shadow-brand-700/20">
                   <Phone className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-neutral-900">
+                  <h4 className="text-xs font-bold uppercase tracking-wider text-neutral-400">
                     Phone Number
                   </h4>
-                  <p className="text-xs text-neutral-500 sm:text-sm">
-                    <a
-                      href="tel:+919876543210"
-                      className="transition-colors hover:text-brand-700 hover:underline"
-                    >
-                      +91 98765 43210
-                    </a>
+                  <p className="mt-0.5 text-base font-bold text-neutral-900 transition-colors group-hover:text-brand-700">
+                    +91 98765 43210
                   </p>
                 </div>
-              </div>
+              </a>
 
               {/* Email */}
-              <div className="flex items-center gap-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-neutral-100 text-neutral-700 transition-colors hover:bg-brand-50 hover:text-brand-700">
+              <a
+                href="mailto:contact@chandnidi.org"
+                className="hover:shadow-xs group flex items-center gap-4 rounded-2xl border border-transparent p-3 transition-all hover:border-neutral-200/80 hover:bg-white"
+              >
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand-50 text-brand-700 ring-1 ring-brand-100 transition-all group-hover:scale-105 group-hover:bg-brand-700 group-hover:text-white group-hover:shadow-md group-hover:shadow-brand-700/20">
                   <Mail className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-neutral-900">Email</h4>
-                  <p className="text-xs text-neutral-500 sm:text-sm">
-                    <a
-                      href="mailto:contact@chandnidi.org"
-                      className="transition-colors hover:text-brand-700 hover:underline"
-                    >
-                      contact@chandnidi.org
-                    </a>
+                  <h4 className="text-xs font-bold uppercase tracking-wider text-neutral-400">
+                    Official Email
+                  </h4>
+                  <p className="mt-0.5 text-base font-bold text-neutral-900 transition-colors group-hover:text-brand-700">
+                    contact@chandnidi.org
                   </p>
                 </div>
-              </div>
+              </a>
 
               {/* Address */}
-              <div className="flex items-center gap-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-neutral-100 text-neutral-700 transition-colors hover:bg-brand-50 hover:text-brand-700">
+              <div className="hover:shadow-xs group flex items-start gap-4 rounded-2xl border border-transparent p-3 transition-all hover:border-neutral-200/80 hover:bg-white">
+                <div className="mt-0.5 flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand-50 text-brand-700 ring-1 ring-brand-100 transition-all group-hover:scale-105 group-hover:bg-brand-700 group-hover:text-white group-hover:shadow-md group-hover:shadow-brand-700/20">
                   <MapPin className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-neutral-900">
-                    Address
+                  <h4 className="text-xs font-bold uppercase tracking-wider text-neutral-400">
+                    Office Address
                   </h4>
-                  <p className="text-xs text-neutral-500 sm:text-sm">
-                    Chandni Di Foundation, Community Hubs across Delhi-NCR,
-                    India
+                  <p className="mt-0.5 text-sm font-semibold leading-snug text-neutral-800">
+                    Chandni Di Foundation, Community Learning Centres across
+                    Delhi-NCR, India
                   </p>
                 </div>
               </div>
             </div>
 
             {/* Social Media Links */}
-            <div className="space-y-3 border-t border-neutral-100 pt-6">
+            <div className="space-y-3.5 border-t border-neutral-200/60 pt-6">
               <span className="text-xs font-bold uppercase tracking-wider text-neutral-400">
-                Social Media Links
+                Connect on Social Media
               </span>
-              <div className="flex items-center gap-2.5">
+              <div className="flex items-center gap-3">
                 <a
                   href="https://facebook.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"
-                  className="flex h-9 w-9 items-center justify-center rounded-full bg-neutral-100 text-neutral-600 transition-colors hover:bg-[#1877F2] hover:text-white"
+                  className="shadow-xs flex h-10 w-10 items-center justify-center rounded-full border border-neutral-200 bg-white text-neutral-600 transition-all hover:-translate-y-0.5 hover:border-[#1877F2] hover:bg-[#1877F2] hover:text-white hover:shadow-sm"
                 >
                   <FacebookIcon className="h-4 w-4" />
                 </a>
@@ -313,7 +353,7 @@ export default function ContactSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
-                  className="flex h-9 w-9 items-center justify-center rounded-full bg-neutral-100 text-neutral-600 transition-colors hover:bg-[#0A66C2] hover:text-white"
+                  className="shadow-xs flex h-10 w-10 items-center justify-center rounded-full border border-neutral-200 bg-white text-neutral-600 transition-all hover:-translate-y-0.5 hover:border-[#0A66C2] hover:bg-[#0A66C2] hover:text-white hover:shadow-sm"
                 >
                   <LinkedInIcon className="h-4 w-4" />
                 </a>
@@ -322,7 +362,7 @@ export default function ContactSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="YouTube"
-                  className="flex h-9 w-9 items-center justify-center rounded-full bg-neutral-100 text-neutral-600 transition-colors hover:bg-[#FF0000] hover:text-white"
+                  className="shadow-xs flex h-10 w-10 items-center justify-center rounded-full border border-neutral-200 bg-white text-neutral-600 transition-all hover:-translate-y-0.5 hover:border-[#FF0000] hover:bg-[#FF0000] hover:text-white hover:shadow-sm"
                 >
                   <YoutubeIcon className="h-4 w-4" />
                 </a>
@@ -331,7 +371,7 @@ export default function ContactSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
-                  className="flex h-9 w-9 items-center justify-center rounded-full bg-neutral-100 text-neutral-600 transition-colors hover:bg-[#E4405F] hover:text-white"
+                  className="shadow-xs flex h-10 w-10 items-center justify-center rounded-full border border-neutral-200 bg-white text-neutral-600 transition-all hover:-translate-y-0.5 hover:border-[#E4405F] hover:bg-[#E4405F] hover:text-white hover:shadow-sm"
                 >
                   <InstagramIcon className="h-4 w-4" />
                 </a>
@@ -339,11 +379,11 @@ export default function ContactSection() {
             </div>
           </div>
 
-          {/* ── RIGHT COLUMN: Send Message Form (Matching Reference Image) ── */}
+          {/* ── RIGHT COLUMN: Send Message Form ── */}
           <div className="lg:col-span-7">
             <Suspense
               fallback={
-                <div className="p-8 text-center text-sm text-neutral-500">
+                <div className="rounded-3xl border border-neutral-200/80 bg-white p-12 text-center text-sm text-neutral-400">
                   Loading form...
                 </div>
               }

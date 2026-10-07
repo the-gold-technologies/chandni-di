@@ -62,21 +62,14 @@ export default function ContactHeroSection() {
             to hear from you.
           </p>
 
-          {/* Action Buttons matching Landing Page Hero style */}
-          <div className="flex flex-wrap items-center gap-4 pt-2">
+          {/* Action Button */}
+          <div className="pt-2">
             <a
               href="#contact-form"
               className="inline-flex transform items-center justify-center gap-3 rounded-full bg-brand-700 px-8 py-4 text-sm font-bold uppercase tracking-wider text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-brand-800 hover:shadow-xl hover:shadow-brand-700/25 sm:text-base"
             >
               <span>SUBMIT ENQUIRY</span>
               <ArrowRight className="h-4 w-4" />
-            </a>
-
-            <a
-              href="#contact-info"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-neutral-300 bg-white/85 px-7 py-4 text-sm font-bold text-neutral-800 backdrop-blur-sm transition-all hover:border-brand-700 hover:bg-white hover:text-brand-700 sm:text-base"
-            >
-              <span>CONTACT INFO</span>
             </a>
           </div>
         </div>
