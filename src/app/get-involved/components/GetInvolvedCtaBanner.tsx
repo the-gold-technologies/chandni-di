@@ -7,7 +7,7 @@ import { ArrowRight, Heart } from "lucide-react";
 
 export default function GetInvolvedCtaBanner() {
   return (
-    <section className="bg-transparent">
+    <section className="bg-white py-16 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="relative overflow-hidden rounded-[2.5rem] border border-[#EDE5DA] bg-[#FBF8F2] p-8 shadow-sm sm:p-12 lg:p-14">
           <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12">

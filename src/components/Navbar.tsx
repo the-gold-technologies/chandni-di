@@ -16,10 +16,21 @@ import {
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const [impactDropdownOpen, setImpactDropdownOpen] = useState(false);
   const [mobileImpactOpen, setMobileImpactOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Synchronous layout check before browser paint to prevent flash on reload
+  const useIsomorphicLayoutEffect =
+    typeof window !== "undefined" ? React.useLayoutEffect : React.useEffect;
+
+  useIsomorphicLayoutEffect(() => {
+    if (typeof window !== "undefined" && window.scrollY > 15) {
+      setScrolled(true);
+    }
+  }, []);
 
   // Automatically reset mobile dropdown whenever the menu is closed
   useEffect(() => {
@@ -34,11 +45,34 @@ export default function Navbar() {
   };
 
   useEffect(() => {
+    setMounted(true);
+
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+      setScrolled(window.scrollY > 15);
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    // Immediate check on mount
+    handleScroll();
+
+    // Secondary checks for browsers that restore scroll position asynchronously after reload
+    const rafId = requestAnimationFrame(handleScroll);
+    const timer1 = setTimeout(handleScroll, 50);
+    const timer2 = setTimeout(handleScroll, 150);
+    const timer3 = setTimeout(handleScroll, 300);
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", handleScroll, { passive: true });
+    window.addEventListener("pageshow", handleScroll, { passive: true });
+
+    return () => {
+      cancelAnimationFrame(rafId);
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+      clearTimeout(timer3);
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+      window.removeEventListener("pageshow", handleScroll);
+    };
   }, []);
 
   // Handle desktop hover with a slight close delay for butter-smooth UX
@@ -79,17 +113,19 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled ? "pt-4 sm:pt-4 lg:pt-4" : "pt-4 sm:pt-6"
-      }`}
+      className={`fixed inset-x-0 top-0 z-50 ${
+        mounted ? "transition-all duration-300" : ""
+      } ${scrolled ? "pt-4 sm:pt-4 lg:pt-4" : "pt-4 sm:pt-6"}`}
     >
       <div
-        className={`mx-auto transition-all duration-300 ${
+        className={`mx-auto ${mounted ? "transition-all duration-300" : ""} ${
           scrolled ? "max-w-6xl px-4 sm:px-6" : "max-w-7xl px-4 sm:px-6 lg:px-8"
         }`}
       >
         <div
-          className={`flex items-center justify-between transition-all duration-300 ${
+          className={`flex items-center justify-between ${
+            mounted ? "transition-all duration-300" : ""
+          } ${
             scrolled
               ? "rounded-full border border-neutral-200/80 bg-white/95 px-5 py-2.5 shadow-[0_12px_36px_rgba(0,0,0,0.08)] backdrop-blur-md sm:px-8 sm:py-3"
               : "border-b border-transparent bg-transparent py-1.5 sm:py-2"

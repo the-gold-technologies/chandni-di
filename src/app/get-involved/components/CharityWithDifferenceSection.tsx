@@ -88,7 +88,7 @@ export default function CharityWithDifferenceSection() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-white pt-12 pb-8 sm:pt-16 sm:pb-10 lg:pt-20 lg:pb-12">
+    <section className="relative overflow-hidden bg-white pb-8 pt-12 sm:pb-10 sm:pt-16 lg:pb-12 lg:pt-20">
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* ── Section Header (Standard Site Badge & Consistent Typography) ── */}
         <div className="mx-auto mb-12 max-w-3xl space-y-4 text-center sm:mb-14">
@@ -118,15 +118,22 @@ export default function CharityWithDifferenceSection() {
           onTouchStart={() => setIsPaused(true)}
           onTouchEnd={() => setIsPaused(false)}
         >
-          {/* ── 3 Wider Gourd/Bell Shaped Cards with Exact 10px Stroke Gap ── */}
+          {/* ── Responsive Card Grid: 1 on mobile, 2 on tablet, 3 on desktop ── */}
           <div className="grid grid-cols-1 place-items-center gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-7">
             {visibleCards.map((item, idx) => {
               const Icon = item.icon;
+              const responsiveVisibility =
+                idx === 0
+                  ? "flex"
+                  : idx === 1
+                    ? "hidden md:flex"
+                    : "hidden lg:flex";
+
               return (
                 <Link
                   key={`${item.id}-${idx}`}
                   href={item.href}
-                  className="focus:outline-hidden group relative flex aspect-[350/390] w-full max-w-[365px] flex-col items-center justify-between transition-all duration-500 hover:-translate-y-1.5"
+                  className={`focus:outline-hidden group relative aspect-[350/390] w-full max-w-[365px] flex-col items-center justify-between transition-all duration-500 hover:-translate-y-1.5 ${responsiveVisibility}`}
                 >
                   {/* ── SVG Exact Gourd Contour with 10px Gap from Stroke ── */}
                   <svg
@@ -257,6 +264,25 @@ export default function CharityWithDifferenceSection() {
                 </Link>
               );
             })}
+          </div>
+
+          {/* ── Centered Pagination Dots (Visual Auto-scroll Indicator) ── */}
+          <div className="mt-8 flex items-center justify-center gap-3 sm:mt-10">
+            <div className="flex items-center gap-2">
+              {initiatives.map((item, idx) => (
+                <button
+                  key={item.id}
+                  type="button"
+                  onClick={() => setStartIndex(idx)}
+                  className={`h-2.5 rounded-full transition-all duration-300 ${
+                    startIndex === idx
+                      ? "shadow-xs w-7 bg-brand-700"
+                      : "w-2.5 bg-neutral-300 hover:bg-neutral-400"
+                  }`}
+                  aria-label={`Go to slide ${idx + 1}: ${item.title}`}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -74,7 +74,10 @@ export default function DonateSection() {
   };
 
   return (
-    <section id="donate" className="scroll-mt-24 py-16 sm:py-20 lg:py-24">
+    <section
+      id="donate"
+      className="scroll-mt-24 border-b border-neutral-200/60 bg-white py-16 sm:py-20 lg:py-24"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header with Deep Emotional Resonance */}
         <div className="mx-auto mb-14 max-w-3xl space-y-4 text-center sm:mb-16">

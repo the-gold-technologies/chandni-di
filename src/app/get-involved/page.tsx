@@ -18,32 +18,30 @@ export const metadata: Metadata = {
 
 export default function GetInvolvedPage() {
   return (
-    <main className="min-h-screen bg-[#FAF7F2]/30">
-      {/* 1. HERO SECTION */}
+    <main className="min-h-screen">
+      {/* 1. HERO SECTION (Warm Cream) */}
       <GetInvolvedHero />
 
-      <div className="space-y-4 pb-16 sm:space-y-8 sm:pb-24">
-        {/* 2. DIRECT EDUCATIONAL GIVING (7.1 Donate) */}
-        <DonateSection />
+      {/* 2. DIRECT EDUCATIONAL GIVING (Crisp White) */}
+      <DonateSection />
 
-        {/* 3. CHARITY WITH DIFFERENCE (Donation Utilisation Categories) */}
-        <CharityWithDifferenceSection />
+      {/* 3. CHARITY WITH DIFFERENCE (Warm Cream) */}
+      <CharityWithDifferenceSection />
 
-        {/* 4. SPONSOR A CHILD'S LIFECYCLE (7.5 Sponsor a Child) */}
-        <SponsorChildSection />
+      {/* 4. SPONSOR A CHILD'S LIFECYCLE (Crisp White) */}
+      <SponsorChildSection />
 
-        {/* 5. WAYS TO CONTRIBUTE BEYOND MONEY (7.2 Volunteer + 7.6 Fundraise + 7.7 In-Kind Drives) */}
-        <WaysToContributeSection />
+      {/* 5. WAYS TO CONTRIBUTE BEYOND MONEY (Warm Cream) */}
+      <WaysToContributeSection />
 
-        {/* 6. PARTNERSHIPS (7.3 Institutional + 7.4 Corporate CSR) */}
-        <PartnerSection />
+      {/* 6. PARTNERSHIPS (Crisp White) */}
+      <PartnerSection />
 
-        {/* 7. BUILDING TRUST THROUGH ACCOUNTABILITY (Google Doc Transparency Section) */}
-        <TransparencySection />
+      {/* 7. BUILDING TRUST THROUGH ACCOUNTABILITY (Warm Cream) */}
+      <TransparencySection />
 
-        {/* 8. TAKE THE NEXT STEP CTA BANNER (Navigates to Contact) */}
-        <GetInvolvedCtaBanner />
-      </div>
+      {/* 8. TAKE THE NEXT STEP CTA BANNER (Crisp White) */}
+      <GetInvolvedCtaBanner />
     </main>
   );
 }

@@ -13,9 +13,9 @@ import {
 } from "lucide-react";
 
 export default function WaysToContributeSection() {
-  const [activeTab, setActiveTab] = useState<"volunteer" | "fundraise" | "drives">(
-    "volunteer"
-  );
+  const [activeTab, setActiveTab] = useState<
+    "volunteer" | "fundraise" | "drives"
+  >("volunteer");
 
   const streams = [
     {
@@ -68,7 +68,10 @@ export default function WaysToContributeSection() {
   const currentStream = streams.find((s) => s.id === activeTab) || streams[0];
 
   return (
-    <section id="ways-to-contribute" className="scroll-mt-24 py-14 sm:py-18 lg:py-22">
+    <section
+      id="ways-to-contribute"
+      className="scroll-mt-24 border-b border-neutral-200/60 bg-white py-16 sm:py-20 lg:py-24"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12">
           {/* ── LEFT COLUMN: Text Content & Adjusted Compact Pathway Card ── */}
@@ -82,7 +85,7 @@ export default function WaysToContributeSection() {
             </div>
 
             {/* Bold Headline with Brand Red Highlight */}
-            <h2 className="font-sans text-3xl font-black uppercase tracking-tight text-neutral-900 sm:text-4xl lg:text-[42px] leading-tight">
+            <h2 className="font-sans text-3xl font-black uppercase leading-tight tracking-tight text-neutral-900 sm:text-4xl lg:text-[42px]">
               YOUR SUPPORT IS{" "}
               <span className="text-brand-700">TRULY POWERFUL.</span>
             </h2>
@@ -104,7 +107,7 @@ export default function WaysToContributeSection() {
                   onClick={() => setActiveTab(tab.id)}
                   className={`rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-wider transition-all duration-200 ${
                     activeTab === tab.id
-                      ? "bg-brand-700 text-white shadow-xs"
+                      ? "shadow-xs bg-brand-700 text-white"
                       : "border border-neutral-200 bg-white text-neutral-600 hover:border-neutral-400 hover:bg-neutral-50"
                   }`}
                 >
@@ -114,12 +117,12 @@ export default function WaysToContributeSection() {
             </div>
 
             {/* Dynamic Active Pathway Card (Self-contained with its own Action Button) */}
-            <div className="rounded-2xl sm:rounded-3xl border border-neutral-200/90 bg-[#FAF7F2]/80 p-5 sm:p-6 shadow-xs transition-all duration-300">
+            <div className="shadow-xs rounded-2xl border border-neutral-200/90 bg-[#FAF7F2]/80 p-5 transition-all duration-300 sm:rounded-3xl sm:p-6">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-bold uppercase tracking-wider text-brand-700">
                   {currentStream.badge}
                 </span>
-                <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-white text-neutral-900 shadow-xs">
+                <div className="shadow-xs flex h-8 w-8 items-center justify-center rounded-xl bg-white text-neutral-900">
                   <currentStream.icon className="h-4 w-4 text-brand-700" />
                 </div>
               </div>
@@ -128,14 +131,17 @@ export default function WaysToContributeSection() {
                 {currentStream.title}
               </h3>
 
-              <p className="mt-1.5 text-xs sm:text-sm leading-relaxed text-neutral-600">
+              <p className="mt-1.5 text-xs leading-relaxed text-neutral-600 sm:text-sm">
                 {currentStream.desc}
               </p>
 
               {/* Highlights Check List */}
               <div className="mt-3.5 grid grid-cols-1 gap-1.5 pt-1 sm:grid-cols-2">
                 {currentStream.highlights.map((item, idx) => (
-                  <div key={idx} className="flex items-start gap-2 text-xs text-neutral-700">
+                  <div
+                    key={idx}
+                    className="flex items-start gap-2 text-xs text-neutral-700"
+                  >
                     <CheckCircle2 className="mt-0.5 h-3.5 w-3.5 shrink-0 text-brand-700" />
                     <span>{item}</span>
                   </div>
@@ -146,7 +152,7 @@ export default function WaysToContributeSection() {
               <div className="mt-5 border-t border-neutral-200/70 pt-3.5">
                 <Link
                   href={currentStream.ctaHref}
-                  className="group inline-flex items-center gap-2 rounded-full bg-brand-700 px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-white shadow-xs transition-all hover:bg-brand-800 hover:shadow-md"
+                  className="shadow-xs group inline-flex items-center gap-2 rounded-full bg-brand-700 px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-white transition-all hover:bg-brand-800 hover:shadow-md"
                 >
                   <span>{currentStream.ctaText}</span>
                   <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
@@ -167,7 +173,7 @@ export default function WaysToContributeSection() {
                     <Sparkles className="h-5 w-5 text-white" />
                   </div>
 
-                  <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl sm:rounded-3xl border border-neutral-200/80 shadow-md">
+                  <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-neutral-200/80 shadow-md sm:rounded-3xl">
                     <Image
                       src="/images/cta_learning_children.jpg"
                       alt="Children studying with notebooks and educational kits"
@@ -179,7 +185,7 @@ export default function WaysToContributeSection() {
                 </div>
 
                 {/* Bottom Photo */}
-                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl sm:rounded-3xl border border-neutral-200/80 shadow-md">
+                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-neutral-200/80 shadow-md sm:rounded-3xl">
                   <Image
                     src="/images/after_school_programme.jpg"
                     alt="Students laughing and participating in after school classes"
@@ -192,7 +198,7 @@ export default function WaysToContributeSection() {
 
               {/* Sub-column 2 (Right): Tall Vertical Photo */}
               <div className="relative col-span-7">
-                <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl sm:rounded-3xl border border-neutral-200/80 shadow-lg">
+                <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl border border-neutral-200/80 shadow-lg sm:rounded-3xl">
                   <Image
                     src="/images/get_involved_volunteer.png"
                     alt="Volunteer mentor teaching slum children in classroom"
@@ -204,7 +210,7 @@ export default function WaysToContributeSection() {
                 </div>
 
                 {/* Floating Avatar Pill Badge at Bottom (Matching Reference) */}
-                <div className="absolute -bottom-4 left-1/2 z-20 -translate-x-1/2 flex items-center gap-2.5 rounded-full border border-neutral-200/90 bg-white/95 px-4 py-2 shadow-xl backdrop-blur-md whitespace-nowrap">
+                <div className="absolute -bottom-4 left-1/2 z-20 flex -translate-x-1/2 items-center gap-2.5 whitespace-nowrap rounded-full border border-neutral-200/90 bg-white/95 px-4 py-2 shadow-xl backdrop-blur-md">
                   {/* Overlapping Mini Avatars */}
                   <div className="flex -space-x-2">
                     <div className="relative h-6 w-6 overflow-hidden rounded-full border-2 border-white bg-[#C05621]">

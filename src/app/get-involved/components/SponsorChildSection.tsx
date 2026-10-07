@@ -34,7 +34,7 @@ export default function SponsorChildSection() {
         "Guaranteed mainstream school admission support",
       ],
       sponsorExperience: "Welcome photo pack + Child's annual progress letter",
-      buttonText: "Sponsor a Bridge Scholar",
+      buttonText: "Sponsor Bridge Child",
       amount: 1500,
     },
     {
@@ -56,7 +56,7 @@ export default function SponsorChildSection() {
       ],
       sponsorExperience:
         "Quarterly school report cards + Student handmade drawings",
-      buttonText: "Sponsor a School Continuation Scholar",
+      buttonText: "Sponsor School Child",
       amount: 2500,
     },
     {
@@ -77,7 +77,7 @@ export default function SponsorChildSection() {
       ],
       sponsorExperience:
         "Direct mentor connection + Convocation graduation invitation",
-      buttonText: "Sponsor a College Scholar",
+      buttonText: "Sponsor College Youth",
       amount: 5000,
     },
   ];
@@ -92,7 +92,7 @@ export default function SponsorChildSection() {
   return (
     <section
       id="sponsor"
-      className="scroll-mt-24 bg-[#FAF7F2]/50 py-16 sm:py-20 lg:py-24"
+      className="scroll-mt-24 border-b border-neutral-200/60 bg-[#FAF7F2]/50 py-16 sm:py-20 lg:py-24"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
@@ -211,13 +211,13 @@ export default function SponsorChildSection() {
                 <button
                   type="button"
                   onClick={() => handleSponsorClick(tier.amount)}
-                  className={`inline-flex w-full items-center justify-center gap-2 rounded-full py-3.5 text-xs font-bold uppercase tracking-wider transition-all duration-200 sm:text-sm ${
+                  className={`inline-flex w-full items-center justify-center gap-2 rounded-full px-4 py-3.5 text-sm font-bold tracking-wide transition-all duration-200 ${
                     tier.isPopular
                       ? "bg-brand-700 text-white shadow-md hover:bg-brand-800 hover:shadow-lg"
-                      : "border-2 border-neutral-300 bg-white text-neutral-800 hover:border-brand-300 hover:bg-brand-50 hover:text-brand-700"
+                      : "border-2 border-neutral-300 bg-white hover:border-brand-300 hover:bg-brand-50 hover:text-brand-700"
                   }`}
                 >
-                  <Heart className="h-4 w-4" />
+                  <Heart className="h-4 w-4 shrink-0" />
                   <span>{tier.buttonText}</span>
                 </button>
               </div>

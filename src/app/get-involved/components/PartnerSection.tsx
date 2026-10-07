@@ -22,7 +22,7 @@ export default function PartnerSection() {
   ];
 
   return (
-    <section id="partner" className="scroll-mt-24 py-14 sm:py-18 lg:py-22">
+    <section id="partner" className="sm:py-18 lg:py-22 scroll-mt-24 py-14">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* ── Section Header (Google Doc 7.3 & 7.4) ── */}
         <div className="mx-auto mb-12 max-w-3xl space-y-4 text-center sm:mb-16">
@@ -83,13 +83,13 @@ export default function PartnerSection() {
 
                 {/* Statutory Quick Tags */}
                 <div className="mt-4 flex flex-wrap items-center gap-2 pt-2">
-                  <span className="rounded-md bg-white/15 px-2.5 py-1 text-[11px] font-medium text-white backdrop-blur-xs">
+                  <span className="backdrop-blur-xs rounded-md bg-white/15 px-2.5 py-1 text-[11px] font-medium text-white">
                     ✓ 80G Tax Exemption
                   </span>
-                  <span className="rounded-md bg-white/15 px-2.5 py-1 text-[11px] font-medium text-white backdrop-blur-xs">
+                  <span className="backdrop-blur-xs rounded-md bg-white/15 px-2.5 py-1 text-[11px] font-medium text-white">
                     ✓ CSR-1 Compliant
                   </span>
-                  <span className="rounded-md bg-white/15 px-2.5 py-1 text-[11px] font-medium text-white backdrop-blur-xs">
+                  <span className="backdrop-blur-xs rounded-md bg-white/15 px-2.5 py-1 text-[11px] font-medium text-white">
                     ✓ Annual Audited Impact
                   </span>
                 </div>
@@ -143,11 +143,16 @@ export default function PartnerSection() {
                 <div className="mt-5 space-y-2 border-t border-neutral-100 pt-4 text-xs text-neutral-600">
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 shrink-0 text-brand-700" />
-                    <span>Quarterly audited utilization &amp; photographic impact reports</span>
+                    <span>
+                      Quarterly audited utilization &amp; photographic impact
+                      reports
+                    </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 shrink-0 text-brand-700" />
-                    <span>Employee engagement days &amp; volunteer mentorship drives</span>
+                    <span>
+                      Employee engagement days &amp; volunteer mentorship drives
+                    </span>
                   </div>
                 </div>
               </div>
@@ -156,7 +161,7 @@ export default function PartnerSection() {
               <div className="mt-7 pt-2">
                 <Link
                   href="/contact?type=CSR+Partnership+(Corporate)"
-                  className="group/btn inline-flex items-center gap-2.5 rounded-full bg-brand-700 px-6 py-3 text-xs font-bold uppercase tracking-wider text-white shadow-xs transition-all hover:bg-brand-800 hover:shadow-md"
+                  className="group/btn shadow-xs inline-flex items-center gap-2.5 rounded-full bg-brand-700 px-6 py-3 text-xs font-bold uppercase tracking-wider text-white transition-all hover:bg-brand-800 hover:shadow-md"
                 >
                   <span>Contact us for CSR Partnership</span>
                   <ArrowRight className="h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
@@ -191,18 +196,31 @@ export default function PartnerSection() {
                 <div className="mt-6 space-y-2.5 text-xs text-neutral-600">
                   <div className="flex items-center gap-2.5">
                     <div className="h-1.5 w-1.5 rounded-full bg-[#C05621]" />
-                    <span className="font-medium text-neutral-900">School Admission Alliances:</span>
-                    <span>Concession quotas &amp; mainstream enrollment pathways</span>
+                    <span className="font-medium text-neutral-900">
+                      School Admission Alliances:
+                    </span>
+                    <span>
+                      Concession quotas &amp; mainstream enrollment pathways
+                    </span>
                   </div>
                   <div className="flex items-center gap-2.5">
                     <div className="h-1.5 w-1.5 rounded-full bg-[#C05621]" />
-                    <span className="font-medium text-neutral-900">University Student Internships:</span>
-                    <span>Academic tutoring &amp; NSS community programmes</span>
+                    <span className="font-medium text-neutral-900">
+                      University Student Internships:
+                    </span>
+                    <span>
+                      Academic tutoring &amp; NSS community programmes
+                    </span>
                   </div>
                   <div className="flex items-center gap-2.5">
                     <div className="h-1.5 w-1.5 rounded-full bg-[#C05621]" />
-                    <span className="font-medium text-neutral-900">Vocational &amp; Tech Academies:</span>
-                    <span>Practical coding labs, hardware training &amp; career guidance</span>
+                    <span className="font-medium text-neutral-900">
+                      Vocational &amp; Tech Academies:
+                    </span>
+                    <span>
+                      Practical coding labs, hardware training &amp; career
+                      guidance
+                    </span>
                   </div>
                 </div>
               </div>
