@@ -68,12 +68,20 @@ body {
 }
 
 /* Print Optimization for Legal Documents and Policies */
+@page {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
 @media print {
   /* Completely hide all website chrome: header, footer, navigation, TOC sidebar, ambient decor */
   header,
   footer,
   nav,
   aside,
+  button,
   .no-print,
   [data-no-print] {
     display: none !important;
@@ -92,7 +100,7 @@ body {
   body {
     background: #ffffff !important;
     color: #111827 !important;
-    font-size: 11pt !important;
+    font-size: 10.5pt !important;
     line-height: 1.55 !important;
     width: 100% !important;
     margin: 0 !important;
@@ -107,7 +115,7 @@ body {
     max-width: 100% !important;
   }
 
-  /* Clean headings and prevent page splits across section titles */
+  /* Clean headings and ensure breathing room on page breaks */
   h1,
   h2,
   h3,
@@ -122,13 +130,25 @@ body {
   blockquote {
     page-break-inside: avoid;
     break-inside: avoid;
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Prevent cards, callouts, and contact containers from splitting across pages */
+  .break-inside-avoid,
+  .print-avoid-break,
+  [data-break-inside-avoid],
+  article,
+  figure {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
   }
 
   section {
     page-break-inside: auto;
     break-inside: auto;
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
+    padding-top: 1.25rem !important;
+    padding-bottom: 1.25rem !important;
     border-bottom: 1px solid #e5e7eb !important;
   }
 }

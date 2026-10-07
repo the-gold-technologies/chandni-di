@@ -52,7 +52,7 @@ export default function LegalTableOfContents({
   };
 
   return (
-    <div className="rounded-2xl border border-neutral-200/90 bg-white p-5 shadow-sm lg:sticky lg:top-28">
+    <div className="rounded-2xl border border-neutral-200/90 bg-white p-5 shadow-sm lg:sticky lg:top-28 print:hidden">
       <div className="flex items-center gap-2 border-b border-neutral-200/80 pb-3 text-xs font-bold uppercase tracking-wider text-neutral-800">
         <ListFilter className="h-4 w-4 text-brand-700" />
         <span>Table of Contents</span>

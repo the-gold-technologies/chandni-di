@@ -11,6 +11,7 @@ import {
   TrendingUp,
   Sparkles,
   ShieldCheck,
+  Newspaper,
 } from "lucide-react";
 
 export default function Navbar() {
@@ -108,6 +109,13 @@ export default function Navbar() {
       desc: "Audited financials, 80G tax exemption & registrations",
       icon: ShieldCheck,
       color: "text-emerald-700 bg-emerald-50",
+    },
+    {
+      name: "Media & Press Coverage",
+      href: "/media",
+      desc: "National TV broadcasts, print news & Wikipedia entry",
+      icon: Newspaper,
+      color: "text-purple-700 bg-purple-50",
     },
   ];
 

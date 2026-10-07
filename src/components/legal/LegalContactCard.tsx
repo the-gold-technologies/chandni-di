@@ -18,7 +18,10 @@ export default function LegalContactCard({
   policyName,
 }: LegalContactCardProps) {
   return (
-    <div className="mt-12 overflow-hidden rounded-3xl border border-brand-200/90 bg-gradient-to-br from-[#FFFDF9] via-[#FAF7F2] to-[#F5EFE6] p-6 shadow-sm sm:p-8">
+    <div
+      style={{ breakInside: "avoid", pageBreakInside: "avoid" }}
+      className="mt-12 overflow-hidden rounded-3xl border border-brand-200/90 bg-gradient-to-br from-[#FFFDF9] via-[#FAF7F2] to-[#F5EFE6] p-6 shadow-sm sm:p-8 print:mt-6 print:break-inside-avoid print:border-neutral-300 print:bg-white print:p-5"
+    >
       <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-start">
         <div className="max-w-xl space-y-2">
           <div className="inline-flex items-center gap-1.5 rounded-full bg-brand-50 px-3 py-1 text-xs font-bold text-brand-800 ring-1 ring-brand-200/70">

@@ -91,41 +91,42 @@ export default function LegalPolicyViewer({
       <div id="policy-document-content" className="scroll-mt-28" />
 
       {/* Formal Printable Document Header (ONLY visible when printing/exporting to PDF) */}
-      <div className="hidden print:block print:px-2 print:pb-6 print:pt-4">
-        <div className="border-b-2 border-black pb-4">
-          <div className="flex items-start justify-between">
-            <div>
-              <h1 className="font-serif text-2xl font-black uppercase tracking-wide text-black">
-                Chandni Di Foundation
-              </h1>
-              <p className="mt-1 text-xs font-semibold text-neutral-800">
-                Registered Public Charitable Trust • NITI Aayog NGO Darpan
-                Registered
-              </p>
-              <p className="text-[11px] text-neutral-600">
-                Income Tax 12A &amp; 80G Certified • DPDPA 2023 &amp; POCSO
-                Compliant
-              </p>
-            </div>
-            <div className="text-right text-xs">
-              <span className="inline-block rounded border border-black px-2 py-0.5 font-bold uppercase text-black">
-                Official Legal Document
-              </span>
-              <p className="mt-1 text-neutral-700">
-                Document: {currentDoc.badge}
-              </p>
-              <p className="text-neutral-500">
-                Effective: {currentDoc.lastUpdated}
-              </p>
-            </div>
+      <div className="hidden print:block print:pb-6 print:pt-0">
+        <div className="flex items-center justify-between border-b border-neutral-300 pb-4">
+          {/* Left: ONLY the Official Logo */}
+          <div className="pl-1">
+            <img
+              src="/images/logo_cropped.png"
+              alt="Chandni Di Logo"
+              className="h-12 w-auto object-contain"
+            />
+          </div>
+
+          {/* Right: Official Policy & Effective Date */}
+          <div className="shrink-0 text-right text-xs">
+            <span className="inline-block rounded-full border border-neutral-300 bg-neutral-50 px-3 py-0.5 text-[10px] font-bold uppercase tracking-wider text-neutral-700">
+              Official Policy
+            </span>
+            <p className="mt-1 font-semibold text-neutral-800">
+              {currentDoc.badge}
+            </p>
+            <p className="text-[10px] text-neutral-500">
+              Effective: {currentDoc.lastUpdated}
+            </p>
           </div>
         </div>
 
-        <div className="mt-4 border-b border-neutral-300 pb-3">
-          <h2 className="text-xl font-bold uppercase tracking-tight text-black">
-            {currentDoc.title}
-          </h2>
-          <p className="mt-1 text-xs italic text-neutral-600">
+        {/* Document Title Banner & Statutory Registration Line */}
+        <div className="mt-4 border-b border-neutral-200 pb-3">
+          <div className="flex items-baseline justify-between gap-4">
+            <h2 className="font-serif text-xl font-bold tracking-tight text-neutral-900">
+              {currentDoc.title}
+            </h2>
+            <span className="shrink-0 text-[10px] font-medium text-neutral-500">
+              NGO Darpan Registered • 80G &amp; 12A Certified
+            </span>
+          </div>
+          <p className="mt-1 text-xs leading-relaxed text-neutral-600">
             {currentDoc.subtitle}
           </p>
         </div>

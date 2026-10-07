@@ -121,6 +121,14 @@ export default function Footer() {
                     Trust &amp; Transparency
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    href="/media"
+                    className="transition-colors hover:text-brand-700"
+                  >
+                    Media &amp; Press
+                  </Link>
+                </li>
               </ul>
             </div>
 

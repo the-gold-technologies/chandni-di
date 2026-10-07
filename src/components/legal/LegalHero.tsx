@@ -37,6 +37,7 @@ export default function LegalHero({
   onTabChange,
 }: LegalHeroProps) {
   const pathname = usePathname();
+  const [mounted, setMounted] = useState(false);
 
   const policyTabs = [
     {
@@ -68,18 +69,14 @@ export default function LegalHero({
         ? "cookies"
         : "privacy");
 
-  // Sliding pill position state
+  // Sliding pill position state - strictly horizontal, vertical is pinned via top-1.5/bottom-1.5
   const [pillStyle, setPillStyle] = useState<{
     left: number;
-    top: number;
     width: number;
-    height: number;
     opacity: number;
   }>({
     left: 0,
-    top: 0,
     width: 0,
-    height: 0,
     opacity: 0,
   });
 
@@ -87,31 +84,25 @@ export default function LegalHero({
   const tabRefs = useRef<{ [key: string]: HTMLAnchorElement | null }>({});
 
   const updatePillPosition = useCallback(() => {
-    const container = containerRef.current;
     const activeEl = tabRefs.current[currentActiveKey];
 
-    if (container && activeEl) {
-      const containerRect = container.getBoundingClientRect();
-      const tabRect = activeEl.getBoundingClientRect();
-
+    if (activeEl) {
       setPillStyle({
-        left: tabRect.left - containerRect.left,
-        top: tabRect.top - containerRect.top,
-        width: tabRect.width,
-        height: tabRect.height,
+        left: activeEl.offsetLeft,
+        width: activeEl.offsetWidth,
         opacity: 1,
       });
     }
   }, [currentActiveKey]);
 
   useEffect(() => {
-    // Initial measure and update on layout changes
+    setMounted(true);
     updatePillPosition();
+
     const handleResize = () => updatePillPosition();
     window.addEventListener("resize", handleResize);
 
-    // Double-check after fonts / layout settle
-    const timer = setTimeout(updatePillPosition, 80);
+    const timer = setTimeout(updatePillPosition, 60);
 
     return () => {
       window.removeEventListener("resize", handleResize);
@@ -195,19 +186,20 @@ export default function LegalHero({
               </span>
               <div
                 ref={containerRef}
-                className="shadow-2xs relative inline-flex flex-wrap items-center gap-2 rounded-full border border-neutral-200/80 bg-white p-1.5"
+                className="shadow-2xs relative inline-flex items-center gap-2 rounded-full border border-neutral-200/80 bg-white p-1.5"
               >
-                {/* Smooth sliding red pill indicator */}
-                <div
-                  className="pointer-events-none absolute rounded-full bg-brand-700 shadow-sm transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)]"
-                  style={{
-                    transform: `translate3d(${pillStyle.left}px, ${pillStyle.top}px, 0)`,
-                    width: `${pillStyle.width}px`,
-                    height: `${pillStyle.height}px`,
-                    opacity: pillStyle.opacity,
-                  }}
-                  aria-hidden="true"
-                />
+                {/* Smooth sliding red pill indicator strictly constrained to container inner height */}
+                {mounted && (
+                  <div
+                    className="pointer-events-none absolute bottom-1.5 top-1.5 rounded-full bg-brand-700 shadow-sm transition-all duration-300 ease-out"
+                    style={{
+                      left: `${pillStyle.left}px`,
+                      width: `${pillStyle.width}px`,
+                      opacity: pillStyle.opacity,
+                    }}
+                    aria-hidden="true"
+                  />
+                )}
 
                 {policyTabs.map((tab) => {
                   const isActive = currentActiveKey === tab.id;
@@ -223,7 +215,9 @@ export default function LegalHero({
                       onClick={(e) => handleTabClick(e, tab)}
                       className={`relative z-10 inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs font-semibold transition-colors duration-200 sm:text-sm ${
                         isActive
-                          ? "text-white"
+                          ? mounted
+                            ? "text-white"
+                            : "bg-brand-700 text-white"
                           : "text-neutral-600 hover:text-neutral-950"
                       }`}
                     >
