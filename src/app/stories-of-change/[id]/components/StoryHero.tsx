@@ -75,7 +75,7 @@ export default function StoryHero({ story }: StoryHeroProps) {
             </span>
 
             {story.scholarSince && (
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1 text-xs font-semibold text-neutral-600 ring-1 ring-neutral-200 shadow-2xs">
+              <span className="shadow-2xs inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1 text-xs font-semibold text-neutral-600 ring-1 ring-neutral-200">
                 <Calendar className="h-3.5 w-3.5 text-neutral-400" />
                 <span>Scholar since {story.scholarSince}</span>
               </span>
@@ -84,13 +84,15 @@ export default function StoryHero({ story }: StoryHeroProps) {
             <button
               onClick={handleShare}
               type="button"
-              className="inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1 text-xs font-semibold text-neutral-600 ring-1 ring-neutral-200 transition-colors hover:bg-neutral-50 hover:text-neutral-900 shadow-2xs"
+              className="shadow-2xs inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1 text-xs font-semibold text-neutral-600 ring-1 ring-neutral-200 transition-colors hover:bg-neutral-50 hover:text-neutral-900"
               title="Share this story"
             >
               {copied ? (
                 <>
                   <Check className="h-3.5 w-3.5 text-emerald-600" />
-                  <span className="text-emerald-700 font-bold">Link Copied!</span>
+                  <span className="font-bold text-emerald-700">
+                    Link Copied!
+                  </span>
                 </>
               ) : (
                 <>
@@ -122,7 +124,7 @@ export default function StoryHero({ story }: StoryHeroProps) {
         <div className="mt-10 grid grid-cols-1 items-stretch gap-8 lg:grid-cols-12 lg:gap-10">
           {/* Left Column: Authentic Portrait */}
           <div className="relative flex flex-col justify-center lg:col-span-5">
-            <div className="relative mx-auto w-full max-w-md overflow-hidden rounded-3xl border-4 border-white bg-neutral-200 shadow-2xl lg:max-w-none lg:h-full lg:min-h-[460px]">
+            <div className="relative mx-auto w-full max-w-md overflow-hidden rounded-3xl border-4 border-white bg-neutral-200 shadow-2xl lg:h-full lg:min-h-[460px] lg:max-w-none">
               <Image
                 src={story.image}
                 alt={`Portrait of ${story.name}`}
@@ -173,7 +175,7 @@ export default function StoryHero({ story }: StoryHeroProps) {
             )}
 
             {/* Quick Facts Grid */}
-            <div className="grid grid-cols-2 gap-4 rounded-2xl border border-neutral-200/80 bg-white p-5 text-xs sm:grid-cols-3 shadow-xs">
+            <div className="shadow-xs grid grid-cols-2 gap-4 rounded-2xl border border-neutral-200/80 bg-white p-5 text-xs sm:grid-cols-3">
               <div>
                 <span className="font-bold uppercase tracking-wider text-neutral-400">
                   Institution
@@ -203,7 +205,7 @@ export default function StoryHero({ story }: StoryHeroProps) {
 
             {/* Milestones & Honors */}
             {story.academicFeats && story.academicFeats.length > 0 && (
-              <div className="rounded-2xl border border-neutral-200/80 bg-white p-5 shadow-xs">
+              <div className="shadow-xs rounded-2xl border border-neutral-200/80 bg-white p-5">
                 <span className="text-xs font-bold uppercase tracking-wider text-neutral-400">
                   Key Milestones &amp; Academic Honors
                 </span>
@@ -222,13 +224,14 @@ export default function StoryHero({ story }: StoryHeroProps) {
             )}
 
             {/* Direct Hero Sponsor Action */}
-            <div className="flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-brand-200/80 bg-gradient-to-r from-brand-50/90 to-brand-100/40 p-5 shadow-xs">
+            <div className="shadow-xs flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-brand-200/80 bg-gradient-to-r from-brand-50/90 to-brand-100/40 p-5">
               <div>
                 <p className="font-serif text-base font-bold text-neutral-900">
                   Inspired by {story.name}&apos;s journey?
                 </p>
                 <p className="text-xs text-neutral-600">
-                  Just ₹1,500/month sponsors tuition, textbooks &amp; mentoring for a child.
+                  Just ₹1,500/month sponsors tuition, textbooks &amp; mentoring
+                  for a child.
                 </p>
               </div>
               <Link

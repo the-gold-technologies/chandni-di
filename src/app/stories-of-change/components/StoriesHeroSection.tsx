@@ -60,7 +60,8 @@ export default function StoriesHeroSection() {
             {/* Supporting paragraph verbatim from Google Doc */}
             <p className="max-w-xl text-base leading-relaxed text-neutral-600 sm:text-lg">
               The children we work with come from different circumstances, but
-              their aspirations remind us of the importance of sustained support.
+              their aspirations remind us of the importance of sustained
+              support.
             </p>
 
             {/* Quick stats row */}

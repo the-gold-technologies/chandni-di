@@ -17,7 +17,10 @@ export default function ProgrammesPage() {
       <ProgrammesHeroSection />
 
       {/* 2. PROGRAMMES 3-CARD SHOWCASE GRID */}
-      <div id="programmes" className="scroll-mt-24 bg-white pb-8 pt-16 sm:pb-12 sm:pt-24">
+      <div
+        id="programmes"
+        className="scroll-mt-24 bg-white pb-8 pt-16 sm:pb-12 sm:pt-24"
+      >
         <ProgrammesCardsGrid />
       </div>
 

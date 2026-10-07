@@ -66,3 +66,69 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #a1a1aa;
 }
+
+/* Print Optimization for Legal Documents and Policies */
+@media print {
+  /* Completely hide all website chrome: header, footer, navigation, TOC sidebar, ambient decor */
+  header,
+  footer,
+  nav,
+  aside,
+  .no-print,
+  [data-no-print] {
+    display: none !important;
+  }
+
+  /* CRITICAL: Force position: static on ALL elements during print so fixed navbar / logo NEVER repeats or stamps across printed pages */
+  *,
+  *::before,
+  *::after {
+    position: static !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #111827 !important;
+    font-size: 11pt !important;
+    line-height: 1.55 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Clean headings and prevent page splits across section titles */
+  h1,
+  h2,
+  h3,
+  h4 {
+    page-break-after: avoid;
+    break-after: avoid;
+    color: #000000 !important;
+  }
+
+  p,
+  li,
+  blockquote {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  section {
+    page-break-inside: auto;
+    break-inside: auto;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    border-bottom: 1px solid #e5e7eb !important;
+  }
+}

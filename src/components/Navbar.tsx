@@ -113,7 +113,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 ${
+      className={`fixed inset-x-0 top-0 z-50 print:hidden ${
         mounted ? "transition-all duration-300" : ""
       } ${scrolled ? "pt-4 sm:pt-4 lg:pt-4" : "pt-4 sm:pt-6"}`}
     >

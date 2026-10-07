@@ -48,9 +48,9 @@ export default function ContactInfoSection() {
         </h2>
 
         <p className="text-sm leading-relaxed text-neutral-500 sm:text-base">
-          Whether you want to support a child&apos;s education, volunteer, explore
-          a partnership, or learn more about our work, we would love to hear from
-          you.
+          Whether you want to support a child&apos;s education, volunteer,
+          explore a partnership, or learn more about our work, we would love to
+          hear from you.
         </p>
       </div>
 

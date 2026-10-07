@@ -6,7 +6,9 @@ interface StoryJourneyTimelineProps {
   story: Story;
 }
 
-export default function StoryJourneyTimeline({ story }: StoryJourneyTimelineProps) {
+export default function StoryJourneyTimeline({
+  story,
+}: StoryJourneyTimelineProps) {
   const journeyStages = story.journeyStages;
 
   if (!journeyStages || journeyStages.length === 0) {
@@ -16,7 +18,7 @@ export default function StoryJourneyTimeline({ story }: StoryJourneyTimelineProp
   const stageIcons = [AlertCircle, Sparkles, TrendingUp];
 
   return (
-    <section className="border-y border-neutral-100 bg-[#FAF7F2]/45 py-14 sm:py-18">
+    <section className="sm:py-18 border-y border-neutral-100 bg-[#FAF7F2]/45 py-14">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mx-auto max-w-2xl text-center">
@@ -27,7 +29,8 @@ export default function StoryJourneyTimeline({ story }: StoryJourneyTimelineProp
             From Hardship to Opportunity
           </h2>
           <p className="mt-2 text-xs text-neutral-600 sm:text-sm">
-            How continuous grassroots handholding helped {story.name} turn formidable barriers into academic milestones.
+            How continuous grassroots handholding helped {story.name} turn
+            formidable barriers into academic milestones.
           </p>
         </div>
 
@@ -62,7 +65,7 @@ export default function StoryJourneyTimeline({ story }: StoryJourneyTimelineProp
             return (
               <div
                 key={idx}
-                className={`relative flex flex-col justify-between rounded-2xl border ${theme.border} ${theme.bg} p-6 shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md`}
+                className={`relative flex flex-col justify-between rounded-2xl border ${theme.border} ${theme.bg} shadow-xs p-6 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md`}
               >
                 <div>
                   <div className="flex items-center justify-between gap-2">
@@ -71,7 +74,9 @@ export default function StoryJourneyTimeline({ story }: StoryJourneyTimelineProp
                     >
                       {stage.stage}
                     </span>
-                    <div className={`flex h-8 w-8 items-center justify-center rounded-xl ${theme.iconColor}`}>
+                    <div
+                      className={`flex h-8 w-8 items-center justify-center rounded-xl ${theme.iconColor}`}
+                    >
                       <Icon className="h-4 w-4" />
                     </div>
                   </div>

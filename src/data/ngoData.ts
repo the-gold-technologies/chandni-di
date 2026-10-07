@@ -422,3 +422,10 @@ export const SPONSORSHIP_TIERS = [
     taxBenefit: "₹2,500 tax deduction under 80G",
   },
 ];
+
+export const CONTACT_INFO = {
+  email: "connect@chandnidi.org",
+  phone: "+91 98765 43210",
+  address: "Chandni Di Foundation, New Delhi, Delhi-NCR, India",
+  hours: "Monday – Saturday: 9:00 AM – 6:00 PM IST",
+};

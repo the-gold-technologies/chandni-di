@@ -4,18 +4,18 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-function FacebookIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
-      <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
-    </svg>
-  );
-}
-
 function LinkedInIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
       <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.4 1.4 0 0 0 1.4-1.4 1.4 1.4 0 0 0-1.4-1.4 1.4 1.4 0 0 0-1.4 1.4c0 .77.62 1.4 1.4 1.4m1.39 9.74v-8.37H5.07v8.37h2.78z" />
+    </svg>
+  );
+}
+
+function FacebookIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
     </svg>
   );
 }
@@ -28,17 +28,17 @@ function YoutubeIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-function SpotifyIcon(props: React.SVGProps<SVGSVGElement>) {
+function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
-      <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
     </svg>
   );
 }
 
 export default function Footer() {
   return (
-    <footer className="relative w-full overflow-hidden rounded-t-[2.5rem] border-x border-t border-[#EDE5DA] bg-[#FAF7F2] text-neutral-800 shadow-[0_-6px_30px_rgba(0,0,0,0.02)] sm:rounded-t-[3rem] lg:rounded-t-[3.5rem]">
+    <footer className="relative w-full overflow-hidden rounded-t-[2.5rem] border-x border-t border-[#EDE5DA] bg-[#FAF7F2] text-neutral-800 shadow-[0_-6px_30px_rgba(0,0,0,0.02)] sm:rounded-t-[3rem] lg:rounded-t-[3.5rem] print:hidden">
       {/* Decorative Botanical Flowers Illustration firmly anchored at Bottom-Left Corner */}
       <div className="pointer-events-none absolute bottom-0 left-0 z-0 select-none">
         <Image
@@ -51,11 +51,11 @@ export default function Footer() {
         />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-6xl px-6 pb-7 pt-12 sm:px-8 sm:pb-9 sm:pt-14 lg:px-10">
-        {/* Main Grid: Logo on Left, Exactly 3 Navigation Columns on Right */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-12 md:gap-10">
-          {/* Left Column: Clean Logo Only (Aligned with Column Headers, No Text Below) */}
-          <div className="flex items-start md:col-span-5 lg:col-span-5">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 pb-7 pt-12 sm:px-8 sm:pb-9 sm:pt-14 lg:px-10">
+        {/* Main Grid: Logo & Mission on Left, 3 Distinct Navigation Columns on Right */}
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-12 lg:gap-12">
+          {/* Left Column: Brand Logo & Mission Snapshot */}
+          <div className="space-y-4 md:col-span-5 lg:col-span-5">
             <Link
               href="/"
               className="inline-block transition-opacity hover:opacity-90"
@@ -69,16 +69,26 @@ export default function Footer() {
                 priority
               />
             </Link>
+            <p className="max-w-sm text-xs leading-relaxed text-neutral-600 sm:text-[13px]">
+              Empowering children from street and slum communities through
+              foundational education, after-school handholding, skill building,
+              and university career sponsorships.
+            </p>
+            <div className="pt-1">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-800 ring-1 ring-emerald-200/80">
+                <span>Section 80G &amp; 12A Compliant Non-Profit</span>
+              </span>
+            </div>
           </div>
 
-          {/* Right Navigation Columns: 3 Columns matching original reference layout */}
-          <div className="grid grid-cols-3 gap-6 md:col-span-7 lg:col-span-7 lg:gap-10">
-            {/* Column 1: Our Organisation */}
+          {/* Right Navigation Columns: 3 Columns with 100% Unique, Non-Redundant Pages */}
+          <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:col-span-7 lg:col-span-7 lg:gap-8">
+            {/* Column 1: Our Work & Impact */}
             <div>
               <h3 className="mb-3.5 text-[15px] font-bold tracking-tight text-brand-700 sm:text-base">
-                Our Organisation
+                Organisation
               </h3>
-              <ul className="space-y-2 text-[13px] font-medium text-neutral-800 sm:text-[14px]">
+              <ul className="space-y-2.5 text-[13px] font-medium text-neutral-800 sm:text-[14px]">
                 <li>
                   <Link
                     href="/about"
@@ -89,59 +99,10 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/about#founder"
+                    href="/impact"
                     className="transition-colors hover:text-brand-700"
                   >
-                    Founder&apos;s Story
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/about#mission"
-                    className="transition-colors hover:text-brand-700"
-                  >
-                    Our Mission
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/transparency"
-                    className="transition-colors hover:text-brand-700"
-                  >
-                    Transparency &amp; 80G
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Column 2: Programmes */}
-            <div>
-              <h3 className="mb-3.5 text-[15px] font-bold tracking-tight text-brand-700 sm:text-base">
-                Programmes
-              </h3>
-              <ul className="space-y-2 text-[13px] font-medium text-neutral-800 sm:text-[14px]">
-                <li>
-                  <Link
-                    href="/programmes#bridge"
-                    className="transition-colors hover:text-brand-700"
-                  >
-                    Bridge Schooling
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/programmes#after-school"
-                    className="transition-colors hover:text-brand-700"
-                  >
-                    After-School Support
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/programmes#college-to-career"
-                    className="transition-colors hover:text-brand-700"
-                  >
-                    College to Career
+                    Measuring Impact
                   </Link>
                 </li>
                 <li>
@@ -152,21 +113,70 @@ export default function Footer() {
                     Stories of Change
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    href="/transparency"
+                    className="transition-colors hover:text-brand-700"
+                  >
+                    Trust &amp; Transparency
+                  </Link>
+                </li>
               </ul>
             </div>
 
-            {/* Column 3: Contact */}
+            {/* Column 2: Programmes */}
             <div>
               <h3 className="mb-3.5 text-[15px] font-bold tracking-tight text-brand-700 sm:text-base">
-                Contact
+                Programmes
               </h3>
-              <ul className="space-y-2 text-[13px] font-medium text-neutral-800 sm:text-[14px]">
+              <ul className="space-y-2.5 text-[13px] font-medium text-neutral-800 sm:text-[14px]">
                 <li>
                   <Link
-                    href="/contact#faqs"
+                    href="/programmes"
                     className="transition-colors hover:text-brand-700"
                   >
-                    FAQs
+                    All Programmes
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/programmes/bridge-programme"
+                    className="transition-colors hover:text-brand-700"
+                  >
+                    Bridge Schooling
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/programmes/after-school"
+                    className="transition-colors hover:text-brand-700"
+                  >
+                    After-School Care
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/programmes/college-to-career"
+                    className="transition-colors hover:text-brand-700"
+                  >
+                    College to Career
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Column 3: Connect & Get Involved */}
+            <div>
+              <h3 className="mb-3.5 text-[15px] font-bold tracking-tight text-brand-700 sm:text-base">
+                Get Involved
+              </h3>
+              <ul className="space-y-2.5 text-[13px] font-medium text-neutral-800 sm:text-[14px]">
+                <li>
+                  <Link
+                    href="/get-involved"
+                    className="font-semibold text-brand-800 transition-colors hover:text-brand-700"
+                  >
+                    Support a Child
                   </Link>
                 </li>
                 <li>
@@ -177,81 +187,90 @@ export default function Footer() {
                     Contact Us
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href="/get-involved#donate"
-                    className="transition-colors hover:text-brand-700"
-                  >
-                    Support a Child
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/get-involved#volunteer"
-                    className="transition-colors hover:text-brand-700"
-                  >
-                    Volunteer
-                  </Link>
-                </li>
               </ul>
             </div>
           </div>
         </div>
 
-        {/* Bottom Row: Left Copyright (aligned with logo) and Right Social Icons */}
-        <div className="mt-12 flex flex-col items-start justify-between gap-4 sm:mt-14 sm:flex-row sm:items-center">
-          <div>
-            <p className="text-xs font-semibold text-neutral-800 sm:text-[13px]">
+        {/* Bottom Row: Left Copyright, Center Social Media Icons, Right Legal Policy Links */}
+        <div className="mt-12 flex flex-col items-center justify-between gap-6 border-t border-[#E5DACD] pt-6 sm:mt-14 lg:flex-row">
+          {/* Left: Copyright */}
+          <div className="text-xs font-medium text-neutral-600 sm:text-[13px]">
+            <p className="font-semibold text-neutral-800">
               © {new Date().getFullYear()} Chandni Di Foundation. All rights
-              reserved
+              reserved.
             </p>
           </div>
 
-          {/* 4 Social Media Icons matching original styling */}
-          <div className="flex items-center gap-2.5">
-            {/* Facebook */}
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              className="flex h-7 w-7 items-center justify-center rounded-full bg-[#1877F2] text-white shadow-sm transition-transform hover:scale-110"
-            >
-              <FacebookIcon className="h-3.5 w-3.5" />
-            </a>
-
-            {/* LinkedIn */}
+          {/* Center: 4 Social Media Icons (LinkedIn, Facebook, YouTube, Instagram) */}
+          <div className="flex items-center gap-3">
+            {/* 1. LinkedIn */}
             <a
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="flex h-7 w-7 items-center justify-center rounded-[5px] bg-[#0A66C2] text-white shadow-sm transition-transform hover:scale-110"
+              className="shadow-xs flex h-8 w-8 items-center justify-center rounded-lg bg-[#0A66C2] text-white transition-transform hover:scale-110"
             >
-              <LinkedInIcon className="h-3.5 w-3.5" />
+              <LinkedInIcon className="h-4 w-4" />
             </a>
 
-            {/* YouTube */}
+            {/* 2. Facebook */}
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="shadow-xs flex h-8 w-8 items-center justify-center rounded-lg bg-[#1877F2] text-white transition-transform hover:scale-110"
+            >
+              <FacebookIcon className="h-4 w-4" />
+            </a>
+
+            {/* 3. YouTube */}
             <a
               href="https://youtube.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="YouTube"
-              className="flex h-7 w-7 items-center justify-center rounded-md bg-[#FF0000] text-white shadow-sm transition-transform hover:scale-110"
+              className="shadow-xs flex h-8 w-8 items-center justify-center rounded-lg bg-[#FF0000] text-white transition-transform hover:scale-110"
             >
-              <YoutubeIcon className="h-3.5 w-3.5" />
+              <YoutubeIcon className="h-4 w-4" />
             </a>
 
-            {/* Spotify */}
+            {/* 4. Instagram */}
             <a
-              href="https://spotify.com"
+              href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Spotify"
-              className="flex h-7 w-7 items-center justify-center rounded-full bg-[#1DB954] text-white shadow-sm transition-transform hover:scale-110"
+              aria-label="Instagram"
+              className="shadow-xs flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] text-white transition-transform hover:scale-110"
             >
-              <SpotifyIcon className="h-3.5 w-3.5" />
+              <InstagramIcon className="h-4 w-4" />
             </a>
+          </div>
+
+          {/* Right: Legal Policy Links */}
+          <div className="flex flex-wrap items-center gap-3 text-xs font-medium text-neutral-600 sm:gap-4 sm:text-[13px]">
+            <Link
+              href="/privacy-policy"
+              className="transition-colors hover:text-brand-700 hover:underline"
+            >
+              Privacy Policy
+            </Link>
+            <span className="text-neutral-300">•</span>
+            <Link
+              href="/terms-and-conditions"
+              className="transition-colors hover:text-brand-700 hover:underline"
+            >
+              Terms &amp; Conditions
+            </Link>
+            <span className="text-neutral-300">•</span>
+            <Link
+              href="/cookie-policy"
+              className="transition-colors hover:text-brand-700 hover:underline"
+            >
+              Cookie Policy
+            </Link>
           </div>
         </div>
       </div>

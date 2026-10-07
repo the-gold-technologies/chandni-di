@@ -122,8 +122,8 @@ export default function StoriesCtaSection() {
             {/* ── Right Column: Emotional Photography & Floating Badges ── */}
             <div className="relative flex flex-col justify-center lg:col-span-5">
               {/* Outer Layered Photographic Frame */}
-              <div className="relative mx-auto w-full max-w-md overflow-hidden rounded-3xl border-4 border-white bg-neutral-100 shadow-2xl lg:h-full lg:max-w-none lg:min-h-[520px]">
-                <div className="relative aspect-[4/5] w-full sm:aspect-[3/4] lg:h-full lg:min-h-[520px] lg:aspect-auto">
+              <div className="relative mx-auto w-full max-w-md overflow-hidden rounded-3xl border-4 border-white bg-neutral-100 shadow-2xl lg:h-full lg:min-h-[520px] lg:max-w-none">
+                <div className="relative aspect-[4/5] w-full sm:aspect-[3/4] lg:aspect-auto lg:h-full lg:min-h-[520px]">
                   <Image
                     src="/images/step3_admission.jpg"
                     alt="Children joyfully walking out of school with backpacks after admission"
