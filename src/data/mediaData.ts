@@ -16,6 +16,8 @@ export interface MediaItem {
     | "twitter"
     | "facebook"
     | "archive";
+  image?: string;
+  author?: string;
   featured?: boolean;
 }
 
@@ -32,6 +34,8 @@ export const MEDIA_ITEMS: MediaItem[] = [
     description:
       "Official biographical page documenting Chandni Khan's life journey from street childhood to founding Voice of Slum and Chandni Di Foundation, pioneering street journalism and child education.",
     iconType: "wikipedia",
+    image: "/images/founder.jpg",
+    author: "Wikipedia Public Record",
     featured: true,
   },
   {
@@ -47,6 +51,8 @@ export const MEDIA_ITEMS: MediaItem[] = [
     description:
       "A deep-dive national feature detailing how Chandni Di transformed children from street and slum settlements into confident learners, writers, and change-makers.",
     iconType: "tv",
+    image: "/images/media_gnt_exclusive.png",
+    author: "Good News Today Desk",
     featured: true,
   },
   {
@@ -62,6 +68,8 @@ export const MEDIA_ITEMS: MediaItem[] = [
     description:
       "A moving visual documentary capturing daily life in our learning centres, student testimonials, and the transformative impact of community education.",
     iconType: "video",
+    image: "/images/media_youtube_doc.jpg",
+    author: "Documentary Feature",
     featured: true,
   },
   {
@@ -77,6 +85,8 @@ export const MEDIA_ITEMS: MediaItem[] = [
     description:
       "Televised broadcast highlighting Chandni Di's grassroots work in rescuing underprivileged children from child labour and enrolling them in formal classrooms.",
     iconType: "video",
+    image: "/images/media_gnt_full_clipping.jpg",
+    author: "GNT Television Special",
   },
   {
     id: "india-today-twitter",
@@ -90,6 +100,8 @@ export const MEDIA_ITEMS: MediaItem[] = [
     description:
       "India Today's official channel broadcast covering Chandni Di's mission to break the cycle of poverty through bridge education and dignified learning spaces.",
     iconType: "twitter",
+    image: "/images/media_india_today_broadcast.jpg",
+    author: "India Today Official",
   },
   {
     id: "dainik-jagran-bhaskar",
@@ -104,6 +116,8 @@ export const MEDIA_ITEMS: MediaItem[] = [
     description:
       "Frontline Hindi daily report covering the practical challenges and remarkable successes of bridge schools operating in underprivileged settlements.",
     iconType: "newspaper",
+    image: "/images/bridge_programme.jpg",
+    author: "Dainik Jagran / Bhaskar",
   },
   {
     id: "facebook-viral-feature",
@@ -117,6 +131,8 @@ export const MEDIA_ITEMS: MediaItem[] = [
     description:
       "High-engagement video documentation showing student classroom interactions, vocational workshops, and community parent meetings.",
     iconType: "facebook",
+    image: "/images/college_to_career.jpg",
+    author: "Community Spotlight",
   },
   {
     id: "google-press-archive-1",
@@ -130,6 +146,8 @@ export const MEDIA_ITEMS: MediaItem[] = [
     description:
       "Curated archive of national news clippings, event photographs, and public interviews documenting the foundation's institutional growth.",
     iconType: "archive",
+    image: "/images/contact_hero.jpg",
+    author: "Verified Press Archival",
   },
   {
     id: "google-press-archive-2",
@@ -143,5 +161,7 @@ export const MEDIA_ITEMS: MediaItem[] = [
     description:
       "Verified media records, award citations, television interview archives, and high-resolution institutional photo assets.",
     iconType: "archive",
+    image: "/images/corporate_csr_partnership.jpg",
+    author: "Verified Press Archival",
   },
 ];

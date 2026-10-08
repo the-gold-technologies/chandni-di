@@ -2,8 +2,8 @@ import React from "react";
 import { Metadata } from "next";
 import {
   MediaHero,
-  MediaFeatured,
-  MediaGrid,
+  MediaTopNews,
+  MediaMoreCoverage,
   MediaPressKit,
 } from "@/app/media/components";
 
@@ -20,11 +20,11 @@ export default function MediaPage() {
         {/* 1. Hero with stats & quick actions */}
         <MediaHero />
 
-        {/* 2. Flagship Recognition: Wikipedia Biography & Good News Today Interview */}
-        <MediaFeatured />
+        {/* 2. Top News Showcase (1 Left Lead Feature + 2x2 Grid) */}
+        <MediaTopNews />
 
-        {/* 3. Comprehensive filterable media grid (TV, Print, Digital, Wikipedia, Archives) */}
-        <MediaGrid />
+        {/* 3. More Coverage & Archives (4-Column Grid) */}
+        <MediaMoreCoverage />
 
         {/* 4. Official Press Kit & Media Desk Contacts */}
         <MediaPressKit />
