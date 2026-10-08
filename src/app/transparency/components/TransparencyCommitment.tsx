@@ -3,115 +3,72 @@
 import React from "react";
 import Link from "next/link";
 import {
-  ShieldAlert,
-  Award,
-  FileCheck,
-  Lock,
-  HeartHandshake,
   ArrowRight,
+  ShieldCheck,
+  HeartHandshake,
+  CheckCircle2,
 } from "lucide-react";
 
 export default function TransparencyCommitment() {
-  const commitments = [
-    {
-      title: "Public Charitable Exclusivity",
-      desc: "All foundation funds, assets, and donations are dedicated exclusively to non-profit child educational advancement under Indian trust law.",
-      icon: Award,
-    },
-    {
-      title: "Strict Minor Safeguarding",
-      desc: "Beneficiary case studies and visuals are published solely with verified legal guardian consent and adherence to child rights frameworks.",
-      icon: ShieldAlert,
-    },
-    {
-      title: "Zero Data Commercialization",
-      desc: "We will never sell, rent, trade, or monetize donor details, phone numbers, or volunteer records to commercial brokers or advertisers.",
-      icon: Lock,
-    },
-    {
-      title: "Open Financial Verification",
-      desc: "Audited balance sheets, registration renewals, and statutory returns are open for inspection by verified donors and CSR committees.",
-      icon: FileCheck,
-    },
-  ];
-
   return (
     <section
       id="our-commitment"
       className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
     >
-      <div className="relative overflow-hidden rounded-3xl border border-[#EDE5DA] bg-[#FAF7F2] p-8 shadow-card sm:p-12 lg:p-16">
-        {/* Subtle decorative glow */}
-        <div className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-brand-100/40 blur-3xl" />
+      {/* ── High-Impact Proper CTA Banner ── */}
+      <div className="relative overflow-hidden rounded-[2.5rem] border border-[#EDE5DA] bg-[#FAF7F2] p-8 text-center shadow-[0_10px_40px_rgba(0,0,0,0.03)] sm:p-12 lg:p-16">
+        {/* Soft Ambient Glows */}
+        <div className="pointer-events-none absolute -left-20 -top-20 h-64 w-64 rounded-full bg-brand-100/40 blur-3xl" />
+        <div className="pointer-events-none absolute -right-20 bottom-0 h-64 w-64 rounded-full bg-amber-100/40 blur-3xl" />
 
-        <div className="relative z-10 max-w-3xl space-y-4">
-          <span className="inline-flex items-center gap-2 rounded-full bg-brand-50 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-brand-700 ring-1 ring-brand-200/80">
-            <HeartHandshake className="h-3.5 w-3.5 text-brand-700" />
-            Governance Charter
-          </span>
+        <div className="relative z-10 mx-auto max-w-3xl space-y-6">
+          {/* Eyebrow matching site pattern */}
+          <div className="inline-flex items-center gap-2">
+            <span className="inline-flex items-center gap-2 rounded-full bg-brand-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-brand-700 ring-1 ring-brand-200">
+              <HeartHandshake className="h-3.5 w-3.5 text-brand-700" />
+              Our Commitment
+            </span>
+          </div>
 
-          {/* Heading from Google Doc */}
-          <h2 className="font-serif text-3xl font-extrabold text-neutral-900 sm:text-4xl lg:text-[42px]">
-            Our Commitment
+          {/* Main Headline */}
+          <h2 className="font-serif text-3xl font-extrabold leading-[1.18] tracking-tight text-neutral-900 sm:text-4xl md:text-5xl lg:text-[46px]">
+            Dedicated to Responsible Governance &amp;{" "}
+            <span className="font-serif italic text-brand-700">
+              Lasting Impact
+            </span>
           </h2>
 
           {/* Verbatim Supporting Copy from Google Doc */}
-          <p className="text-base leading-relaxed text-neutral-700 sm:text-lg">
+          <p className="mx-auto max-w-2xl text-base font-normal leading-relaxed text-neutral-700 sm:text-lg lg:text-xl">
             We strive to maintain responsible processes and provide appropriate
             information about our programmes, operations, and impact.
           </p>
-        </div>
 
-        {/* 4 Pillars Grid */}
-        <div className="relative z-10 mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {commitments.map((item, idx) => {
-            const Icon = item.icon;
-            return (
-              <div
-                key={idx}
-                className="shadow-2xs backdrop-blur-xs flex flex-col justify-between rounded-2xl border border-neutral-200/80 bg-white/95 p-6"
-              >
-                <div className="space-y-3">
-                  <div className="shadow-2xs flex h-10 w-10 items-center justify-center rounded-xl bg-brand-50 text-brand-700">
-                    <Icon className="h-5 w-5" />
-                  </div>
-                  <h3 className="font-serif text-base font-bold text-neutral-900">
-                    {item.title}
-                  </h3>
-                  <p className="text-xs leading-relaxed text-neutral-600">
-                    {item.desc}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* Direct Contact Bar verbatim CTA */}
-        <div className="relative z-10 mt-10 flex flex-col items-center justify-between gap-6 border-t border-neutral-200/80 pt-8 sm:flex-row">
-          <div>
-            <h4 className="font-serif text-base font-bold text-neutral-900">
-              Have Questions or Need Additional Verification?
-            </h4>
-            <p className="text-xs text-neutral-600">
-              Our administration and governance desk is at your service.
-            </p>
-          </div>
-
-          <div className="flex flex-wrap items-center gap-3">
+          {/* Primary CTA Button verbatim from Google Doc */}
+          <div className="flex flex-wrap items-center justify-center gap-4 pt-3">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 rounded-full bg-brand-700 px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-white shadow-sm transition-all hover:bg-brand-800"
+              className="inline-flex transform items-center justify-center gap-3 rounded-full bg-brand-700 px-8 py-4 text-xs font-bold uppercase tracking-wider text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-brand-800 hover:shadow-xl hover:shadow-brand-700/25 sm:text-sm"
             >
               <span>Contact Us for More Information</span>
               <ArrowRight className="h-4 w-4" />
             </Link>
-            <Link
-              href="/privacy-policy"
-              className="inline-flex items-center gap-2 rounded-full border border-neutral-300 bg-white px-5 py-3.5 text-xs font-bold uppercase tracking-wider text-neutral-700 hover:bg-neutral-50"
-            >
-              <span>Privacy Policy</span>
-            </Link>
+          </div>
+
+          {/* Trust Reassurance Footnote */}
+          <div className="flex flex-wrap items-center justify-center gap-3 pt-4 text-xs font-semibold text-neutral-600 sm:gap-6">
+            <span className="inline-flex items-center gap-1.5">
+              <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600" />
+              <span>Section 80G &amp; 12A Certified</span>
+            </span>
+            <span className="inline-flex items-center gap-1.5">
+              <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600" />
+              <span>Independent CA Audited</span>
+            </span>
+            <span className="inline-flex items-center gap-1.5">
+              <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600" />
+              <span>NITI Aayog NGO Darpan Verified</span>
+            </span>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 
 export default function TransparencyHero() {
   return (
@@ -62,24 +62,6 @@ export default function TransparencyHero() {
             information and documentation so supporters can better understand
             our work and governance.
           </p>
-
-          {/* Action Buttons */}
-          <div className="flex flex-wrap items-center gap-4 pt-2">
-            <a
-              href="#statutory-documents"
-              className="inline-flex transform items-center justify-center gap-3 rounded-full bg-brand-700 px-8 py-4 text-sm font-bold uppercase tracking-wider text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-brand-800 hover:shadow-xl hover:shadow-brand-700/25 sm:text-base"
-            >
-              <span>EXPLORE DOCUMENTS</span>
-              <ArrowRight className="h-4 w-4" />
-            </a>
-
-            <a
-              href="#our-commitment"
-              className="shadow-2xs backdrop-blur-xs inline-flex items-center justify-center gap-2 rounded-full border border-neutral-300 bg-white/90 px-6 py-4 text-sm font-bold uppercase tracking-wider text-neutral-800 transition-all hover:bg-white hover:text-brand-700"
-            >
-              <span>OUR COMMITMENT</span>
-            </a>
-          </div>
 
           {/* Trust Badges Strip */}
           <div className="flex flex-wrap items-center gap-2 pt-2 text-xs font-semibold text-neutral-700">

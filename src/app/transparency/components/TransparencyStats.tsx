@@ -5,94 +5,129 @@ import {
   TrendingUp,
   Percent,
   FileCheck,
-  Users,
-  ShieldCheck,
+  GraduationCap,
+  ArrowRight,
 } from "lucide-react";
 
 export default function TransparencyStats() {
-  const metrics = [
+  const steps = [
     {
+      num: 1,
       value: "88%+",
-      label: "Direct Program Allocation",
-      desc: "Of all incoming donations directly deployed on tuition, school fees, learning materials, and nutrition.",
+      title: "Direct Program Outlay",
+      description:
+        "Classroom tuition, textbooks, uniforms, and child nutrition deployed directly.",
       icon: TrendingUp,
-      status: "Audited Program Outlay",
     },
     {
+      num: 2,
       value: "50%",
-      label: "Section 80G Tax Exemption",
-      desc: "Immediate tax deduction for all Indian citizens and corporate contributors under Section 80G(5)(vi).",
+      title: "80G Tax Exemption",
+      description:
+        "Immediate 50% tax deduction on taxable income for Indian contributors.",
       icon: Percent,
-      status: "Income Tax Certified",
     },
     {
+      num: 3,
       value: "100%",
-      label: "Form 10BD CBDT Filings",
-      desc: "Every PAN-linked contribution is filed annually with the CBDT for seamless 26AS / AIS tax credit.",
+      title: "CBDT Form 10BD",
+      description:
+        "Official annual tax filing reflected seamlessly in your 26AS & AIS.",
       icon: FileCheck,
-      status: "CBDT Verified Filing",
     },
     {
+      num: 4,
       value: "500+",
-      label: "Mainstreamed Scholars",
-      desc: "Slum and street children successfully enrolled in formal accredited schools and tracked year-on-year.",
-      icon: Users,
-      status: "Verified Child Transitions",
+      title: "Mainstreamed Scholars",
+      description:
+        "Children transitioned from street labour into accredited formal schools.",
+      icon: GraduationCap,
     },
   ];
 
   return (
     <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      {/* Expansive Unified Horizontal Ribbon — Replaces stiff isolated boxes with wide, cohesive architecture */}
-      <div className="shadow-xs overflow-hidden rounded-3xl border border-[#EDE5DA] bg-[#FAF7F2]/75">
-        {/* Subtle Header Banner */}
-        <div className="flex flex-col items-start justify-between gap-2 border-b border-neutral-200/70 px-6 py-4 sm:flex-row sm:items-center sm:px-10 lg:px-12">
-          <div className="flex items-center gap-2">
-            <ShieldCheck className="h-4 w-4 text-emerald-600" />
-            <span className="text-xs font-bold uppercase tracking-widest text-neutral-700">
-              Accountability at Scale • Key Governance Metrics
+      <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12">
+        {/* ── LEFT COLUMN: Eyebrow, Serif Title, Copy, Action Button ── */}
+        <div className="space-y-5 lg:col-span-4 xl:col-span-4">
+          <div className="inline-flex items-center gap-2">
+            <span className="inline-flex items-center gap-2 rounded-full bg-brand-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-brand-700 ring-1 ring-brand-200">
+              Accountability in Action
             </span>
           </div>
-          <span className="text-[11px] font-semibold text-neutral-500">
-            Updated for Financial Year 2025–26 • CA Audited
-          </span>
+
+          <h2 className="font-serif text-3xl font-extrabold leading-[1.18] tracking-tight text-neutral-900 sm:text-4xl lg:text-[38px]">
+            Building Trust Through{" "}
+            <span className="font-serif italic text-brand-700">
+              Verified Impact
+            </span>
+          </h2>
+
+          <p className="max-w-md text-sm leading-relaxed text-neutral-700 sm:text-base">
+            We believe transparency and accountability are essential to
+            responsible social impact. Every rupee received is audited by
+            independent CAs, statutorily filed, and deployed directly to street
+            children&apos;s education.
+          </p>
+
+          <div className="pt-2">
+            <a
+              href="#statutory-documents"
+              className="inline-flex transform items-center justify-center gap-2.5 rounded-full bg-brand-700 px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-brand-800 hover:shadow-xl hover:shadow-brand-700/25 sm:text-sm"
+            >
+              <span>EXPLORE DOCUMENTS</span>
+              <ArrowRight className="h-4 w-4" />
+            </a>
+          </div>
         </div>
 
-        {/* Expansive Wide Metrics Grid with Seamless Dividers */}
-        <div className="grid grid-cols-1 divide-y divide-neutral-200/80 sm:grid-cols-2 sm:divide-x sm:divide-y-0 lg:grid-cols-4">
-          {metrics.map((metric, idx) => {
-            const Icon = metric.icon;
-            return (
-              <div
-                key={idx}
-                className="group flex flex-col justify-between p-6 transition-colors hover:bg-white/80 sm:p-8 lg:p-9"
-              >
-                <div>
-                  <div className="flex items-center justify-between">
-                    <span className="font-serif text-3xl font-extrabold tracking-tight text-neutral-900 transition-colors group-hover:text-brand-700 sm:text-4xl lg:text-[40px]">
-                      {metric.value}
-                    </span>
-                    <div className="shadow-2xs flex h-9 w-9 items-center justify-center rounded-xl bg-white text-brand-700 ring-1 ring-neutral-200/80">
-                      <Icon className="h-4 w-4" />
-                    </div>
+        {/* ── RIGHT COLUMN: Connected 4-Step Horizontal Sequence (from Reference Layout) ── */}
+        <div className="relative lg:col-span-8 xl:col-span-8">
+          {/* Dotted Connecting Horizontal Line between Circles (Desktop) */}
+          <div
+            className="pointer-events-none absolute left-[12%] right-[12%] top-10 hidden border-t-2 border-dotted border-neutral-300 lg:block"
+            aria-hidden="true"
+          />
+
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-4">
+            {steps.map((step) => {
+              const Icon = step.icon;
+              return (
+                <div
+                  key={step.num}
+                  className="group relative z-10 flex flex-col items-center text-center"
+                >
+                  {/* Circular Icon Container */}
+                  <div className="shadow-2xs sm:h-22 sm:w-22 relative flex h-20 w-20 items-center justify-center rounded-full border border-[#EAE2D5] bg-[#FAF5EE] text-brand-700 transition-transform duration-300 group-hover:scale-105">
+                    <Icon
+                      className="h-7 w-7 text-brand-700"
+                      strokeWidth={1.75}
+                    />
                   </div>
 
-                  <h3 className="mt-3 font-serif text-base font-bold text-neutral-900">
-                    {metric.label}
+                  {/* Step Number */}
+                  <span className="mt-3 font-serif text-sm font-bold text-neutral-900">
+                    {step.num}
+                  </span>
+
+                  {/* Step Title */}
+                  <h3 className="mt-2 font-serif text-base font-bold text-neutral-900 transition-colors group-hover:text-brand-700">
+                    {step.title}
                   </h3>
 
-                  <p className="mt-2 text-xs leading-relaxed text-neutral-600">
-                    {metric.desc}
+                  {/* Stat Highlight Pill */}
+                  <span className="mt-1 inline-block rounded-full bg-brand-50 px-2.5 py-0.5 font-mono text-[11px] font-bold text-brand-700 ring-1 ring-brand-200/60">
+                    {step.value}
+                  </span>
+
+                  {/* Step Description */}
+                  <p className="mt-2 max-w-[200px] text-xs leading-relaxed text-neutral-600 sm:text-[13px]">
+                    {step.description}
                   </p>
                 </div>
-
-                <div className="mt-6 flex items-center gap-1.5 border-t border-neutral-200/60 pt-3 text-[11px] font-semibold text-emerald-700">
-                  <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                  <span>{metric.status}</span>
-                </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
