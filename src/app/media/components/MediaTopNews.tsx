@@ -37,12 +37,12 @@ export default function MediaTopNews() {
     },
     {
       title:
-        "Good News Today Exclusive Article: From Waste Picking to Running Classrooms",
-      date: "National News",
+        "Good News Today TV Special: From the Streets to National Recognition",
+      date: "TV Broadcast",
       image: "/images/media_gnt_full_clipping.jpg",
       url:
-        MEDIA_ITEMS.find((i) => i.id === "gnt-exclusive-interview")?.url ||
-        "https://www.gnttv.com/india/story/exclusive-interview-chandni-di-voice-slum-started-magazine-which-being-run-children-slums-329149-2022-01-03",
+        MEDIA_ITEMS.find((i) => i.id === "good-news-today-instagram")?.url ||
+        "https://www.instagram.com/tv/CYZL8D3KQUa/?utm_medium=share_sheet",
     },
     {
       title:
